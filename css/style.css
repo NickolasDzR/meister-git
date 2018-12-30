@@ -27,6 +27,15 @@ ul {
   background-repeat: no-repeat; 
 }
 
+.mainly{
+  width: 1920px;
+  margin: 0 auto;
+  background-image: url("../img/main-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 853px;
+}
+
 .row-up {
   display: flex;
   flex-wrap: wrap;
@@ -44,9 +53,9 @@ ul {
   max-height: 178px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.container {
+  margin: 0 auto;
+  width: 1200px !important;
 }
 
 .image-logo {
@@ -217,4 +226,118 @@ ul {
 .social-list:nth-child(3) {
   margin-left: 28px;
   padding-top: 11px;
+}
+
+.if-driver {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+  /*
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 17px;
+}
+ */
+
+.if-cargo {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.about-off {
+  display: inline-block;
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 70px;
+}
+
+.about-cargo {
+  display: inline-block;
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 70px;
+}
+
+.detail {
+  border-radius: 20px;
+  background-color: #c14f2f;
+  color: #ffffff;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 11px 34.3px 15px 35.8px;
+}
+
+.col-info {
+  background-color: white;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  flex: 0 0 47.2%;
+  max-width: 47.2%;
+}
+
+.jumbo-overlap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -164px
+}
+
+.row-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.col-info:nth-child(1) {
+  padding: 49px 54px 41px 53px;
+  margin: 0;
+}
+
+.col-info:nth-child(2) {
+  padding: 49px 54px 41px 53px;
+  margin: 0;
+}
+
+.camion {
+  margin: 0 auto !important;
+}
+
+.left-arrow-cont {
+  width: 99px;
+  height: 102px;
+  position: absolute;
+  top: 420px;
+  left: 150px;
+}
+
+.right-arrow-cont {
+  width: 27px;
+  height: 68px;
+  position: absolute;
+  top: 360px;
+  left: 890px;
 }
