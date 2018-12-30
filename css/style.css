@@ -181,11 +181,11 @@ ul {
 
 .down-side {
   padding-top: 28px;
-  padding-bottom: 1px;
+  padding-bottom: 5px;
 }
 
 .col-10-list {
-  padding-left: 82px;
+  padding-left: 82.8px;
 }
 
 .list-nav li {
@@ -196,8 +196,25 @@ ul {
   margin-right: 70px;
 }
 
-.list-nav,
-.social-image {
+.list-nav {
   display: flex;
   flex-wrap: wrap;
+}
+
+.social-image {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list {
+  padding-top: 11px;
+  margin-left: 6px;
+}
+
+.social-list:nth-child(2),
+.social-list:nth-child(3) {
+  margin-left: 28px;
+  padding-top: 11px;
 }
