@@ -341,3 +341,22 @@ ul {
   top: 360px;
   left: 890px;
 }
+
+.advantages-cont {
+  background-color: #c14f2f;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.col-5 {
+  margin: 0 auto;
+}
+
+.odds {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-img {
+  text-align: center;
+}
