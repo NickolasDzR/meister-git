@@ -433,5 +433,143 @@ ul {
 }
 
 .main-form {
-  padding-top: 110px;
+  padding: 110px 0 98px 0;
+}
+
+.order-form {
+
+}
+
+.order-form {
+  padding-left: 37px;
+}
+
+.input-date {
+  padding: 6px 62px 5px 18px;
+  border: 0 solid white;
+  border-bottom: 1px solid #afafaf;;
+  opacity: 0.47;
+  color: #676767;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.button-cont {
+  text-align: center;
+  margin: 34px 38px 50px 0;
+}
+
+.order-button {
+  border: 0 solid white;
+  border-radius: 24px;
+  background-color: #c14f2f;
+  color: #ffffff;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 12px 75px 14px 75px;
+}
+
+.impost-request {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 46px;
+  margin-bottom: 18px;
+  color: #07a6b9;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.input-date:nth-child(1),
+.input-date:nth-child(3),
+.input-date:nth-child(5) {
+  margin-right: 59px;
+}
+
+.input-date:nth-child(1),
+.input-date:nth-child(2) {
+  margin-bottom: 48px;
+}
+
+.input-date:nth-child(3),
+.input-date:nth-child(4) {
+  margin-bottom: 46px;
+}
+
+.geography {
+  padding-bottom: 93px;
+  border-bottom: 9px solid #c14f2f;
+}
+
+.geophy-tr {
+  width: 1380px;
+  margin: 0 auto;
+  padding-top: 70px;
+  margin-left: 186px;
+  display: Flex;
+}
+
+.map-img {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  width: 867px;
+  height: 483px;
+}
+
+.paragraph-geo {
+  color: #1a1a1a;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  margin: 0;
+  margin-top: 78px;
+}
+
+.about-meneger {
+  font-family: "Roboto";
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.sp-cargo {
+  color: #cb2c00;
+}
+
+.our-number {
+  color: #07a6b9;
+  font-family: "Proxima Nova Rg";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.2px;
+  text-transform: uppercase;
+  margin-top: 55px;
+}
+
+.col-8 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.col-4 {
+  flex: 0 0 30%;
+  max-width: 30%;
+  padding: 0 0 0 45px;
+}
+
+.footer {
+  width: 1920px;
+  margin: 0 auto;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
