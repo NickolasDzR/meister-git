@@ -37,6 +37,28 @@ ul {
 .container-background {
   background-image: url("../img/main-background.jpg");
   height: 853px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 340px;
+  padding-bottom: 190px;  
+}
+
+.line-img {
+  position: relative;
+  top: -56px;
+  left: 17px;
+}
+
+.allowed-cargo {
+  text-align: right;
+  color: #3b97a2;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 36px;
+  margin: 0;
+  margin-right: 21px;
 }
 
 .row-up {
@@ -68,6 +90,19 @@ ul {
   padding: 0;
   text-align: center;
   margin-left: 14px;
+}
+
+.h1-article {
+  color: #1f425d;
+  font-family: "Proxima Nova Lt";
+  font-style: italic;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 70px;
+  width: 478px;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
 }
 
 .logo-sign {
