@@ -352,21 +352,25 @@ ul {
 
 .row-section {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 19px;
 }
 
-.col-info:nth-child(1) {
-  padding: 44px 54px 23px 53px;
-  margin: 0;
-}
-
-.col-info:nth-child(2) {
+.col-info {
   padding: 38px 54px 41px 53px;
   margin: 0;
 }
 
+.col-info:nth-child(odd) {
+  margin-right: 60px;
+}
+
+.col-info:nth-child(n+3) {
+  margin-top: 60px;
+}
+
 .camion {
+  position: relative;
   margin: 0 auto !important;
   padding-right: 49px;
 }
@@ -375,16 +379,16 @@ ul {
   width: 99px;
   height: 102px;
   position: absolute;
-  top: 385px;
-  left: 117px;
+  top: -5px;
+  right: 763px;
 }
 
 .right-arrow-cont {
   width: 27px;
   height: 68px;
   position: absolute;
-  top: 355px;
-  left: 866px;
+  top: -55px;
+  left: 626px;
 }
 
 .advantages-cont {
@@ -665,10 +669,10 @@ ul {
 }
 
 .map-img {
-  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   width: 867px;
   height: 483px;
+  padding-left: 0 !important;
 }
 
 .paragraph-geo {
