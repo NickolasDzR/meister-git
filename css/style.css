@@ -797,6 +797,7 @@ ul {
 .col-3 {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0 !important;
 }
 
 .schedule-cont {
@@ -820,11 +821,14 @@ ul {
 
 .broadcrumps {
   text-align: left;
+  margin-left: -50px;
 }
 
 .bc-list {
   display: flex;
   align-items: center;
+  padding-top: 12px;
+  margin: 0;
 }
 
 .bc-list a {
@@ -846,7 +850,7 @@ ul {
 .arrow-right {
   height: 15px;
   color: #bee8ed;
-  margin: 0 25px 0 25px;
+  margin: 0 25px 0 28px;
 }
 
 .h1-article_vc {
@@ -855,6 +859,7 @@ ul {
   font-size: 42px;
   font-weight: 700;
   line-height: 22px;
+  margin-bottom: 70px;
 }
 
 .h2-article_vc {
@@ -866,15 +871,12 @@ ul {
   border-bottom: solid 4px;
   padding-bottom: 2px;
   border-image: url("../img/line-h2.jpg") 3;
+  width: 481px;
 }
 
-.col-red {
-  flex: 0 0 45% !important;
-  max-width: 45% !important; 
-}
-
-.circs-ul li {
+.circs-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .circs-job {
@@ -886,12 +888,55 @@ ul {
   line-height: 28px;
 }
 
-.circs-job-list {
-  display: inline-block;
+.circs-paragraph {
+  margin-right: 5px;
+}
+
+.circs-job-span {
+  display: block;
   align-items: center;
   color: #1c1c1c;
   font-family: "Proxima Nova Rg";
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+}
+
+.tasks-paragraph {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.tasks {
+  padding-left: 0;
+}
+
+.tasks li {
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.text {
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+
+.tasks li:before {
+  content:  "—";
+  position: absolute;
+  left:     -5px;
+}
+
+.bc {
+  margin-bottom: 48px;
 }
