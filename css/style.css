@@ -817,3 +817,81 @@ ul {
 .svg-img {
   padding-top: 28px;
 }
+
+.broadcrumps {
+  text-align: left;
+}
+
+.bc-list {
+  display: flex;
+  align-items: center;
+}
+
+.bc-list a {
+  color: #999999;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.bc-list li {
+  color: #07a6b9;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.arrow-right {
+  height: 15px;
+  color: #bee8ed;
+  margin: 0 25px 0 25px;
+}
+
+.h1-article_vc {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.h2-article_vc {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+  border-bottom: solid 4px;
+  padding-bottom: 2px;
+  border-image: url("../img/line-h2.jpg") 3;
+}
+
+.col-red {
+  flex: 0 0 45% !important;
+  max-width: 45% !important; 
+}
+
+.circs-ul li {
+  display: flex;
+}
+
+.circs-job {
+  margin: 0;
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.circs-job-list {
+  display: inline-block;
+  align-items: center;
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
