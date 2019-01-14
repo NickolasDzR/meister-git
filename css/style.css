@@ -827,7 +827,8 @@ ul {
 .bc-list {
   display: flex;
   align-items: center;
-  padding-top: 14px;
+  padding-top: 13.1px;
+  margin: 0;
   margin-left: -35px;
 }
 
@@ -947,7 +948,7 @@ ul {
 }
 
 .bc {
-  margin-bottom: 48px;
+  margin-bottom: 47px;
 }
 
 .style-size {
@@ -956,12 +957,12 @@ ul {
 }
 
 .conditions {
-  padding-left: 16px;
+  margin-top: 21px;
 }
 
 .summarize {
   padding-top: 9px;
-  margin-bottom: 28px;
+  margin-bottom: 28.5px;
 }
 
 .respond {
@@ -974,12 +975,20 @@ ul {
   font-weight: 400;
   line-height: 22px;
   cursor: pointer;
-  padding: 12px 60px 14px 51px;
+  padding: 10px 60px 14px 51px;
 }
 
 .rectangel2 {
   position: absolute;
   background-repeat: no-repeat;
   left: -359px;
-  top: -38px;
+  top: -9px;
+}
+
+.vacansies-h1 {
+  padding-left: 4px !important;
+}
+
+.pad-size {
+  padding-left: 5px !important;
 }
