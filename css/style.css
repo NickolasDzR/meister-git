@@ -144,7 +144,8 @@ ul {
 
 .call-button:hover,
 .detail:hover,
-.order-button:hover {
+.order-button:hover,
+.respond:hover {
   background-color: #a53617;
 }
 
@@ -657,7 +658,6 @@ ul {
 
 .geography {
   padding-bottom: 94px;
-  border-bottom: 9px solid #c14f2f;
 }
 
 .geophy-tr {
@@ -740,6 +740,7 @@ ul {
   background-repeat: no-repeat;
   background-color: black;
   background-image: url("../img/footer-img.jpg");
+  border-top: 9px solid #c14f2f;
 }
 
 .footer-article {
@@ -821,14 +822,17 @@ ul {
 
 .broadcrumps {
   text-align: left;
-  margin-left: -50px;
 }
 
 .bc-list {
   display: flex;
   align-items: center;
-  padding-top: 12px;
-  margin: 0;
+  padding-top: 14px;
+  margin-left: -35px;
+}
+
+.h-cont {
+  padding-left: 4px !important;
 }
 
 .bc-list a {
@@ -859,7 +863,7 @@ ul {
   font-size: 42px;
   font-weight: 700;
   line-height: 22px;
-  margin-bottom: 70px;
+  margin-bottom: 94px;
 }
 
 .h2-article_vc {
@@ -869,9 +873,10 @@ ul {
   font-weight: 700;
   line-height: 22px;
   border-bottom: solid 4px;
-  padding-bottom: 2px;
+  padding-bottom: 8.7px;
   border-image: url("../img/line-h2.jpg") 3;
   width: 481px;
+  margin-bottom: 0;
 }
 
 .circs-container {
@@ -889,7 +894,7 @@ ul {
 }
 
 .circs-paragraph {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .circs-job-span {
@@ -908,10 +913,14 @@ ul {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+  padding-top: 2px;
+  margin-bottom: 0;
 }
 
 .tasks {
-  padding-left: 0;
+  padding-top: 11px;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .tasks li {
@@ -928,15 +937,49 @@ ul {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 5px;
-  line-height: 24px;
+  line-height: 26.1px;
 }
 
 .tasks li:before {
   content:  "—";
   position: absolute;
-  left:     -5px;
+  left: 4px;
 }
 
 .bc {
   margin-bottom: 48px;
+}
+
+.style-size {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.conditions {
+  padding-left: 16px;
+}
+
+.summarize {
+  padding-top: 9px;
+  margin-bottom: 28px;
+}
+
+.respond {
+  border: 0 solid white;
+  border-radius: 24px;
+  background-color: #c14f2f;
+  color: #ffffff;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+  padding: 12px 60px 14px 51px;
+}
+
+.rectangel2 {
+  position: absolute;
+  background-repeat: no-repeat;
+  left: -359px;
+  top: -38px;
 }
