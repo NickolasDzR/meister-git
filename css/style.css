@@ -32,6 +32,7 @@ ul {
   margin: 0 auto;
   background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .container-background {
@@ -951,6 +952,15 @@ ul {
   margin-bottom: 47px;
 }
 
+/*
+
+.bc-2 {
+  margin-bottom: 103px;
+  padding-left: 5px !important;
+}
+
+*/
+
 .style-size {
   position: relative;
   margin-bottom: 20px;
@@ -981,8 +991,8 @@ ul {
 .rectangel2 {
   position: absolute;
   background-repeat: no-repeat;
-  left: -359px;
-  top: -9px;
+  left: 0px;
+  top: 88px;
 }
 
 .vacansies-h1 {
