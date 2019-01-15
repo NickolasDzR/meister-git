@@ -880,6 +880,20 @@ ul {
   margin-bottom: 0;
 }
 
+.h2-article_cargo {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+  border-bottom: solid 4px;
+  padding-bottom: 7.7px;
+  border-image: url("../img/line-h2.jpg") 3;
+  width: 481px;
+  margin-bottom: 0;
+}
+
+
 .circs-container {
   display: flex;
   flex-wrap: wrap;
@@ -951,9 +965,19 @@ ul {
   margin-bottom: 47px;
 }
 
+.bc-2 {
+  margin-bottom: 103.5px;
+}
+
 .style-size {
   position: relative;
   margin-bottom: 20px;
+}
+
+.style-size-2 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 5px !important;
 }
 
 .conditions {
