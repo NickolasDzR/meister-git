@@ -399,10 +399,10 @@ ul {
   margin: 0 auto;
 }
 
-.col-6 {
+.col-6-ad {
   margin: 0 auto;
-  flex: 0 0 60% !important;
-  max-width: 60% !important;
+  flex: 0 0 60%;
+  max-width: 60%;
   padding-top: 61px;
   padding-bottom: 77px;
 }
@@ -865,7 +865,7 @@ ul {
   font-size: 42px;
   font-weight: 700;
   line-height: 22px;
-  margin-bottom: 94px;
+  margin-left: 360px;
 }
 
 .h2-article_vc {
@@ -1001,4 +1001,8 @@ ul {
 
 .pad-size {
   padding-left: 5px !important;
+}
+
+.h2-article_cont {
+  width: 100%;
 }
