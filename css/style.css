@@ -954,18 +954,25 @@ ul {
   left: 20px;
 }
 
+.duties {
+  padding-top: 10px;  
+  padding-left: 25px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.duties li {
+    color: #333333;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
 .bc {
   margin-bottom: 46px;
 }
-
-/*
-
-.bc-2 {
-  margin-bottom: 103px;
-  padding-left: 5px !important;
-}
-
-*/
 
 .style-size {
   position: relative;
@@ -978,7 +985,7 @@ ul {
 
 .summarize {
   padding: 7.5px 0 0 6px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .respond {
@@ -1012,7 +1019,7 @@ ul {
 
 .h2-article_cont {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .col-6-first {
@@ -1021,9 +1028,32 @@ ul {
 
 .worker-img {
   padding-left: 40px !important;
-  padding-top: 8px;
+  padding-top: 7px;
+}
+
+.car-go-img {
+  padding-left: 8px !important;
+  padding-top: 7px;
 }
 
 .firstcont-vacansy {
-  margin-bottom: 150px;
+  margin-bottom: 103px;
+}
+
+.col-7_red {
+  flex: 0 0 61%;
+  max-width: 61%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.col-5_red {
+  flex: 0 0 39%;
+  max-width: 39%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
