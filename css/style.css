@@ -823,12 +823,13 @@ ul {
 
 .broadcrumps {
   text-align: left;
+  padding-top: 1px;
 }
 
 .bc-list {
   display: flex;
   align-items: center;
-  padding-top: 13.1px;
+  padding-top: 12.8px;
   margin: 0;
   margin-left: -35px;
 }
@@ -865,10 +866,12 @@ ul {
   font-size: 42px;
   font-weight: 700;
   line-height: 22px;
-  margin-left: 360px;
+  margin-left: 379px;
+  margin-bottom: 68px;
 }
 
 .h2-article_vc {
+  margin-bottom: 0;
   color: #1c1c1c;
   font-family: "Proxima Nova Rg";
   font-size: 32px;
@@ -877,8 +880,8 @@ ul {
   border-bottom: solid 4px;
   padding-bottom: 8.7px;
   border-image: url("../img/line-h2.jpg") 3;
-  width: 481px;
-  margin-bottom: 0;
+  padding-left: 5px;
+  width: 486px;
 }
 
 .circs-container {
@@ -915,13 +918,14 @@ ul {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  padding-top: 2px;
   margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .tasks {
-  padding-top: 11px;
-  padding-left: 20px;
+  padding-top: 10px;  
+  padding-left: 25px;
   margin: 0;
 }
 
@@ -931,6 +935,7 @@ ul {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
+  letter-spacing: -0.2px;
 }
 
 .text {
@@ -939,17 +944,18 @@ ul {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 5px;
-  line-height: 26.1px;
+  line-height: 26.6px;
+  letter-spacing: -0.3px;
 }
 
 .tasks li:before {
   content:  "—";
   position: absolute;
-  left: 4px;
+  left: 20px;
 }
 
 .bc {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 /*
@@ -971,8 +977,8 @@ ul {
 }
 
 .summarize {
-  padding-top: 9px;
-  margin-bottom: 28.5px;
+  padding: 7.5px 0 0 6px;
+  margin-bottom: 30px;
 }
 
 .respond {
@@ -985,7 +991,8 @@ ul {
   font-weight: 400;
   line-height: 22px;
   cursor: pointer;
-  padding: 10px 60px 14px 51px;
+  padding: 11px 60px 13px 51px;
+  margin-left: 5px;
 }
 
 .rectangel2 {
@@ -1005,4 +1012,18 @@ ul {
 
 .h2-article_cont {
   width: 100%;
+  margin-bottom: 21px;
+}
+
+.col-6-first {
+  margin: 0 0px;
+}
+
+.worker-img {
+  padding-left: 40px !important;
+  padding-top: 8px;
+}
+
+.firstcont-vacansy {
+  margin-bottom: 150px;
 }
