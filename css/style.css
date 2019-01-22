@@ -50,16 +50,35 @@ ul {
   position: relative;
 }
 
-.container-background {
+.container-image {
+  /*
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  min-height: 803px;
+  */
+}
+
+.container-image {
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.container-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.background-mainly {
   height: 853px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 362px;
-  padding-bottom: 325px;
 }
 
 .line-img {
