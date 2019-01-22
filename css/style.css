@@ -20,28 +20,6 @@ ul {
 
 .main-navigator {
   border-bottom: 11px solid #07a6b9;
-  background-color: #07a6b9;
-}
-
-.main-navigator::before,
-.main-navigator::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: calc(50% - 580px);
-  background-color: #ffffff;
-}
-
-.main-navigator::after {
-  right: 0px;
-  bottom: 60px;
-  height: 92px;
-}
-
-.main-navigator::before {
-  left: 0px;
-  bottom: 60px;
-  height: 166px;
 }
 
 .mainly{
@@ -118,10 +96,6 @@ ul {
   position: bottom right;
 }
 
-/*   background-image: url("../img/rectangle.jpg");
-  background-position: bottom right;
-  background-repeat: no-repeat; */
-
 .image-logo {
   margin: 0;
   padding: 0;
@@ -153,8 +127,9 @@ ul {
   line-height: 22px;
 }
 
-.col-1-stick {
-  flex: 0 0 0%;
+.stick {
+  flex: 0 0 0% !important;
+  max-width: 0% !important;
   display: flex;
   flex-wrap: wrap;
   border-left: 1px solid #07a6b9;
@@ -216,18 +191,18 @@ ul {
   fill: #c6ecf1;
 }
 
-.col-3-logo {
-  flex: 28%;
-  max-width: 28%;
-  padding: 44px 0 28px 0;
+.mail {
+  flex: 28% !important;
+  max-width: 28% !important;
 }
 
 .col-9-nav {
   flex: 0 0 72%;
   max-width: 72%;
-  background-image: url("../img/rectangle.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
+}
+
+.row-down {
+  background-color: #07a6b9;
 }
 
 .write-onmail {
