@@ -20,6 +20,28 @@ ul {
 
 .main-navigator {
   border-bottom: 11px solid #07a6b9;
+  background-color: #07a6b9;
+}
+
+.main-navigator::before,
+.main-navigator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: calc(50% - 580px);
+  background-color: #ffffff;
+}
+
+.main-navigator::after {
+  right: 0px;
+  bottom: 60px;
+  height: 92px;
+}
+
+.main-navigator::before {
+  left: 0px;
+  bottom: 60px;
+  height: 166px;
 }
 
 .mainly{
@@ -69,6 +91,7 @@ ul {
 
 .navigation {
   max-height: 178px;
+  background-color: white;
 }
 
 .rectangle {
@@ -183,6 +206,9 @@ ul {
 .col-9-nav {
   flex: 0 0 72%;
   max-width: 72%;
+  background-image: url("../img/rectangle.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .write-onmail {
@@ -241,14 +267,16 @@ ul {
   margin-left: 15px;
 }
 
+/*
+
 .down-side {
   padding-top: 28px;
   padding-bottom: 5px;
-  width: 100px;
-	height: 100px;
 	transform: skew(20deg);
 	background: red;
 }
+
+*/
 
 .col-10-list {
   padding-left: 82.8px;
