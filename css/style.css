@@ -20,21 +20,12 @@ ul {
 
 .main-navigator {
   border-bottom: 11px solid #07a6b9;
-  margin: 0 auto;
 }
 
 .mainly{
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.pad-top {
-  padding-top: 32px;
-}
-
-.logo-pad {
-  padding: 44px 0 29px 0;
 }
 
 .container-image {
@@ -205,10 +196,6 @@ ul {
   max-width: 28% !important;
 }
 
-.send-post {
-  float: left;
-}
-
 .col-9-nav {
   flex: 0 0 72%;
   max-width: 72%;
@@ -304,11 +291,6 @@ ul {
 .list-nav {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0px;
-}
-
-.bg-color {
-  background-color: #07a6b9;
 }
 
 .social-image {
@@ -316,16 +298,6 @@ ul {
   align-items: center;
   padding: 0;
   margin: 0;
-}
-
-.flexred_nav {
-  flex: 0 0 80% !important;
-  max-width: 80% !important;
-}
-
-.flexred_social {
-  flex: 0 0 20% !important;
-  max-width: 20% !important;
 }
 
 .social-list {
