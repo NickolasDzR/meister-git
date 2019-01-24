@@ -73,7 +73,6 @@ ul {
 }
 
 .down {
-  background-color: #07a6b9;
   padding-bottom: 27px;
 }
 
@@ -84,12 +83,13 @@ ul {
 
 .delta {
   position: relative;
+  background-color: #07a6b9;
 }
 
 .delta::before {
   content: ''; 
   position: absolute;
-  left: -73px;
+  right: 100%;
   border: 34px solid transparent;
   border-right: 24px solid #07a6b9;
   border-bottom: 49px solid #07a6b9;
