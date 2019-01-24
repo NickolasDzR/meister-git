@@ -20,22 +20,12 @@ ul {
 
 .main-navigator {
   border-bottom: 11px solid #07a6b9;
-  background-color: #07a6b9;
 }
 
 .mainly{
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.container-image {
-  /*
-  background-image: url("../img/main-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 803px;
-  */
 }
 
 .container-image {
@@ -79,12 +69,12 @@ ul {
 .row-up {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 7px;
 }
 
-.row-down {
-  display: flex;
-  flex-wrap: wrap;
-  height: 74px;
+.down {
+  background-color: #07a6b9;
+  padding-bottom: 27px;
 }
 
 .navigation {
@@ -92,14 +82,24 @@ ul {
   background-color: white;
 }
 
+.delta {
+  position: relative;
+}
+
+.delta::before {
+  content: ''; 
+  position: absolute;
+  left: -58px;
+  border: 34px solid transparent;
+  border-right: 24px solid #07a6b9;
+  border-bottom: 49px solid #07a6b9;
+}
+
 .rectangle {
   width: 100%;
   position: bottom right;
 }
 
-/*   background-image: url("../img/rectangle.jpg");
-  background-position: bottom right;
-  background-repeat: no-repeat; */
 
 .image-logo {
   margin: 0;
@@ -141,7 +141,6 @@ ul {
   height: 70px;
   transform: rotate(34deg);
   margin-top: 16px;
-  margin-left: 45px;
 }
 
 .call-button {
@@ -196,17 +195,14 @@ ul {
 }
 
 .col-3-logo {
-  flex: 28%;
-  max-width: 28%;
+  flex: 33%;
+  max-width: 33%;
   padding: 44px 0 28px 0;
 }
 
 .col-9-nav {
-  flex: 0 0 72%;
-  max-width: 72%;
-  background-image: url("../img/rectangle.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  flex: 0 0 67%;
+  max-width: 67%;
 }
 
 .write-onmail {
@@ -234,11 +230,10 @@ ul {
 }
 
 .col-4-first {
-  flex: 0 0 36%;
-  max-width: 36%;
+  flex: 0 0 26%;
+  max-width: 26%;
   display: flex;
   align-items: center;
-  padding-left: 95px;
   padding-top: 13px;
 }
 
@@ -247,12 +242,11 @@ ul {
 }
 
 .col-4-second {
-  flex: 0 0 33%;
-  max-width: 33%;
+  flex: 0 0 23%;
+  max-width: 23%;
   display: flex;
   align-items: center;
   padding-top: 12px;
-  padding-left: 62px;
 }
 
 .col-12-mail {
@@ -277,7 +271,6 @@ ul {
 */
 
 .col-10-list {
-  padding-left: 82.8px;
 }
 
 .container-fluid {
