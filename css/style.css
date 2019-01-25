@@ -20,6 +20,7 @@ ul {
 
 .main-navigator {
   border-bottom: 11px solid #07a6b9;
+  overflow: hidden;
 }
 
 .mainly{
@@ -93,6 +94,16 @@ ul {
   border: 34px solid transparent;
   border-right: 24px solid #07a6b9;
   border-bottom: 49px solid #07a6b9;
+}
+
+.delta::after {
+  content: '';
+  position: absolute;
+  width: 2060px;
+  height: 80px;
+  right: -2046px;
+  top: 0px;
+  background-color: #07a6b9;
 }
 
 .rectangle {
