@@ -205,14 +205,14 @@ ul {
 }
 
 .col-3-logo {
-  flex: 33%;
-  max-width: 33%;
+  flex: 31.8%;
+  max-width: 31.8%;
   padding: 44px 0 28px 0;
 }
 
 .col-9-nav {
-  flex: 0 0 67%;
-  max-width: 67%;
+  flex: 0 0 68.2%;
+  max-width: 68.2%;
 }
 
 .write-onmail {
