@@ -32,10 +32,7 @@ ul {
 .container-image {
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  position: relative;
+  width: 100vw;
 }
 
 .container-image img {
@@ -45,17 +42,21 @@ ul {
 }
 
 .background-mainly {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  width: 100% !important;
   position: absolute;
-  top: 167px;
+  top: 177px;
   left: 189px;
+}
+
+.display_fl {
+  margin-top: auto;
 }
 
 .line-img {
   position: relative;
-  top: -58px;
+  top: -1px;  
   left: 0px;
 }
 
@@ -128,11 +129,14 @@ ul {
   font-size: 65px;
   font-weight: 400;
   line-height: 70px;
-  width: 478px;
+  width: 488px;
   margin: 0;
   padding: 0;
   direction: rtl;
+  font-size: 3vw;
 }
+
+
 
 .logo-sign {
   margin: 0;
