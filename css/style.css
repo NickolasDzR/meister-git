@@ -71,10 +71,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 7px;
+  padding-left: 49px;
 }
 
 .down {
-  padding-bottom: 27px;
+  padding: 20px 0 6px 36px;
 }
 
 .navigation {
@@ -151,6 +152,7 @@ ul {
   height: 70px;
   transform: rotate(34deg);
   margin-top: 16px;
+  margin-right: 62px;
 }
 
 .call-button {
@@ -174,9 +176,15 @@ ul {
   background-color: #a53617;
 }
 
-.button {
+.col-button {
   display: flex;
   align-items: center;
+  flex: 0 0 28%;
+  max-width: 28%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
 .link-nav,
@@ -207,7 +215,7 @@ ul {
 .col-3-logo {
   flex: 31.8%;
   max-width: 31.8%;
-  padding: 44px 0 28px 0;
+  padding: 44px 46px 21px 0;
 }
 
 .col-9-nav {
@@ -245,6 +253,7 @@ ul {
   display: flex;
   align-items: center;
   padding-top: 13px;
+  margin-right: 61px;
 }
 
 .container-fluid {
@@ -252,11 +261,12 @@ ul {
 }
 
 .col-4-second {
-  flex: 0 0 23%;
-  max-width: 23%;
+  flex: 0 0 26%;
+  max-width: 26%;
   display: flex;
   align-items: center;
   padding-top: 12px;
+  margin-right: 23px;
 }
 
 .col-12-mail {
@@ -268,17 +278,6 @@ ul {
 .col-12-phone {
   margin-left: 15px;
 }
-
-/*
-
-.down-side {
-  padding-top: 28px;
-  padding-bottom: 5px;
-	transform: skew(20deg);
-	background: red;
-}
-
-*/
 
 .col-10-list {
 }
