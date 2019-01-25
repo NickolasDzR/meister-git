@@ -45,16 +45,18 @@ ul {
 }
 
 .background-mainly {
-  height: 853px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  top: 167px;
+  left: 189px;
 }
 
 .line-img {
   position: relative;
-  top: -59px;
-  left: 15px;
+  top: -58px;
+  left: 0px;
 }
 
 .allowed-cargo {
@@ -384,6 +386,7 @@ ul {
   position: relative;
   margin-top: -164px;
   margin-bottom: 89px;
+  top: 61px;
 }
 
 .row-section {
