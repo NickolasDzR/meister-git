@@ -50,7 +50,7 @@ ul {
   flex-wrap: wrap;
   width: 100% !important;
   position: absolute;
-  top: 177px;
+  top: 348px;
   left: 189px;
 }
 
@@ -60,18 +60,19 @@ ul {
 
 .line-img {
   position: relative;
-  top: -3px;
-  left: 21px;
+  top: -6.3px;
+  left: 16px;
 }
 
 .allowed-cargo {
   text-align: right;
   color: #3b97a2;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 15.6px;
   font-weight: 300;
   line-height: 36px;
   margin: 0;
+  margin-top: -8px;
 }
 
 .row-up {
@@ -133,13 +134,28 @@ ul {
   font-size: 65px;
   font-weight: 400;
   line-height: 70px;
-  width: 488px;
+  width: 476px;
   margin: 0;
   padding: 0;
   direction: rtl;
-  font-size: 3vw;
+  font-size: 3.9vw;
 }
 
+
+.h1-article-dw {
+  color: #1f425d;
+  font-family: "Proxima Nova Lt";
+  font-style: italic;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 70px;
+  width: 476px;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  margin-top: -18px;
+  font-size: 3.9vw;
+}
 
 
 .logo-sign {
