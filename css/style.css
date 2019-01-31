@@ -578,7 +578,7 @@ ul {
   line-height: 46px;
   margin: 0;
   padding-top: 58.9px;
-  padding-left: 4px;
+  padding-left: 10px;
 }
 
 .interestingvac-h2 {
@@ -600,7 +600,8 @@ ul {
   line-height: 28px;
   letter-spacing: -0.2px;
   margin-top: 26.1px;
-  padding-right: 30px;
+  padding-right: 60px;
+  padding-left: 6px;
 }
 
 .text-vac {
@@ -717,7 +718,7 @@ ul {
 
 .button-cont {
   text-align: center;
-  margin: -6px 42px 0 0;
+  margin: -1px 42px 0 0;
 }
 
 .order-button,
@@ -743,14 +744,12 @@ ul {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 48px;
-  margin-bottom: 15px;
-  margin-right: 15px;
   color: #07a6b9;
   font-family: "Proxima Nova Rg";
   font-size: 32px;
   font-weight: 700;
   line-height: 48px;
+  padding: 50px 6px 15px 0;
 }
 
 .input-date:nth-child(1),
