@@ -793,7 +793,7 @@ ul {
   background-repeat: no-repeat;
   width: 867px;
   height: 483px;
-  padding-left: 0 !important;
+  right: 130px;
 }
 
 .paragraph-geo {
@@ -839,7 +839,6 @@ ul {
 
 .footer-cont {
   display: flex;
-  justify-content: space-between;
   padding: 82px 0 50px 20px !important;
 }
 
@@ -859,6 +858,12 @@ ul {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+  padding-right: 90px;
+}
+
+.broadcrumps-footer {
+  padding-left: 34px;
+  padding-top: 2px;
 }
 
 .adress {
@@ -915,17 +920,34 @@ ul {
   margin-bottom: 7px;
 }
 
-.schedule {
-  margin-left: 14px;
+.svg-img {
+  flex: 0 0 10%;
+  max-width: 10%;
+  padding-top: 28px;
+  left: 35px;
 }
 
-.svg-img {
-  padding-top: 28px;
+.schedule {
+  margin-left: 14px;
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+
+.indent {
+  padding: 83px 0 47px 4px;
+}
+
+.indent-logo {
+  margin-right: 90px;
 }
 
 .broadcrumps {
   text-align: left;
   padding-top: 1px;
+}
+
+.indend-broadcrumps {
+  margin-right: 100px;
 }
 
 .bc-list {
