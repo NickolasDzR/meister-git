@@ -23,7 +23,7 @@ ul {
   overflow: hidden;
 }
 
-.mainly{
+.mainly {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
@@ -52,10 +52,6 @@ ul {
   position: absolute;
   top: 348px;
   left: 189px;
-}
-
-.display_fl {
-  margin-top: auto;
 }
 
 .line-img {
@@ -288,10 +284,6 @@ ul {
   margin-right: 61px;
 }
 
-.container-fluid {
-  background-color: red;
-}
-
 .col-4-second {
   flex: 0 0 26%;
   max-width: 26%;
@@ -309,13 +301,6 @@ ul {
 
 .col-12-phone {
   margin-left: 15px;
-}
-
-.col-10-list {
-}
-
-.container-fluid {
-  background: rgba(255, 0, 0, 0.5);
 }
 
 .list-nav li {
@@ -464,14 +449,6 @@ ul {
   background-color: #c14f2f;
 }
 
-.col-6-ad {
-  margin: 0 auto;
-  flex: 0 0 60%;
-  max-width: 60%;
-  padding-top: 61px;
-  padding-bottom: 77px;
-}
-
 .odds {
   display: flex;
   flex-wrap: wrap;
@@ -489,10 +466,8 @@ ul {
   font-weight: 700;
   line-height: 35px;
   margin: 0;
-  margin-top: 32.1px;
-  margin-bottom: 72px;
-  padding-right: 4px;
-  padding-top: 61px;
+  margin: 32.1px 0 72px 0;
+  padding: 61px 4px 0 0;
 }
 
 .advantages-list {
@@ -722,8 +697,7 @@ ul {
 }
 
 .order-button,
-.button-vacansy
- {
+.button-vacansy {
   border: 0 solid white;
   border-radius: 24px;
   background-color: #c14f2f;
@@ -831,17 +805,6 @@ ul {
   margin-top: 57px;
 }
 
-.col-4-header {
-  flex: 0 0 31%;
-  max-width: 31%;
-  padding: 0 0 0 14.8px !important;
-}
-
-.footer-cont {
-  display: flex;
-  padding: 82px 0 50px 20px !important;
-}
-
 .footer {
   background-position: top center;
   background-repeat: no-repeat;
@@ -864,11 +827,6 @@ ul {
 .broadcrumps-footer {
   padding-left: 34px;
   padding-top: 2px;
-}
-
-.adress {
-  flex: 0 0 26.4%;
-  max-width: 26.4%;
 }
 
 .broadcrumps a {
@@ -907,13 +865,6 @@ ul {
   font-weight: 400;
   line-height: 18px;
   text-align: right;
-}
-
-.schedule-cont {
-  flex: 0 0 26.6%;
-  max-width: 26.6%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .logofooter-img {
@@ -1098,15 +1049,6 @@ ul {
   margin-bottom: 46px;
 }
 
-.style-size {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.conditions {
-  margin-top: 21px;
-}
-
 .summarize {
   padding: 7.5px 0 0 6px;
   margin-bottom: 28px;
@@ -1131,10 +1073,6 @@ ul {
   background-repeat: no-repeat;
   left: 0px;
   top: 88px;
-}
-
-.vacansies-h1 {
-  padding-left: 4px !important;
 }
 
 .pad-size {
@@ -1184,10 +1122,6 @@ ul {
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
-}
-
-.backgroun-image {
-  background-image: url("../img/pattern.jpg")
 }
 
 .interest-vacansy {
