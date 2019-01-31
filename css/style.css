@@ -29,6 +29,13 @@ ul {
   position: relative;
 }
 
+.rectangle-container {
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
 .container-image {
   background-position: top center;
   background-repeat: no-repeat;
@@ -941,8 +948,7 @@ ul {
   font-size: 42px;
   font-weight: 700;
   line-height: 22px;
-  margin-left: 379px;
-  margin-bottom: 68px;
+  padding: 9px 0 5px 4px;
 }
 
 .h2-article_vc {
@@ -1046,7 +1052,7 @@ ul {
 }
 
 .bc {
-  margin-bottom: 46px;
+  margin-bottom: 37px;
 }
 
 .summarize {
@@ -1127,4 +1133,37 @@ ul {
 .interest-vacansy {
   padding-top: 113px;
   padding-bottom: 95px;
+}
+
+.indent-business {
+  margin: 0 auto;
+}
+
+.our-busines {
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.rectangle::before {
+  content: "";
+  height: 93px;
+  width: 2000px;
+  position: absolute;
+  background-color: #3b97a2;
+  opacity: 0.13;
+  right: 373px;
+}
+
+.rectangle::after {
+  content: "";
+  position: absolute;
+  opacity: 0.13;
+  border: 34px solid transparent;
+  border-left: 21px solid #3b97a2;
+  border-top: 59px solid #3b97a2;
+  left: -73px;
+  bottom: -1px;
 }
