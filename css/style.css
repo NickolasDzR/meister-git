@@ -23,13 +23,9 @@ ul {
   overflow: hidden;
 }
 
-.mainly {
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.rectangle-container {
+.rectangle-container,
+.mainly,
+map {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
@@ -574,6 +570,17 @@ ul {
   padding-left: 16px;
 }
 
+.interestingvac-h3 {
+  color: #1a1a1a;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 33px;
+  margin: 0;
+  padding-top: 47.9px;
+  padding-left: 16px;
+}
+
 .text-about {
   color: #333333;
   font-family: "Roboto";
@@ -600,6 +607,10 @@ ul {
 
 .about-us-container {
   background-image: url("../img/pattern.jpg");
+  margin: 0 auto;
+}
+
+.about-us-container {
   margin: 0 auto;
 }
 
@@ -965,20 +976,6 @@ ul {
   width: 486px;
 }
 
-.h2-article_ab {
-  margin-bottom: 0;
-  color: #1c1c1c;
-  font-family: "Proxima Nova Rg";
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 22px;
-  border-bottom: solid 4px;
-  padding-bottom: 8.7px;
-  border-image: url("../img/line-h2.jpg") 3;
-  padding-left: 5px;
-  width: 356px;
-}
-
 .circs-container {
   display: flex;
   flex-wrap: wrap;
@@ -1164,6 +1161,12 @@ ul {
   padding-bottom: 95px;
 }
 
+.interest-vacansy {
+  padding-top: 113px;
+  padding-bottom: 95px;
+  align-items: center;
+}
+
 .indent-business {
   margin: 0 auto;
 }
@@ -1223,4 +1226,31 @@ ul {
 
 .list-way {
   position: relative;
+}
+
+.style-grey {
+  color: #666666;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.style-black {
+  color: #1a1a1a;
+  font-family: "Proxima Nova Rg";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.send-post {
+  float: left;
+}
+
+.yandex-map {
+  border: 0;
+}
+
+.box-shadow {
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
