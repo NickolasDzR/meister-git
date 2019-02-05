@@ -23,7 +23,14 @@ ul {
   overflow: hidden;
 }
 
-.rectangle-container,
+.rectangle-container {
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 61px;
+}
+
 .mainly,
 map {
   background-position: top center;
@@ -567,7 +574,7 @@ map {
   line-height: 33px;
   margin: 0;
   padding-top: 47.9px;
-  padding-left: 16px;
+  padding-left: 7px;
 }
 
 .interestingvac-h3 {
@@ -601,8 +608,8 @@ map {
   line-height: 28px;
   letter-spacing: -0.2px;
   margin-top: 15.1px;
-  padding-right: 32px;
-  margin-left: 16px;
+  padding-right: 55px;
+  margin-left: 7px;
 }
 
 .about-us-container {
@@ -619,6 +626,7 @@ map {
   max-width: 660px;
   margin-left: 20px;
   padding-bottom: 50px;
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
 }
 
 .main-form {
@@ -657,7 +665,7 @@ map {
   font-weight: 300;
   line-height: 32px;
   overflow: visible;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
 }
 
 .input-date::placeholder {
@@ -741,7 +749,7 @@ map {
   font-size: 32px;
   font-weight: 700;
   line-height: 48px;
-  padding: 50px 6px 15px 0;
+  padding: 48px 17px 15px 0px;
 }
 
 .input-date:nth-child(1),
@@ -1161,12 +1169,6 @@ map {
   padding-bottom: 95px;
 }
 
-.interest-vacansy {
-  padding-top: 113px;
-  padding-bottom: 95px;
-  align-items: center;
-}
-
 .indent-business {
   margin: 0 auto;
 }
@@ -1253,4 +1255,8 @@ map {
 .box-shadow {
   box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+}
+
+.second-vacansy {
+  padding-top: 0.5px;
 }
