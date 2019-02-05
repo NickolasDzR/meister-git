@@ -48,6 +48,11 @@ map {
   background-size: cover;
 }
 
+.map {
+  margin-top: 53px;
+  margin-bottom: -4px;
+}
+
 /*
 .container-image img {
   height: 100%;
@@ -1023,6 +1028,28 @@ map {
   margin-left: 5px;
 }
 
+.way-work {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-top: 23px;
+  margin-left: 5px;
+}
+
+.list-work {
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-top: 6px;
+  padding-left: 25px;
+}
+
 .tasks {
   padding-top: 10px;  
   padding-left: 25px;
@@ -1228,6 +1255,7 @@ map {
 
 .list-way {
   position: relative;
+  margin-bottom: -13px;
 }
 
 .style-grey {
@@ -1259,4 +1287,101 @@ map {
 
 .second-vacansy {
   padding-top: 0.5px;
+}
+
+.main-article {
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3px;
+  }
+
+.mission-message {
+  margin-bottom: 0;
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+  border-bottom: solid 4px;
+  padding-bottom: 8.7px;
+  border-image: url("../img/line-h2.jpg") 3;
+  padding-left: 5px;
+  width: 486px;
+  margin-top: 81px;
+  }
+
+.our-contacts {
+  color: #1c1c1c;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+  border-bottom: solid 4px;
+  padding-bottom: 8.7px;
+  border-image: url("../img/line-h2.jpg") 3;
+  padding-left: 5px;
+  width: 486px;
+  margin-bottom: 32px;
+}
+
+.style-grey {
+  margin-bottom: 1px;
+  padding-left: 15px;
+}
+
+.style-black {
+  margin-top: 4px;
+  padding-left: 15px;
+}
+
+.indent-cont {
+  padding-top: 50px;
+}
+
+.contacts {
+  margin-bottom: 37px;
+}
+
+.image-location {
+  margin-top: 6px;
+  margin-left: -10px;
+  float: left;
+}
+
+.image-phone,
+.image-post {
+  margin-top: 9px;
+  margin-left: -14px;
+  float: left;
+}
+
+.image-clock {
+  margin-top: 2px;
+  margin-left: -14px;
+  float: left;
+}
+
+.ask-question {
+  margin-bottom: 52px;
+}
+
+.input-question {
+  padding: 6px 387px 5px 18.4px;
+  border: 0 solid white;
+  border-bottom: 1px solid #afafaf;
+  opacity: 0.47;
+  color: #676767;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  overflow: visible;
+  margin-bottom: 18px;
+}
+
+.button-question {
+  text-align: center;
+  margin: -1px 43px 15px 0;
 }
