@@ -7,6 +7,7 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: repeat;
+  min-width: 1250px; 
 }
 
 a {
@@ -42,9 +43,9 @@ map {
 .container-image {
   background-position: top center;
   background-repeat: no-repeat;
-  background: url(../img/main-background.jpg) center;
   object-fit: cover;
-  height: 100vmin;
+  width: 100%;
+  height: auto;
   background-size: cover;
 }
 
@@ -53,20 +54,9 @@ map {
   margin-bottom: -4px;
 }
 
-/*
 .container-image img {
   height: 100%;
   width: 100%;
-}
-*/
-
-.background-mainly {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100% !important;
-  position: absolute;
-  top: 348px;
-  left: 189px;
 }
 
 .line-img {
@@ -1396,4 +1386,17 @@ map {
 .button-question {
   text-align: center;
   margin: -1px 43px 15px 0;
+}
+
+.background-mainly {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100% !important;
+  position: absolute;
+  top: 348px;
+  left: 189px;
+}
+
+.container {
+  max-width: 1200px !important;
 }
