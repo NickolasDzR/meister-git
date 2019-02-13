@@ -40,21 +40,13 @@ map {
   overflow: hidden;
 }
 
-.container-image {
-  background-position: top center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
 .map {
   margin-top: 53px;
   margin-bottom: -4px;
 }
 
 .track-img {
+  display: block;
   height: 100%;
   width: 100%;
 }
