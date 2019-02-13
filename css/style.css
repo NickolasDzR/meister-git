@@ -54,12 +54,13 @@ map {
   margin-bottom: -4px;
 }
 
-.container-image img {
+.track-img {
   height: 100%;
   width: 100%;
 }
 
 .line-img {
+  width: inherit;
   position: relative;
   top: -6.3px;
   left: 16px;
@@ -84,7 +85,7 @@ map {
 }
 
 .down {
-  padding: 20px 0 6px 36px;
+  padding: 19.9px 0 6px 36px;
 }
 
 .navigation {
@@ -1229,7 +1230,7 @@ map {
   border-left: 21px solid #3b97a2;
   border-top: 59px solid #3b97a2;
   left: -73px;
-  bottom: -1px;
+  bottom: 1px;
 }
 
 .mission {
@@ -1391,7 +1392,6 @@ map {
 .background-mainly {
   display: flex;
   flex-wrap: wrap;
-  width: 100% !important;
   position: absolute;
   top: 348px;
   left: 189px;
