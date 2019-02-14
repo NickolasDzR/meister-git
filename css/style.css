@@ -37,7 +37,6 @@ map {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
 }
 
 .map {
@@ -1382,11 +1381,13 @@ map {
 }
 
 .background-mainly {
+  position: absolute;
+  z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
-  top: 348px;
-  left: 189px;
+  box-sizing: border-box;
+  top: 20%;
+  left: 16%;
 }
 
 .container {
