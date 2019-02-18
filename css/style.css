@@ -637,7 +637,7 @@ map {
   left: 50%;
   top: 50%;
   margin-left: -330px;
-  margin-top: -200px;
+  margin-top: -150px;
   animation-name: bounce;
   animation-duration: 1s;
 }

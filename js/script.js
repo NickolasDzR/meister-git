@@ -6,11 +6,7 @@ link.addEventListener( "click", function(evt){
   evt.preventDefault();
 popup.classList.add("form-show");
 popup.classList.remove("form-unshow");
-});
-
-link.addEventListener( "click", function(evt){
-  evt.preventDefault();
-    console.log("отменяем стандартные действия ссылки по нажатию на нее");
+  console.log("включаем popup добавляя form-show и удаляя form-unshow");
 });
 
 close.addEventListener( "click", function(evt){
