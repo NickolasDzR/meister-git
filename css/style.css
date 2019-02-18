@@ -51,17 +51,16 @@ map {
 }
 
 .line-img {
-  width: inherit;
+  width: 90%;
   position: relative;
-  top: -6.3px;
-  left: 16px;
+  left: 45px;
 }
 
 .allowed-cargo {
   text-align: right;
   color: #3b97a2;
   font-family: "Roboto";
-  font-size: 15.6px;
+  font-size: 0.9vw;
   font-weight: 300;
   line-height: 36px;
   margin: 0;
@@ -131,7 +130,7 @@ map {
   margin: 0;
   padding: 0;
   direction: rtl;
-  font-size: 3.9vw;
+  font-size: 3.3vw;
 }
 
 
@@ -147,7 +146,7 @@ map {
   padding: 0;
   direction: rtl;
   margin-top: -18px;
-  font-size: 3.9vw;
+  font-size: 3.1vw;
 }
 
 
@@ -1375,6 +1374,10 @@ map {
   margin-bottom: 18px;
 }
 
+input[type="text"] {
+  color: #1c1c1c;
+ }
+
 .button-question {
   text-align: center;
   margin: -1px 43px 15px 0;
@@ -1385,11 +1388,52 @@ map {
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  top: 20%;
-  left: 16%;
+  top: 46%;
+  left: 14%;
 }
 
 .container {
   max-width: 1200px !important;
+}
+
+@media screen and (max-width: 1920px) {
+  .background-mainly {
+    top: 46%;
+    left: 14%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .background-mainly {
+    top: 53%;
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .background-mainly {
+    top: 53%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .background-mainly {
+    top: 56%;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background-mainly {
+    top: 66%;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .background-mainly {
+    top: 66%;
+    left: 8%;
+  }
 }
