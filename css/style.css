@@ -627,6 +627,29 @@ map {
   box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
 }
 
+.popup {
+  position: absolute;
+  z-index: 2000;
+  background: white;
+  max-width: 660px;
+  padding-bottom: 50px;
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 50%;
+  margin-left: -330px;
+  margin-top: -200px;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.form-unshow {
+  display: none;
+}
+
+.form-show {
+  display: block;
+}
+
 .main-form {
   padding: 110px 0 98px 0;
 }
@@ -1374,6 +1397,23 @@ map {
   margin-bottom: 18px;
 }
 
+.popup-name,
+.popup-number {
+  padding: 16px 277px 5px 28.4px;
+  border: 0 solid white;
+  border-bottom: 1px solid #afafaf;
+  opacity: 0.47;
+  color: #676767;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  overflow: visible;
+  margin-bottom: 58px;
+  margin-left: 60px;
+}
+
+
 input[type="text"] {
   color: #1c1c1c;
  }
@@ -1436,4 +1476,68 @@ input[type="text"] {
     top: 66%;
     left: 8%;
   }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translatey(-600px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.popup-close {
+  border: 2px solid #cbcbcb;
+  border-radius: 51px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  right: 11px;
+  top: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.popup-close::before,
+.popup-close::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #cbcbcb;
+  right: 3.2px;
+  top: 10.5px;
+}
+
+.popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  transform: rotate(-45deg);
 }
