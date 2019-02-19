@@ -1541,3 +1541,13 @@ input[type="text"] {
 .popup-close::after {
   transform: rotate(-45deg);
 }
+
+/*
+
+input:required,
+input:required {
+  border: none;
+  border-bottom: 1px solid red;
+}
+
+*/
