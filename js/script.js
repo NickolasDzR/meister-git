@@ -5,7 +5,7 @@ var input_name = popup.querySelector("[name=name]");
 var input_number = popup.querySelector("[name=number]");
 var form = popup.querySelector(".popup-form");
 
-/* popup for call back on the main page */
+
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("form-show");
@@ -42,11 +42,10 @@ form.addEventListener("submit", function (evt) {
     console.log("Нужно ввести пароль");
   }
 });
-/* popup for call back on the main page */
 
-/* for form on the main page. */
+/* two forms on the main and vacancy page */
 
-var button_main_form = document.querySelector(".button-main-form");
+var button = document.querySelector(".button-main-form");
 var form_main_page = document.querySelector(".form-main-page");
 var main_order_form = document.querySelector(".main-order-form");
 var input_company = main_order_form.querySelector("[name=company]");
@@ -65,5 +64,5 @@ main_order_form.addEventListener("submit", function (evt) {
     console.log("Форма подачи заявки на перевозку груза");
   }
 });
-/* for form on the main page. */
 
+/* two forms on the main and vacancy page */

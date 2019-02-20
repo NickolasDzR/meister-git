@@ -196,6 +196,7 @@ map {
 .call-button:hover,
 .detail:hover,
 .order-button:hover,
+.vacancy-button:hover,
 .send-form:hover,
 .button-main-form {
   background-color: #a53617;
@@ -621,7 +622,8 @@ map {
 }
 
 .col-7-fm,
-.form-main-page {
+.form-main-page,
+.vacancy-main-page {
   background: white;
   max-width: 660px;
   margin-left: 20px;
@@ -657,12 +659,14 @@ map {
 }
 
 .order-form,
-.main-order-form {
+.main-order-form,
+.vacancy-main-form {
   padding-left: 37px;
 }
 
 .order-form input,
-.main-order-form input {
+.main-order-form input,
+.vacancy-main-form {
   cursor: text;
 }
 
@@ -749,7 +753,8 @@ map {
 
 .order-button,
 .send-form,
-.button-main-form {
+.button-main-form,
+.vacancy-button {
   border: 0 solid white;
   border-radius: 24px;
   background-color: #c14f2f;
