@@ -196,7 +196,8 @@ map {
 .call-button:hover,
 .detail:hover,
 .order-button:hover,
-.respond:hover {
+.respond-driver:hover,
+.respond-logist:hover {
   background-color: #a53617;
 }
 
@@ -627,7 +628,7 @@ map {
   box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
 }
 
-.popup {
+.main-popup {
   position: absolute;
   z-index: 2000;
   background: white;
@@ -638,6 +639,36 @@ map {
   top: 50%;
   margin-left: -330px;
   margin-top: -150px;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.popup-logist {
+  position: absolute;
+  z-index: 2000;
+  background: white;
+  max-width: 660px;
+  padding-bottom: 50px;
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 62%;
+  margin-left: -330px;
+  margin-top: 40px;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.popup-driver {
+  position: absolute;
+  z-index: 2000;
+  background: white;
+  max-width: 660px;
+  padding-bottom: 50px;
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 150%;
+  margin-left: -330px;
+  margin-top: 40px;
   animation-name: bounce;
   animation-duration: 1s;
 }
@@ -1137,7 +1168,8 @@ map {
   margin-bottom: 28px;
 }
 
-.respond {
+.respond-logist,
+.respond-driver {
   border: 0 solid white;
   border-radius: 24px;
   background-color: #c14f2f;
@@ -1511,7 +1543,9 @@ input[type="text"] {
   }
 }
 
-.popup-close {
+.popup-close,
+.popup-logist-off,
+.popup-driver-off {
   border: 2px solid #cbcbcb;
   border-radius: 51px;
   width: 27px;
@@ -1524,7 +1558,11 @@ input[type="text"] {
 }
 
 .popup-close::before,
-.popup-close::after {
+.popup-close::after,
+.popup-logist-off::before,
+.popup-logist-off::after,
+.popup-driver-off::before,
+.popup-driver-off::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -1534,11 +1572,15 @@ input[type="text"] {
   top: 10.5px;
 }
 
-.popup-close::before {
+.popup-close::before,
+.popup-logist-off::before,
+.popup-driver-off::before {
   transform: rotate(45deg);
 }
 
-.popup-close::after {
+.popup-close::after,
+.popup-logist-off::after,
+.popup-driver-off::after {
   transform: rotate(-45deg);
 }
 
@@ -1554,3 +1596,10 @@ input[type="text"] {
   list-style: none;
 }
 
+input:disabled {
+  background-color: white;
+}
+
+input:value {
+  color: black;
+}
