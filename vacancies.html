@@ -16,7 +16,8 @@
     <div class="container navigation">
       <div class="row">
         <div class="col-3-logo">
-          <div class="image-logo"><img class="logo" src="img/logo-meister.png" alt="Логотип компании ООО Мейстер">
+          <div class="image-logo"><a href="index.html"><img class="logo" src="img/logo-meister.png"
+            alt="Логотип компании ООО Мейстер"></a>
             <p class="logo-sign">Грузоперевозки по России</p>
           </div>
         </div>
@@ -258,7 +259,7 @@
             <h2 class="impost-request">Откликнуться</h2>
             <form class="order-form" action="#" name="myform">
               <div class="position">
-                <input class="input-date" type="text" name="company" id="company" placeholder="Имя" required>
+                <input class="input-date" type="text" name="company" id="company" placeholder="Имя">
                 <span class="redstar-name">*</span>
                 <span class="redstar-em">*</span>
               </div>
@@ -266,7 +267,7 @@
               <input class="input-text" type="text" name="cargo-weight" id="cargo-weight" placeholder="Вакансия">
               <input class="input-text" type="text" name="phone-email" id="phone-email" placeholder="Комментарий">
               <div class="button-cont">
-                <button class="button-vacansy">Отправить</button></div>
+                <button class="order-button">Отправить</button></div>
             </form>
           </div>
         </div>
@@ -332,6 +333,17 @@
     </div>
     </div>
   </footer>
+  <div class="popup form-unshow">
+      <button class="popup-close"></button>
+      <h2 class="impost-request">Заказать звонок</h2>
+      <form class="popup-form" method="get">
+        <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
+        <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+        <div class="button-question">
+          <button class="button-vacansy" type="submit">Отправить</button></div>
+      </form>
+    </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

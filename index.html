@@ -8,9 +8,6 @@
 	<link rel='stylesheet' href='css/bootstrap-grid.css' type='text/css' />
 	<link rel='stylesheet' href='css/fonts.css' type='text/css' />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
-	<script src="js/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Maister tk</title>
 </head>
@@ -20,11 +17,13 @@
 		<div class="container navigation">
 			<div class="row">
 				<div class="col-3-logo">
-					<div class="image-logo"><img class="logo" src="img/logo-meister.png" alt="Логотип компании ООО Мейстер">
+					<div class="image-logo"><a href="index.html"><img class="logo" src="img/logo-meister.png"
+								alt="Логотип компании ООО Мейстер"></a>
 						<p class="logo-sign">Грузоперевозки по России</p>
 					</div>
 				</div>
 				<div class="col-9-nav">
+					<h2 class="visually-hidden">Наши контакты, почта и телефон</h2>
 					<div class="row-up">
 						<div class="col-4-first">
 							<img class="send-post" src="img/mail.png" width="33" height="24" alt="Картинка почты">
@@ -57,6 +56,7 @@
 							<div class="col-2">
 								<!--SOCIAL SVG START-->
 								<!--SOCIAL SVG FIRST-->
+								<span class="visually-hidden">Связь с нами в социальных сетях инстаграм, одноаклассники, вконтакте</span>
 								<ul class="social-image">
 									<li class="social-list"><svg class="social-svg" version="1.1" id="Layer_1"
 											xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -179,6 +179,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						<h2 class="visually-hidden">Преимущества</h2>
 						<h1 class="advantages-h1">Наши преимущества</h1>
 						<ul class="odds">
 							<li class="advantages-list"><img class="advantages-img" src="img/exp.png" alt="Диспетчер">
@@ -217,10 +218,11 @@
 							коллектива нашей компании.</p>
 					</div>
 					<div class="col-7-fm">
+							<h2 class="visually-hidden">Форма подачи заявки на перевозку груза</h2>
 						<h2 class="impost-request">Подать заявку</h2>
 						<form class="order-form" action="#" name="myform">
 							<div class="position">
-								<input class="input-date" type="text" name="company" id="company" placeholder="Компания(Имя)" required>
+								<input class="input-date" type="text" name="company" id="company" placeholder="Компания(Имя)">
 								<span class="redstar">*</span>
 							</div>
 							<input class="input-date" type="text" name="your-point" id="your-point" placeholder="Телефон или Email">
@@ -228,7 +230,7 @@
 								placeholder="Пункт отправления">
 							<input class="input-date" type="text" name="phone-email" id="phone-email" placeholder="Пункт назначения">
 							<input class="input-date" type="text" name="destination-point" id="arrival-date" placeholder="Груз, вес">
-							<input class="input-date" type="text" name="Comment" id="Comment" placeholder="Комментарий">
+							<input class="input-date" type="text" name="comment" id="Comment" placeholder="Комментарий">
 							<div class="button-cont">
 								<button class="order-button">Отправить</button></div>
 						</form>
@@ -309,13 +311,13 @@
 	</footer>
 	<div class="popup form-unshow">
 		<button class="popup-close"></button>
-	<h2 class="impost-request">Заказать звонок</h2>
-	<form class="order-form" method="get">
-		<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-		<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
-		<div class="button-question">
-			<button class="button-vacansy" type="submit">Отправить</button></div>
-	</form>
+		<h2 class="impost-request">Заказать звонок</h2>
+		<form class="popup-form" method="get">
+			<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
+			<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+			<div class="button-question">
+				<button class="button-vacansy" type="submit">Отправить</button></div>
+		</form>
 	</div>
 	<script src="js/script.js"></script>
 </body>
