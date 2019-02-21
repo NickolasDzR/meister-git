@@ -43,7 +43,7 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
-/* two forms on the main and vacancy page */
+/* two forms on the main, vacancy and about-us page */
 
 var button = document.querySelector(".button-main-form");
 var form_main_page = document.querySelector(".form-main-page");
@@ -64,5 +64,51 @@ main_order_form.addEventListener("submit", function (evt) {
     console.log("Форма подачи заявки на перевозку груза");
   }
 });
+/* two forms on the main, vacancy and about-us page */
 
-/* two forms on the main and vacancy page */
+/* vacancy popup on the vacancy page */
+
+var button_logist = document.querySelector(".button-logist");
+var respond_logist = document.querySelector(".respond-logist");
+var logist_form = document.querySelector(".form-logist");
+var logist_page = document.querySelector(".form-unshow-logist");
+var close_logist = document.querySelector(".close-logist");
+
+
+respond_logist.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  logist_page.classList.add("form-show-logist");
+  input_name.focus();
+  logist_page.classList.remove("form-unshow-logist");
+  console.log("логист форма");
+
+});
+
+close_logist.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  logist_page.classList.remove("form-show-logist");
+  popup.classList.remove("modal-error");
+  logist_page.classList.add("form-unshow-logist");
+  console.log("выключаем popup");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (logist_page.classList.contains("form-show-logist")) {
+      evt.preventDefault();
+      logist_page.classList.remove("form-show-logist");
+      logist_page.classList.remove("modal-error");
+      logist_page.classList.add("form-unshow-logist");
+    }
+  }
+});
+
+logist_form.addEventListener("submit", function (evt) {
+  if (!input_name.value || !input_number.value) {
+    evt.preventDefault();
+    logist_page.classList.remove("modal-error");
+    logist_page.offsetWidth = popup.offsetWidth;
+    logist_page.classList.add("modal-error");
+    console.log("Нужны данные");
+  }
+});

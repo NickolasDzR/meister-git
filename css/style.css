@@ -621,7 +621,6 @@ map {
   margin: 0 auto;
 }
 
-.col-7-fm,
 .form-main-page,
 .vacancy-main-page {
   background: white;
@@ -631,7 +630,8 @@ map {
   box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
 }
 
-.main-popup {
+.main-popup,
+.col-7_driver {
   position: absolute;
   z-index: 2000;
   background: white;
@@ -646,11 +646,28 @@ map {
   animation-duration: 1s;
 }
 
-.form-unshow {
+.col-7_logist {
+  position: absolute;
+  z-index: 2000;
+  background: white;
+  max-width: 660px;
+  padding-bottom: 50px;
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 89%;
+  margin-left: -330px;
+  margin-top: -150px;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.form-unshow,
+.form-unshow-logist {
   display: none;
 }
 
-.form-show {
+.form-show,
+.form-show-logist {
   display: block;
 }
 
@@ -660,7 +677,8 @@ map {
 
 .order-form,
 .main-order-form,
-.vacancy-main-form {
+.vacancy-main-form,
+.col-7_logist {
   padding-left: 37px;
 }
 
@@ -754,7 +772,8 @@ map {
 .order-button,
 .send-form,
 .button-main-form,
-.vacancy-button {
+.vacancy-button,
+.button-logist {
   border: 0 solid white;
   border-radius: 24px;
   background-color: #c14f2f;
@@ -1524,7 +1543,8 @@ input[type="text"] {
   }
 }
 
-.popup-close {
+.popup-close,
+.close-logist {
   border: 2px solid #cbcbcb;
   border-radius: 51px;
   width: 27px;
@@ -1537,7 +1557,9 @@ input[type="text"] {
 }
 
 .popup-close::before,
-.popup-close::after {
+.popup-close::after,
+.close-logist::before,
+.close-logist::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -1547,11 +1569,13 @@ input[type="text"] {
   top: 10.5px;
 }
 
-.popup-close::before {
+.popup-close::before,
+.close-logist::before {
   transform: rotate(45deg);
 }
 
-.popup-close::after {
+.popup-close::after,
+.close-logist::after {
   transform: rotate(-45deg);
 }
 
