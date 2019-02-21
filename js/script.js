@@ -74,13 +74,13 @@ var logist_form = document.querySelector(".form-logist");
 var logist_page = document.querySelector(".form-unshow-logist");
 var close_logist = document.querySelector(".close-logist");
 var name_logist = logist_form.querySelector("[name=name-logist]");
-var name_logist = logist_form.querySelector("[name=number-logist]");
+var number_logist = logist_form.querySelector("[name=number-logist]");
 
 
 respond_logist.addEventListener("click", function (evt) {
   evt.preventDefault();
   logist_page.classList.add("form-show-logist");
-  name_logist.focus(1);
+  name_logist.focus();
   logist_page.classList.remove("form-unshow-logist");
   console.log("логист форма");
 });
@@ -121,7 +121,7 @@ var driver_page = document.querySelector(".form-unshow-driver");
 var close_driver = document.querySelector(".close-driver");
 var driver_form = document.querySelector(".form-driver");
 var name_driver = driver_form.querySelector("[name=name-driver]");
-var name_driver = driver_form.querySelector("[name=number-driver]");
+var number_driver = driver_form.querySelector("[name=number-driver]");
 
 respond_driver.addEventListener("click", function(evt) {
   evt.preventDefault();
