@@ -68,20 +68,21 @@ main_order_form.addEventListener("submit", function (evt) {
 
 /* vacancy popup on the vacancy page */
 
-var button_logist = document.querySelector(".button-logist");
 var respond_logist = document.querySelector(".respond-logist");
+var button_logist = document.querySelector(".button-logist");
 var logist_form = document.querySelector(".form-logist");
 var logist_page = document.querySelector(".form-unshow-logist");
 var close_logist = document.querySelector(".close-logist");
+var name_logist = logist_form.querySelector("[name=name-logist]");
+var name_logist = logist_form.querySelector("[name=number-logist]");
 
 
 respond_logist.addEventListener("click", function (evt) {
   evt.preventDefault();
   logist_page.classList.add("form-show-logist");
-  input_name.focus();
+  name_logist.focus(1);
   logist_page.classList.remove("form-unshow-logist");
   console.log("логист форма");
-
 });
 
 close_logist.addEventListener("click", function (evt) {
@@ -104,7 +105,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 logist_form.addEventListener("submit", function (evt) {
-  if (!input_name.value || !input_number.value) {
+  if (!name_logist.value || !number_logist.value) {
     evt.preventDefault();
     logist_page.classList.remove("modal-error");
     logist_page.offsetWidth = popup.offsetWidth;
@@ -112,3 +113,50 @@ logist_form.addEventListener("submit", function (evt) {
     console.log("Нужны данные");
   }
 });
+
+/* vacancy popup on the vacancy page */
+/* driver popup on the vacancy page */
+var respond_driver = document.querySelector(".respond-driver");
+var driver_page = document.querySelector(".form-unshow-driver");
+var close_driver = document.querySelector(".close-driver");
+var driver_form = document.querySelector(".form-driver");
+var name_driver = driver_form.querySelector("[name=name-driver]");
+var name_driver = driver_form.querySelector("[name=number-driver]");
+
+respond_driver.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  driver_page.classList.remove("form-unshow-driver");
+  name_driver.focus();
+  driver_page.classList.add("form-show-driver");
+  console.log("логист форма");
+});
+
+close_driver.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  driver_page.classList.add("form-unshow-driver");
+  driver_page.classList.remove("modal-error");
+  driver_page.classList.remove("form-show-driver");
+  console.log("Форма закрывается");
+});
+
+driver_form.addEventListener("submit", function (evt) {
+  if (!name_driver.value || !number_driver.value) {
+    evt.preventDefault();
+    driver_page.classList.remove("modal-error");
+    driver_page.offsetWidth = popup.offsetWidth;
+    driver_page.classList.add("modal-error");
+    console.log("Нужны данные");
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (driver_page.classList.contains("form-show-driver")) {
+      evt.preventDefault();
+      driver_page.classList.remove("form-show-driver");
+      driver_page.classList.remove("modal-error");
+      driver_page.classList.add("form-unshow-driver");
+    }
+  }
+});
+/* driver popup on the vacancy page */
