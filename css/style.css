@@ -634,15 +634,12 @@ map {
 .col-7_logist,
 .col-7_driver {
   position: absolute;
-  z-index: 2000;
   background: white;
   max-width: 660px;
   padding-bottom: 50px;
-  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
-  left: 50%;
-  top: 50%;
   margin-left: -330px;
   margin-top: -150px;
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
   animation-name: bounce;
   animation-duration: 1s;
 }
@@ -651,24 +648,18 @@ map {
   z-index: 2000;
   left: 50%;
   top: 50%;
-  margin-left: -330px;
-  margin-top: -150px;
 }
 
 .col-7_logist {
   z-index: 2000;
   left: 50%;
-  top: 89%;
-  margin-left: -330px;
-  margin-top: -150px;
+  top: 22%;
 }
 
 .col-7_driver {
   z-index: 2000;
   left: 50%;
-  top: 178%;
-  margin-left: -330px;
-  margin-top: -150px;
+  top: 50%;
 }
 
 .form-unshow,
