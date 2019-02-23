@@ -48,15 +48,15 @@ form.addEventListener("submit", function (evt) {
 var button = document.querySelector(".button-main-form");
 var form_main_page = document.querySelector(".form-main-page");
 var main_order_form = document.querySelector(".main-order-form");
-var input_company = main_order_form.querySelector("[name=company]");
-var input_your_point = main_order_form.querySelector("[name=your-point]");
-var input_cargo_weight = main_order_form.querySelector("[name=cargo-weight]");
-var input_phone_email = main_order_form.querySelector("[name=phone-email]");
-var input_destination_point = main_order_form.querySelector("[name=destination-point]");
-var input_comment = main_order_form.querySelector("[name=comment]");
+
+var name_company = main_order_form.querySelector("[name=name_company]");
+var telephone_email = main_order_form.querySelector("[name=telephone_email]");
+var point_send = main_order_form.querySelector("[name=point_send]");
+var point_get = main_order_form.querySelector("[name=point_get]");
+var load_weight = main_order_form.querySelector("[name=load_weight]");
 
 main_order_form.addEventListener("submit", function (evt) {
-  if (!input_company.value || !input_your_point.value || !input_cargo_weight.value || !input_phone_email.value || !input_destination_point.value || !input_comment) {
+  if (!name_company.value || !telephone_email.value || !point_send.value || !point_get.value || !load_weight.value) {
     evt.preventDefault();
     form_main_page.classList.remove("modal-error");
     form_main_page.offsetWidth = popup.offsetWidth;
@@ -160,3 +160,49 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 /* driver popup on the vacancy page */
+
+/* main-form on the vacancy page 
+var respond_driver = document.querySelector(".respond-driver");
+var driver_page = document.querySelector(".form-unshow-driver");
+var close_driver = document.querySelector(".close-driver");
+var driver_form = document.querySelector(".form-driver");
+var name_driver = driver_form.querySelector("[name=name-driver]");
+var number_driver = driver_form.querySelector("[name=number-driver]");
+
+respond_driver.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  driver_page.classList.remove("form-unshow-driver");
+  name_driver.focus();
+  driver_page.classList.add("form-show-driver");
+  console.log("логист форма");
+});
+
+close_driver.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  driver_page.classList.add("form-unshow-driver");
+  driver_page.classList.remove("modal-error");
+  driver_page.classList.remove("form-show-driver");
+  console.log("Форма закрывается");
+});
+
+driver_form.addEventListener("submit", function (evt) {
+  if (!name_driver.value || !number_driver.value) {
+    evt.preventDefault();
+    driver_page.classList.remove("modal-error");
+    driver_page.offsetWidth = popup.offsetWidth;
+    driver_page.classList.add("modal-error");
+    console.log("Нужны данные");
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (driver_page.classList.contains("form-show-driver")) {
+      evt.preventDefault();
+      driver_page.classList.remove("form-show-driver");
+      driver_page.classList.remove("modal-error");
+      driver_page.classList.add("form-unshow-driver");
+    }
+  }
+});
+/* main-form on the vacancy page */

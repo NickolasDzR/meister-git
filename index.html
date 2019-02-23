@@ -45,16 +45,16 @@
 						</div>
 						<!--pop-->
 						<div class="main-popup form-unshow">
-								<button class="popup-close"></button>
-								<h2 class="impost-request">Заказать звонок</h2>
-								<form class="popup-form" action="mail.php" method="POST">
-									<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-									<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
-									<div class="button-question">
-										<button class="button-vacansy" type="submit">Отправить</button></div>
-								</form>
-							</div>
-							<!--pop-->
+							<button class="popup-close"></button>
+							<h2 class="impost-request">Заказать звонок</h2>
+							<form class="popup-form" action="main_popup.php" method="POST">
+								<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
+								<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+								<div class="button-question">
+									<button class="button-vacansy" type="submit">Отправить</button></div>
+							</form>
+						</div>
+						<!--pop-->
 					</div>
 					<div class="delta">
 						<div class="row down">
@@ -68,7 +68,8 @@
 							<div class="col-2">
 								<!--SOCIAL SVG START-->
 								<!--SOCIAL SVG FIRST-->
-								<span class="visually-hidden">Связь с нами в социальных сетях инстаграм, одноаклассники, вконтакте</span>
+								<span class="visually-hidden">Связь с нами в социальных сетях инстаграм, одноаклассники,
+									вконтакте</span>
 								<ul class="social-image">
 									<li class="social-list"><svg class="social-svg" version="1.1" id="Layer_1"
 											xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -230,19 +231,18 @@
 							коллектива нашей компании.</p>
 					</div>
 					<div class="form-main-page">
-							<h2 class="visually-hidden">Форма подачи заявки на перевозку груза</h2>
+						<h2 class="visually-hidden">Форма подачи заявки на перевозку груза</h2>
 						<h2 class="impost-request">Подать заявку</h2>
 						<form class="main-order-form" action="mail.php" method="POST">
 							<div class="position">
-								<input class="input-date" type="text" name="company" id="company" placeholder="Компания(Имя)">
+								<input class="input-date" type="text" name="name_company" id="company" placeholder="Компания(Имя)">
 								<span class="redstar">*</span>
 							</div>
-							<input class="input-date" type="text" name="your-point" id="your-point" placeholder="Телефон или Email">
-							<input class="input-date" type="text" name="cargo-weight" id="cargo-weight"
-								placeholder="Пункт отправления">
-							<input class="input-date" type="text" name="phone-email" id="phone-email" placeholder="Пункт назначения">
-							<input class="input-date" type="text" name="destination-point" id="arrival-date" placeholder="Груз, вес">
-							<input class="input-date" type="text" name="comment" id="Comment" placeholder="Комментарий">
+							<input class="input-date" type="text" name="telephone_email" id="your-point" placeholder="Телефон или Email">
+							<input class="input-date" type="text" name="point_send" id="cargo-weight" placeholder="Пункт отправления">
+							<input class="input-date" type="text" name="point_get" id="phone-email" placeholder="Пункт назначения">
+							<input class="input-date" type="text" name="load_weight" id="arrival-date" placeholder="Груз, вес">
+							<input class="input-date" type="text" name="your-comment" id="Comment" placeholder="Комментарий">
 							<div class="button-cont">
 								<button class="button-main-form" type="submit">Отправить</button></div>
 						</form>

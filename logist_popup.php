@@ -4,12 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_company = $_POST['name_company'];
-$telephone_email = $_POST['telephone_email'];
-$point_send = $_POST['point_send'];
-$point_get = $_POST['point_get'];
-$load_weight = $_POST['load_weight'];
-$your_comment = $_POST['your-comment'];
+$name_logist = $_POST['name_logist'];
+$number_logist = $_POST['number_logist'];
+$logist_default = $_POST['logist_default'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -32,7 +29,7 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заказ звонка с главной страницы';
-$mail->Body    = 'Компания: ' .$name_company. ' хочет перевести груз<br>' . 'Их телефонный номер или email: ' .$telephone_email. '<br>'. 'Перевезти груз нужно из ' .$point_send. ' в ' .$point_get. '<br>'.'наименование и вес груза: ' .$load_weight. '<br>'. 'и их комментарий: ' .$your_comment;
+$mail->Body    = 'Кто-то по имени - ' .$name_logist. '<br>' .'Просит перезвонить на номер - '  .$number_logist. '<br>'. 'Его интересует вакансия ' .$logist_default;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
