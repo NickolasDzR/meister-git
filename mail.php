@@ -40,4 +40,10 @@ if(!$mail->send()) {
 } else {
     header('location: thank-you.html');
 }
+
+if(isset ($_POST['name_companyssssasdddddddddddddsadasdasd']) {
+    $name = $_POST['name_company exist'];
+    } else {
+    $name = 'not exist';
+    }
 ?>
