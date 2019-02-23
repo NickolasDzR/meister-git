@@ -4,9 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_driver = $_POST['name_driver'];
-$number_driver = $_POST['number_driver'];
-$driver_default = $_POST['driver_default'];
+$name_driver = $_GET['name_driver'];
+$number_driver = $_GET['number_driver'];
+$driver_default = $_GET['driver_default'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 

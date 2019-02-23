@@ -237,7 +237,7 @@
         <div class="col-7_driver box-shadow form-unshow-driver">
           <button class="close-driver"></button>
           <h2 class="impost-request">Вакансия водителя</h2>
-          <form class="form-driver" action="driver_popup.php" name="myform">
+          <form class="form-driver" action="driver_popup.php" method="GET" name="myform">
             <div class="position">
               <input class="input-date" type="text" name="name_driver" id="company" placeholder="Имя">
               <span class="redstar-name">*</span>
@@ -245,8 +245,7 @@
             </div>
             <input class="input-date" type="text" name="number_driver" id="number-driver"
               placeholder="Телефон или Email">
-            <input class="input-question" type="text" name="driver_default" id="driver-default"
-              placeholder="Водитель" disabled>
+            <input class="input-question" type="text" name="driver_default" id="driver-default" value="Водитель" disabled>
             <div class="button-question">
               <button class="button-driver">Отправить</button></div>
           </form>
