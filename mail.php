@@ -4,12 +4,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$company = $_POST['company'];
-$your_point = $_POST['your-point'];
-$cargo_weight = $_POST['cargo-weight'];
-$phone_email = $_POST['phone-email'];
-$destination_point = $_POST['destination-point'];
-$comment = $_POST['comment'];
+$name = $_POST['name'];
+$number = $_POST['number'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -31,8 +27,8 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с сайта meister-tk';
-$mail->Body    = '' .$company . ' оставил заявку ' .$your_point. '<br>его email/телефон: ' .$cargo_weight. 'Им нужно перевезти груз в' .$phone_email. 'картошка с пюрешкой' .$destination_point. 'и макарошки' .$comment;
+$mail->Subject = 'Заявка с тестового сайта';
+$mail->Body    = '' .$name .$number;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
