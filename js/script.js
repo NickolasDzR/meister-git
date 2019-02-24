@@ -48,9 +48,7 @@ form.addEventListener("submit", function (evt) {
 var button = document.querySelector(".button-main-form");
 var form_main_page = document.querySelector(".form-main-page");
 var main_order_form = document.querySelector(".main-order-form");
-/*
-If (querySelectorall(main_order_form).length) {}
-*/
+
 var name_company = main_order_form.querySelector("[name=name_company]");
 var telephone_email = main_order_form.querySelector("[name=telephone_email]");
 var point_send = main_order_form.querySelector("[name=point_send]");
@@ -66,16 +64,17 @@ main_order_form.addEventListener("submit", function (evt) {
     console.log("Форма подачи заявки на перевозку груза");
   }
 });
+/* two forms on the main, vacancy and about-us page */
 
+/* vacancy popup on the vacancy page */
 
-/* popup logist */
 var respond_logist = document.querySelector(".respond-logist");
 var button_logist = document.querySelector(".button-logist");
 var logist_form = document.querySelector(".form-logist");
-var logist_page = document.querySelector(".col-7_logist");
+var logist_page = document.querySelector(".form-unshow-logist");
 var close_logist = document.querySelector(".close-logist");
-var name_logist = logist_form.querySelector("[name=name_logist]");
-var number_logist = logist_form.querySelector("[name=number_logist]");
+var name_logist = logist_form.querySelector("[name=name-logist]");
+var number_logist = logist_form.querySelector("[name=number-logist]");
 
 
 respond_logist.addEventListener("click", function (evt) {
@@ -115,14 +114,14 @@ logist_form.addEventListener("submit", function (evt) {
   }
 });
 
-/* popup logist */
-/* popup driver */
+/* vacancy popup on the vacancy page */
+/* driver popup on the vacancy page */
 var respond_driver = document.querySelector(".respond-driver");
 var driver_page = document.querySelector(".form-unshow-driver");
 var close_driver = document.querySelector(".close-driver");
 var driver_form = document.querySelector(".form-driver");
-var name_driver = driver_form.querySelector("[name=name_driver]");
-var number_driver = driver_form.querySelector("[name=number_driver]");
+var name_driver = driver_form.querySelector("[name=name-driver]");
+var number_driver = driver_form.querySelector("[name=number-driver]");
 
 respond_driver.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -160,9 +159,7 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
-/* popup driver */
+/* driver popup on the vacancy page */
 
 /* main-form on the vacancy page 
 var respond_driver = document.querySelector(".respond-driver");
