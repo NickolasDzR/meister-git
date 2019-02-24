@@ -4,9 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_logist = $_POST['name_logist'];
-$number_logist = $_POST['number_logist'];
-$logist_default = $_POST['logist_default'];
+$name_logist = $_GET['name_logist'];
+$number_logist = $_GET['number_logist'];
+$logist_default = $_GET['logist_default'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,8 +28,8 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заказ звонка с главной страницы';
-$mail->Body    = 'Кто-то по имени - ' .$name_logist. '<br>' .'Просит перезвонить на номер - '  .$number_logist. '<br>'. 'Его интересует вакансия ' .$logist_default;
+$mail->Subject = 'Кого-то интересует вакансия "Логист"';
+$mail->Body    = 'Кто-то по имени - ' .$name_logist. '<br>' .'Просит перезвонить на номер - '  .$number_logist. '<br>'. 'Его интересует вакансия "Логист"';
 $mail->AltBody = '';
 
 if(!$mail->send()) {

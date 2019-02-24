@@ -4,12 +4,12 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_company = $_POST['name_company'];
-$telephone_email = $_POST['telephone_email'];
-$point_send = $_POST['point_send'];
-$point_get = $_POST['point_get'];
-$load_weight = $_POST['load_weight'];
-$your_comment = $_POST['your-comment'];
+$name_company = $_GET['name_company'];
+$telephone_email = $_GET['telephone_email'];
+$point_send = $_GET['point_send'];
+$point_get = $_GET['point_get'];
+$load_weight = $_GET['load_weight'];
+$your_comment = $_GET['your-comment'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
