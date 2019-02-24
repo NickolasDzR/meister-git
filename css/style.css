@@ -198,7 +198,12 @@ map {
 .order-button:hover,
 .vacancy-button:hover,
 .send-form:hover,
-.button-main-form {
+.button-main-form:hover,
+.about_us_button:hover,
+.vacancy_button:hover,
+.button-vacansy:hover,
+.button-driver:hover,
+.button-logist:hover {
   background-color: #a53617;
 }
 
@@ -623,7 +628,8 @@ map {
 
 .form-main-page,
 .vacancy-main-page,
-.vacancy_form_page {
+.vacancy_form_page,
+.abous_us_page {
   background: white;
   max-width: 660px;
   margin-left: 20px;
@@ -684,7 +690,8 @@ map {
 .vacancy-main-form,
 .col-7_logist,
 .form-driver,
-.vacancy_form {
+.vacancy_form,
+.about_us_form {
   padding-left: 37px;
 }
 
@@ -783,7 +790,8 @@ map {
 .button-logist,
 .button-driver,
 .button-vacansy,
-.vacancy_button {
+.vacancy_button,
+.about_us_button {
   border: 0 solid white;
   border-radius: 24px;
   background-color: #c14f2f;

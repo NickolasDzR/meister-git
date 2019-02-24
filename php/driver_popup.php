@@ -1,12 +1,12 @@
 <?php 
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once('../phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_logist = $_POST['name_logist'];
-$number_logist = $_POST['number_logist'];
-$logist_default = $_POST['logist_default'];
+$name_driver = $_POST['name_driver'];
+$number_driver = $_POST['number_driver'];
+$driver_default = $_POST['driver_default'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,13 +28,13 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Кто-то интересуется вакансией "Логист"';
-$mail->Body    = 'Кто-то по имени - ' .$name_logist. '<br>' .'Просит перезвонить на номер - '  .$number_logist. '<br>';
+$mail->Subject = 'Кто-то заинтересовался в вакансии "Водитель"';
+$mail->Body    = 'Кто-то по имени - ' .$name_driver. '<br>' .'Просит перезвонить на номер - '  .$number_driver. '<br>';
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: ../thank-you.html');
 }
 ?>

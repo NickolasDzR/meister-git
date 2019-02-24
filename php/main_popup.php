@@ -1,6 +1,6 @@
 <?php 
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once('../phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
@@ -34,6 +34,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: ../thank-you.html');
 }
 ?>

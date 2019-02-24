@@ -1,12 +1,13 @@
 <?php 
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once('../phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_driver = $_POST['name_driver'];
-$number_driver = $_POST['number_driver'];
-$driver_default = $_POST['driver_default'];
+$vacancy_name = $_POST['vacancy_name'];
+$vacancy_email = $_POST['vacancy_email'];
+$vacancy_inp = $_POST['vacancy_inp'];
+$vacancy_comment = $_POST['vacancy_comment'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,13 +29,13 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Кто-то заинтересовался в вакансии "Водитель"';
-$mail->Body    = 'Кто-то по имени - ' .$name_driver. '<br>' .'Просит перезвонить на номер - '  .$number_driver. '<br>';
+$mail->Subject = 'У кого-то есть вопросы. Сообщение с формы на странице вакансий';
+$mail->Body    = 'Кто-то по имени '.$vacancy_name.'<br>'. 'его телефон или email: ' .$vacancy_email. '<br>'. 'его интересует вакансия '.$vacancy_inp. 'и его комментарий: '.$vacancy_comment;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: ../thank-you.html');
 }
 ?>

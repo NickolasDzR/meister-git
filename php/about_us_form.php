@@ -1,13 +1,12 @@
 <?php 
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once('../phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$vacancy_name = $_POST['vacancy_name'];
-$vacancy_email = $_POST['vacancy_email'];
-$vacancy_inp = $_POST['vacancy_inp'];
-$vacancy_comment = $_POST['vacancy_comment'];
+$about_us_name = $_POST['about_us_name'];
+$about_us_email = $_POST['about_us_email'];
+$about_us_question = $_POST['about_us_question'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -29,13 +28,13 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'У кого-то есть вопросы. Сообщение с формы на странице вакансий';
-$mail->Body    = 'Кто-то по имени '.$vacancy_name.'<br>'. 'его телефон или email: ' .$vacancy_email. '<br>'. 'его интересует вакансия '.$vacancy_inp. 'и его комментарий: '.$vacancy_comment;
+$mail->Subject = 'Кто-то задал вопрос на странице "О нас"';
+$mail->Body    = 'Кто-то по имени '.$about_us_name.'<br>'. 'его телефон или email: ' .$about_us_email. '<br>'. 'задал вопрос: '.$about_us_question;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: ../thank-you.html');
 }
 ?>

@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-3-logo">
           <div class="image-logo"><a href="index.html"><img class="logo" src="img/logo-meister.png"
-            alt="Логотип компании ООО Мейстер"></a>
+                alt="Логотип компании ООО Мейстер"></a>
             <p class="logo-sign">Грузоперевозки по России</p>
           </div>
         </div>
@@ -42,17 +42,17 @@
               <button class="call-button" type="submit" name="call-form">Заказать звонок</button>
             </div>
             <!--pop-->
-						<div class="main-popup form-unshow">
-								<button class="popup-close"></button>
-								<h2 class="impost-request">Заказать звонок</h2>
-								<form class="popup-form" method="get">
-									<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-									<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
-									<div class="button-question">
-										<button class="button-vacansy" type="submit">Отправить</button></div>
-								</form>
-							</div>
-							<!--pop-->
+            <div class="main-popup form-unshow">
+              <button class="popup-close"></button>
+              <h2 class="impost-request">Заказать звонок</h2>
+              <form class="popup-form" action="/php/main_popup.php" method="POST">
+                <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
+                <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+                <div class="button-question">
+                  <button class="button-vacansy" type="submit">Отправить</button></div>
+              </form>
+            </div>
+            <!--pop-->
           </div>
           <div class="delta">
             <div class="row down">
@@ -67,9 +67,10 @@
                 <!--SOCIAL SVG START-->
                 <!--SOCIAL SVG FIRST-->
                 <ul class="social-image">
-                  <li class="social-list"><svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35.9 35.9"
-                      enable-background="new 0 0 35.9 35.9" xml:space="preserve" width="20" height="19">
+                  <li class="social-list"><svg class="social-svg" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 35.9 35.9" enable-background="new 0 0 35.9 35.9" xml:space="preserve" width="20"
+                      height="19">
                       <g>
                         <defs>
                           <rect id="SVGID_1_" y="0" width="35.9" height="35.9" />
@@ -88,9 +89,10 @@
                     </svg>
                   </li>
                   <!--SOCIAL SVG SECOND-->
-                  <li class="social-list"><svg class="social-svg" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.8 44.6"
-                      enable-background="new 0 0 25.8 44.6" xml:space="preserve" width="13" height="21">
+                  <li class="social-list"><svg class="social-svg" version="1.1" id="Layer_2"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 25.8 44.6" enable-background="new 0 0 25.8 44.6" xml:space="preserve" width="13"
+                      height="21">
                       <g>
                         <defs>
                           <rect id="SVGID_1_" y="0" width="25.8" height="44.6" />
@@ -107,9 +109,10 @@
                     </svg>
                   </li>
                   <!--SOCIAL SVG THIRD-->
-                  <li class="social-list"><svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 30.1"
-                      enable-background="new 0 0 52.7 30.1" xml:space="preserve" width="21" height="13">
+                  <li class="social-list"><svg class="social-svg" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 52.7 30.1" enable-background="new 0 0 52.7 30.1" xml:space="preserve" width="21"
+                      height="13">
                       <g>
                         <defs>
                           <rect id="SVGID_1_" y="0" width="52.7" height="30.1" />
@@ -253,18 +256,18 @@
             все интересующие вопросы.
             Мы рады сотрудничеству!</p>
         </div>
-        <div class="form-main-page box-shadow">
+        <div class="abous_us_page box-shadow">
           <h2 class="impost-request">Задать вопрос</h2>
-          <form class="main-order-form" action="#" name="myform">
+          <form class="about_us_form" action="/php/about_us_form.php" method="POST">
             <div class="position">
-              <input class="input-date" type="text" name="company" id="company" placeholder="Имя">
+              <input class="input-date" type="text" name="about_us_name" id="company" placeholder="Имя">
               <span class="redstar-name">*</span>
               <span class="redstar-em">*</span>
             </div>
-            <input class="input-date" type="text" name="your-point" id="your-point" placeholder="Телефон или Email">
-            <input class="input-question" type="text" name="cargo-weight" id="cargo-weight" placeholder="Ваш вопрос">
+            <input class="input-date" type="text" name="about_us_email" id="your-point" placeholder="Телефон или Email">
+            <input class="input-question" type="text" name="about_us_question" id="cargo-weight" placeholder="Ваш вопрос">
             <div class="button-question">
-              <button class="button-main-form">Отправить</button></div>
+              <button class="about_us_button" type="submit">Отправить</button></div>
           </form>
         </div>
       </div>
@@ -274,9 +277,10 @@
     <div class="container">
       <div class="row indent">
         <div class="col-4 indent-logo">
-            <a href="index.html">
-          <img class="logofooter-img" src="img/logo-footer.png" alt="Логотип компании ООО Мейстер"></a>
-          <p class="footer-article">115419, Тюмень, 2-й Рощинский проезд, д. 8, с. 5, оф. 221, БЦ «Серпуховской двор»</p>
+          <a href="index.html">
+            <img class="logofooter-img" src="img/logo-footer.png" alt="Логотип компании ООО Мейстер"></a>
+          <p class="footer-article">115419, Тюмень, 2-й Рощинский проезд, д. 8, с. 5, оф. 221, БЦ «Серпуховской двор»
+          </p>
         </div>
         <div class="col-2 indend-broadcrumps">
           <ul class="broadcrumps-footer">
@@ -289,9 +293,9 @@
           <div class="container">
             <div class="row">
               <div class="col-2 svg-img">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" viewBox="0 0 64.9 65.3" enable-background="new 0 0 64.9 65.3" xml:space="preserve"
-                  width="28" height="29" fill="white">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64.9 65.3"
+                  enable-background="new 0 0 64.9 65.3" xml:space="preserve" width="28" height="29" fill="white">
                   <g>
                     <defs>
                       <rect id="SVGID_1_" y="0" width="64.9" height="65.3" />
@@ -306,7 +310,8 @@
 		c-1.2,1.2-1,2.3-0.7,3.1l0,0.1c1,2.4,2.3,4.6,4.4,7.2l0,0c3.8,4.7,7.8,8.3,12.2,11.1c0.6,0.4,1.1,0.6,1.7,0.9
 		c0.5,0.2,1,0.5,1.4,0.7c0.1,0,0.1,0.1,0.2,0.1c0.5,0.2,0.9,0.3,1.4,0.3c1.1,0,1.8-0.7,2.1-0.9l4.7-4.7c0.5-0.5,1.2-1,2.1-1
 		c0.8,0,1.5,0.5,2,1l7.6,7.6C57.6,51.9,57.6,53.4,56.2,54.8" />
-                    <path clip-path="url(#SVGID_3_)" d="M35,15.6c3.6,0.6,6.9,2.3,9.5,4.9s4.3,5.9,4.9,9.5c0.2,0.9,0.9,1.5,1.8,1.5c0.1,0,0.2,0,0.3,0
+                    <path clip-path="url(#SVGID_3_)"
+                      d="M35,15.6c3.6,0.6,6.9,2.3,9.5,4.9s4.3,5.9,4.9,9.5c0.2,0.9,0.9,1.5,1.8,1.5c0.1,0,0.2,0,0.3,0
 		c1-0.2,1.7-1.1,1.5-2.1c-0.7-4.3-2.8-8.3-5.9-11.4C44,14.7,40,12.7,35.7,12c-1-0.2-2,0.5-2.1,1.5C33.4,14.5,34,15.4,35,15.6" />
                     <path clip-path="url(#SVGID_3_)" d="M64.8,28.8c-1.2-7.2-4.6-13.7-9.8-18.8c-5.2-5.2-11.7-8.6-18.8-9.8c-1-0.2-1.9,0.5-2.1,1.5
 		c-0.2,1,0.5,2,1.5,2.1c6.4,1.1,12.2,4.1,16.8,8.7c4.6,4.6,7.6,10.5,8.7,16.8c0.1,0.9,0.9,1.5,1.8,1.5c0.1,0,0.2,0,0.3,0
@@ -326,7 +331,7 @@
     </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/about_us.js"></script>
 </body>
 
 </html>
