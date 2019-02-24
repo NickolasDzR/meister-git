@@ -45,7 +45,7 @@
 						<div class="main-popup form-unshow">
 								<button class="popup-close"></button>
 								<h2 class="impost-request">Заказать звонок</h2>
-								<form class="popup-form" method="get">
+								<form class="popup-form" action="main_popup.php" method="POST">
 									<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
 									<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
 									<div class="button-question">
@@ -173,7 +173,7 @@
         <div class="col-7_logist box-shadow form-unshow-logist">
           <button class="close-logist"></button>
           <h2 class="impost-request">Вакансия логиста</h2>
-          <form class="form-logist" action="logist_popup.php" name="myform">
+          <form class="form-logist" action="logist_popup.php" method="POST" name="myform">
             <div class="position">
               <input class="input-date" type="text" name="name_logist" id="name" placeholder="Имя">
               <span class="redstar-name">*</span>
@@ -237,7 +237,7 @@
         <div class="col-7_driver box-shadow form-unshow-driver">
           <button class="close-driver"></button>
           <h2 class="impost-request">Вакансия водителя</h2>
-          <form class="form-driver" action="driver_popup.php" method="GET" name="myform">
+          <form class="form-driver" action="driver_popup.php" method="POST" name="myform">
             <div class="position">
               <input class="input-date" type="text" name="name_driver" id="company" placeholder="Имя">
               <span class="redstar-name">*</span>
@@ -306,19 +306,19 @@
               Подходите к нам в рабочие дни.
               Ждем желающих работать и зарабатывать вместе с нами.</p>
           </div>
-          <div class="form-main-page">
+          <div class="vacancy_form_page">
             <h2 class="impost-request">Откликнуться</h2>
-            <form class="main-order-form" action="main_vacancy.php" name="myform">
+            <form class="vacancy_form" action="main.php" method="POST">
               <div class="position">
-                <input class="input-date" type="text" name="company" id="company" placeholder="Имя">
+                <input class="input-date" type="text" name="vacancy_name" id="company" placeholder="Имя">
                 <span class="redstar-name">*</span>
                 <span class="redstar-em">*</span>
               </div>
-              <input class="input-date" type="text" name="your-point" id="your-point" placeholder="Телефон или Email">
-              <input class="input-text" type="text" name="cargo-weight" id="cargo-weight" placeholder="Вакансия">
-              <input class="input-text" type="text" name="comment" id="comment" placeholder="Комментарий">
+              <input class="input-date" type="text" name="vacancy_email" id="your-point" placeholder="Телефон или Email">
+              <input class="input-text" type="text" name="vacancy_inp" id="cargo-weight" placeholder="Вакансия">
+              <input class="input-text" type="text" name="vacancy_comment" id="comment" placeholder="Комментарий">
               <div class="button-cont">
-                <button class="button-main-form">Отправить</button></div>
+                <button class="vacancy_button" type="submit">Отправить</button></div>
             </form>
           </div>
         </div>
@@ -387,7 +387,7 @@
     </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/vacancy.js"></script>
 </body>
 
 </html>

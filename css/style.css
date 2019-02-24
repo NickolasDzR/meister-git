@@ -622,7 +622,8 @@ map {
 }
 
 .form-main-page,
-.vacancy-main-page {
+.vacancy-main-page,
+.vacancy_form_page {
   background: white;
   max-width: 660px;
   margin-left: 20px;
@@ -682,7 +683,8 @@ map {
 .main-order-form,
 .vacancy-main-form,
 .col-7_logist,
-.form-driver {
+.form-driver,
+.vacancy_form {
   padding-left: 37px;
 }
 
@@ -780,7 +782,8 @@ map {
 .button-logist,
 .button-logist,
 .button-driver,
-.button-vacansy {
+.button-vacansy,
+.vacancy_button {
   border: 0 solid white;
   border-radius: 24px;
   background-color: #c14f2f;

@@ -28,8 +28,8 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заказ звонка с главной страницы';
-$mail->Body    = 'Кто-то по имени - ' .$name_logist. '<br>' .'Просит перезвонить на номер - '  .$number_logist. '<br>'. 'Его интересует вакансия ' .$logist_default;
+$mail->Subject = 'Кто-то интересуется вакансией "Логист"';
+$mail->Body    = 'Кто-то по имени - ' .$name_logist. '<br>' .'Просит перезвонить на номер - '  .$number_logist. '<br>';
 $mail->AltBody = '';
 
 if(!$mail->send()) {

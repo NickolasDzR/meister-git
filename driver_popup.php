@@ -4,9 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name_driver = $_GET['name_driver'];
-$number_driver = $_GET['number_driver'];
-$driver_default = $_GET['driver_default'];
+$name_driver = $_POST['name_driver'];
+$number_driver = $_POST['number_driver'];
+$driver_default = $_POST['driver_default'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,8 +28,8 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заказ звонка с главной страницы';
-$mail->Body    = 'Кто-то по имени - ' .$name_driver. '<br>' .'Просит перезвонить на номер - '  .$number_driver. '<br>'. 'Его интересует вакансия ' .$driver_default;
+$mail->Subject = 'Кто-то заинтересовался в вакансии "Водитель"';
+$mail->Body    = 'Кто-то по имени - ' .$name_driver. '<br>' .'Просит перезвонить на номер - '  .$number_driver. '<br>';
 $mail->AltBody = '';
 
 if(!$mail->send()) {
