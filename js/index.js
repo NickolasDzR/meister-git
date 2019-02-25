@@ -64,3 +64,22 @@ main_order_form.addEventListener("submit", function (evt) {
     console.log("Форма подачи заявки на перевозку груза");
   }
 });
+
+/* redstar */
+var input = document.querySelectorAll("input");
+var redstar = document.querySelector(".redstar");
+
+document.getElementById('input').addEventListener('keydown', function(evt) { 
+    evt.preventDefault();
+    redstar.classList.remove("redstar");
+ });
+
+ /*
+  document.getElementById('myinput').addEventListener('keydown', function(evt) {
+  evt.preventDefault();
+  popup.classList.add("form-show");
+  input_name.focus();
+  popup.classList.remove("form-unshow");
+  console.log("включаем popup добавляя form-show и удаляя form-unshow");
+});
+*/

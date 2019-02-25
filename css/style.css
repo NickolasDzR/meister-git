@@ -1682,14 +1682,11 @@ input::placeholder {
   color: black;
 }
 
+/*
 input:active + span {
   display: none;
 }
 
 input:focus + span {
-  display: none;
-}
-
-input:visited + span {
   display: none;
 }
