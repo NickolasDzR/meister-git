@@ -777,6 +777,66 @@ map {
   right: -160px;
 }
 
+.redstar-vac {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ff1d25;
+  opacity: 0.47;
+  position: absolute;
+  top: 99px;
+  right: 226px;
+}
+
+.redstar-question {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ff1d25;
+  opacity: 0.47;
+  position: absolute;
+  top: 100px;
+  right: 210px;
+}
+
+.redstar-send {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ff1d25;
+  opacity: 0.47;
+  position: absolute;
+  top: 100px;
+  right: 156px;
+}
+
+.redstar-get {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ff1d25;
+  opacity: 0.47;
+  position: absolute;
+  top: 100px;
+  right: -158px;
+}
+
+.redstar-weight {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ff1d25;
+  opacity: 0.47;
+  position: absolute;
+  top: 188px;
+  right: 231px;
+}
+
 .button-cont {
   text-align: center;
   margin: -1px 42px 0 0;
@@ -1618,6 +1678,18 @@ input:disabled {
   background-color: white;
 }
 
-input:value {
+input::placeholder {
   color: black;
+}
+
+input:active + span {
+  display: none;
+}
+
+input:focus + span {
+  display: none;
+}
+
+input:visited + span {
+  display: none;
 }
