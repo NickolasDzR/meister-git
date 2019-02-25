@@ -1682,11 +1682,6 @@ input::placeholder {
   color: black;
 }
 
-/*
-input:active + span {
-  display: none;
-}
-
-input:focus + span {
+input:valid + span {
   display: none;
 }
