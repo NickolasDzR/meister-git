@@ -9,7 +9,7 @@ $telephone_email = $_POST['telephone_email'];
 $point_send = $_POST['point_send'];
 $point_get = $_POST['point_get'];
 $load_weight = $_POST['load_weight'];
-$your_comment = $_POST['your_comment'];
+$cubage = $_POST['cubage'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -32,7 +32,7 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Кому-то нужно перевезсти груз. Сообщение с формы на главной странице';
-$mail->Body    = 'Кто-то по имени '.$name_company.'<br>'. 'его телефон или email: ' .$telephone_email. '<br>'. 'ему нужно перевезти груз из '.$point_send. ' в '.$point_get . '<br>'. 'тоннаж и кубатура груза: '.$load_weight.'<br>'. 'и его комментарий: '.$your_comment;
+$mail->Body    = 'Кто-то по имени '.$name_company.'<br>'. 'его телефон или email: ' .$telephone_email. '<br>'. 'ему нужно перевезти груз из '.$point_send. ' в '.$point_get . '<br>'. 'тоннаж и кубатура груза: '.$load_weight.'<br>'. 'и его комментарий: '.$cubage;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

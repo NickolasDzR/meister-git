@@ -7,7 +7,6 @@ $mail->CharSet = 'utf-8';
 $vacancy_name = $_POST['vacancy_name'];
 $vacancy_email = $_POST['vacancy_email'];
 $vacancy_inp = $_POST['vacancy_inp'];
-$vacancy_comment = $_POST['vacancy_comment'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -30,7 +29,7 @@ $mail->addAddress('nickolasdzr@yandex.ru');     // Кому будет уход�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'У кого-то есть вопросы. Сообщение с формы на странице вакансий';
-$mail->Body    = 'Кто-то по имени '.$vacancy_name.'<br>'. 'его телефон или email: ' .$vacancy_email. '<br>'. 'его интересует вакансия '.$vacancy_inp. 'и его комментарий: '.$vacancy_comment;
+$mail->Body    = 'Кто-то по имени '.$vacancy_name.'<br>'. 'его телефон или email: ' .$vacancy_email. '<br>'. 'его интересует вакансия '.$vacancy_inp;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

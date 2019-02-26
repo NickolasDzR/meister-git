@@ -981,8 +981,22 @@ map {
 }
 
 .broadcrumps-footer {
-  padding-left: 34px;
-  padding-top: 2px;
+  padding: 2px 0px 0 34px;
+}
+
+.index-border {
+  border-bottom: 1px solid white;
+  width: 68px;
+}
+
+.vacancies-border {
+  border-bottom: 1px solid white;
+  width: 80px;
+}
+
+.about-us-border {
+  border-bottom: 1px solid white;
+  width: 100px;
 }
 
 .broadcrumps a {
@@ -1504,7 +1518,7 @@ map {
   font-weight: 300;
   line-height: 32px;
   overflow: visible;
-  margin-bottom: 18px;
+  margin-bottom: 48px;
 }
 
 .popup-name,
@@ -1680,8 +1694,4 @@ input:disabled {
 
 input::placeholder {
   color: black;
-}
-
-input:valid + span {
-  display: none;
 }
