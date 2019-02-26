@@ -1,6 +1,7 @@
 var link = document.querySelector(".call-button");
 var popup = document.querySelector(".form-unshow");
 var close_button = document.querySelector(".popup-close");
+var overlay = document.querySelector(".overlay");
 var input_name = popup.querySelector("[name=name]");
 var input_number = popup.querySelector("[name=number]");
 var form = popup.querySelector(".popup-form");
@@ -9,16 +10,20 @@ var form = popup.querySelector(".popup-form");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("form-show");
+  overlay.classList.add("form-show");
   input_name.focus();
   popup.classList.remove("form-unshow");
+  overlay.classList.remove("form-unshow");
   console.log("включаем popup добавляя form-show и удаляя form-unshow");
 });
 
 close_button.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("form-show");
+  overlay.classList.remove("form-show");
   popup.classList.remove("modal-error");
   popup.classList.add("form-unshow");
+  overlay.classList.add("form-unshow");
   console.log("выключаем popup добавляя form-unshow и удаляя form-show");
 });
 
@@ -27,8 +32,10 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("form-show")) {
       evt.preventDefault();
       popup.classList.remove("form-show");
+      overlay.classList.remove("form-show");
       popup.classList.remove("modal-error");
       popup.classList.add("form-unshow");
+      overlay.classList.add("form-unshow");
     }
   }
 });

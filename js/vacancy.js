@@ -2,6 +2,7 @@
 var link = document.querySelector(".call-button");
 var popup = document.querySelector(".form-unshow");
 var close_button = document.querySelector(".popup-close");
+var overlay = document.querySelector(".overlay");
 var input_name = popup.querySelector("[name=name]");
 var input_number = popup.querySelector("[name=number]");
 var form = popup.querySelector(".popup-form");
@@ -10,16 +11,20 @@ var form = popup.querySelector(".popup-form");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("form-show");
+  overlay.classList.add("form-show");
   input_name.focus();
   popup.classList.remove("form-unshow");
+  overlay.classList.remove("form-unshow");
   console.log("включаем popup добавляя form-show и удаляя form-unshow");
 });
 
 close_button.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("form-show");
+  overlay.classList.remove("form-show");
   popup.classList.remove("modal-error");
   popup.classList.add("form-unshow");
+  overlay.classList.add("form-unshow");
   console.log("выключаем popup добавляя form-unshow и удаляя form-show");
 });
 
@@ -28,8 +33,10 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("form-show")) {
       evt.preventDefault();
       popup.classList.remove("form-show");
+      overlay.classList.remove("form-show");
       popup.classList.remove("modal-error");
       popup.classList.add("form-unshow");
+      overlay.classList.add("form-unshow");
     }
   }
 });
@@ -56,16 +63,19 @@ var number_logist = logist_form.querySelector("[name=number_logist]");
 respond_logist.addEventListener("click", function (evt) {
   evt.preventDefault();
   logist_page.classList.add("form-show-logist");
-  name_logist.focus();
+  overlay.classList.add("form-show");
   logist_page.classList.remove("form-unshow-logist");
+  overlay.classList.remove("form-unshow");
   console.log("логист форма");
 });
 
 close_logist.addEventListener("click", function (evt) {
   evt.preventDefault();
   logist_page.classList.remove("form-show-logist");
+  overlay.classList.remove("form-show");
   popup.classList.remove("modal-error");
   logist_page.classList.add("form-unshow-logist");
+  overlay.classList.add("form-unshow");
   console.log("выключаем popup");
 });
 
@@ -74,8 +84,10 @@ window.addEventListener("keydown", function (evt) {
     if (logist_page.classList.contains("form-show-logist")) {
       evt.preventDefault();
       logist_page.classList.remove("form-show-logist");
+      overlay.classList.remove("form-show");
       logist_page.classList.remove("modal-error");
       logist_page.classList.add("form-unshow-logist");
+      overlay.classList.add("form-unshow");
     }
   }
 });
@@ -102,15 +114,18 @@ var number_driver = driver_form.querySelector("[name=number_driver]");
 respond_driver.addEventListener("click", function(evt) {
   evt.preventDefault();
   driver_page.classList.remove("form-unshow-driver");
-  name_driver.focus();
+  overlay.classList.remove("form-unshow");
   driver_page.classList.add("form-show-driver");
+  overlay.classList.add("form-show");
   console.log("логист форма");
 });
 
 close_driver.addEventListener("click", function(evt) {
   evt.preventDefault();
   driver_page.classList.add("form-unshow-driver");
+  overlay.classList.remove("form-show");
   driver_page.classList.remove("modal-error");
+  overlay.classList.add("form-unshow");
   driver_page.classList.remove("form-show-driver");
   console.log("Форма закрывается");
 });
@@ -130,8 +145,10 @@ window.addEventListener("keydown", function (evt) {
     if (driver_page.classList.contains("form-show-driver")) {
       evt.preventDefault();
       driver_page.classList.remove("form-show-driver");
+      overlay.classList.remove("form-show");
       driver_page.classList.remove("modal-error");
       driver_page.classList.add("form-unshow-driver");
+      overlay.classList.add("form-unshow");
     }
   }
 });

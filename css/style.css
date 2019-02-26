@@ -657,6 +657,18 @@ map {
   top: 50%;
 }
 
+.overlay {
+  background: #000;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
+
 .col-7_logist {
   z-index: 2000;
   left: 50%;
@@ -1549,7 +1561,7 @@ input[type="text"] {
 
 .background-mainly {
   position: absolute;
-  z-index: 1000;
+  z-index: 800;
   display: flex;
   flex-wrap: wrap;
   top: 46%;
