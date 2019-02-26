@@ -45,13 +45,12 @@ map {
 }
 
 .track-img {
-  display: block;
   height: 100%;
   width: 100%;
 }
 
 .line-img {
-  width: 90%;
+  max-width: 90%;
   position: relative;
   left: 45px;
 }
@@ -1560,12 +1559,11 @@ input[type="text"] {
 }
 
 .background-mainly {
-  position: absolute;
-  z-index: 800;
-  display: flex;
-  flex-wrap: wrap;
-  top: 46%;
-  left: 14%;
+}
+
+.img-block {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
