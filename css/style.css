@@ -192,6 +192,21 @@ map {
   cursor: pointer;
 }
 
+.button-back {
+  border-radius: 23px;
+  background-color: #c14f2f;
+  padding: 12.8px 31px 10.7px 31px;
+  margin-top: 6px;
+  border: 0;
+  color: #ffffff;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
 .call-button:hover,
 .detail:hover,
 .order-button:hover,
@@ -410,12 +425,10 @@ map {
 }
 
 .jumbo-overlap {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
   margin-top: -140px;
-  margin-bottom: 154px;
-  top: 65px;
+  margin-bottom: 94px;
+  bottom: 25px;
 }
 
 .row-section {
@@ -440,7 +453,7 @@ map {
 .camion {
   position: relative;
   margin: 0 auto !important;
-  padding-right: 49px;
+  padding-left: 200px;
 }
 
 .left-arrow-cont {
@@ -448,7 +461,7 @@ map {
   height: 102px;
   position: absolute;
   top: -22px;
-  right: 774px;
+  left: 116px;
 }
 
 .right-arrow-cont {
@@ -456,7 +469,7 @@ map {
   height: 68px;
   position: absolute;
   top: -54px;
-  left: 656px;
+  right: 300px;
 }
 
 .bc-color {
@@ -466,6 +479,7 @@ map {
 .odds {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .advantages-img {
@@ -497,13 +511,10 @@ map {
   padding-top: 82px;
   padding-bottom: 96px;
 }
+/*
 
 .advantages-list:nth-child(1) {
   padding-right: 14px;
-}
-
-.advantages-list:nth-child(1) .h3-list {
-  padding-top: 9px;
 }
 
 .advantages-list:nth-child(2) {
@@ -511,17 +522,9 @@ map {
   padding-top: 8px;
 }
 
-.advantages-list:nth-child(2) .h3-list {
-  padding-top: 18px;
-}
-
 .advantages-list:nth-child(3)  {
   padding-right: 66px;
   padding-top: 1px;
-}
-
-.advantages-list:nth-child(3) .h3-list {
-  padding-top: 16px;
 }
 
 .advantages-list:nth-child(4)  {
@@ -529,22 +532,37 @@ map {
   padding-top: 81px;
 }
 
-.advantages-list:nth-child(4) .h3-list {
-  padding-top: 22px;
-}
-
 .advantages-list:nth-child(5)  {
   padding-right: 41px;
   padding-top: 86px;
 }
 
-.advantages-list:nth-child(5) .h3-list {
-  padding-top: 13px;
-}
-
 .advantages-list:nth-child(6)  {
   padding-top: 81px;
   padding-right: 53px;
+}
+
+*/
+
+.advantages-list:nth-child(1) .h3-list {
+  padding-top: 9px;
+}
+
+.advantages-list:nth-child(2) .h3-list {
+  padding-top: 18px;
+}
+
+.advantages-list:nth-child(3) .h3-list {
+  padding-top: 16px;
+}
+
+
+.advantages-list:nth-child(4) .h3-list {
+  padding-top: 22px;
+}
+
+.advantages-list:nth-child(5) .h3-list {
+  padding-top: 13px;
 }
 
 .advantages-list:nth-child(6) .h3-list {
@@ -1704,4 +1722,23 @@ input:disabled {
 
 input::placeholder {
   color: black;
+}
+
+.thanks-sign {
+  font-size: 50px;
+  font-weight: bold;
+  color: #07a6b9;
+}
+
+.connect-sign {
+  color: #1a1a1a;
+  font-family: "Proxima Nova Rg";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.center {
+  margin-top: 150px;
+  text-align: center;
 }
