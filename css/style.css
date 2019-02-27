@@ -1224,16 +1224,14 @@ map {
   margin: 0;
 }
 
-.tasks li {
-  color: #333333;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-  letter-spacing: -0.2px;
+.tasks-company {
+  padding-top: 10px;
+  padding-left: 23px;
+  margin: 0;
 }
 
-.tasks-about li {
+.tasks li,
+.tasks-company {
   color: #333333;
   font-family: "Roboto";
   font-size: 16px;
@@ -1258,7 +1256,7 @@ map {
   left: 20px;
 }
 
-.tasks-about li:before {
+.tasks-company li:before {
   content:  "—";
   position: absolute;
   left: 5px;
