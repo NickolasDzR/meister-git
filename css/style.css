@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Proxima Nova Rg" "Arial", sans-serif;
   font-size: 14px;
@@ -7,7 +7,6 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: repeat;
-  min-width: 1250px; 
 }
 
 a {
@@ -225,7 +224,7 @@ map {
   display: flex;
   align-items: center;
   flex: 0 0 28%;
-  max-width: 28%;
+  min-width: 28%;
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
@@ -271,13 +270,13 @@ map {
 
 .col-3-logo {
   flex: 31.8%;
-  max-width: 31.8%;
+  min-width: 31.8%;
   padding: 44px 46px 21px 0;
 }
 
 .col-9-nav {
   flex: 0 0 68.2%;
-  max-width: 68.2%;
+  min-width: 68.2%;
 }
 
 .write-onmail {
@@ -306,7 +305,7 @@ map {
 
 .col-4-first {
   flex: 0 0 26%;
-  max-width: 26%;
+  min-width: 26%;
   display: flex;
   align-items: center;
   padding-top: 13px;
@@ -315,7 +314,7 @@ map {
 
 .col-4-second {
   flex: 0 0 26%;
-  max-width: 26%;
+  min-width: 26%;
   display: flex;
   align-items: center;
   padding-top: 12px;
@@ -324,7 +323,7 @@ map {
 
 .col-12-mail {
   flex: 0 0 100%;
-  max-width: 100%;
+  min-width: 100%;
   padding-left: 18px;
 }
 
@@ -421,7 +420,7 @@ map {
   background-color: white;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
   flex: 0 0 47.2%;
-  max-width: 47.2%;
+  min-width: 47.2%;
 }
 
 .jumbo-overlap {
@@ -659,7 +658,7 @@ map {
 .col-7_driver {
   position: absolute;
   background: white;
-  max-width: 660px;
+  min-width: 660px;
   padding-bottom: 50px;
   margin-left: -330px;
   margin-top: -150px;
@@ -1586,48 +1585,6 @@ input[type="text"] {
   max-width: 1200px !important;
 }
 
-@media screen and (max-width: 1920px) {
-  .background-mainly {
-    top: 46%;
-    left: 14%;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .background-mainly {
-    top: 53%;
-    left: 6%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .background-mainly {
-    top: 53%;
-    left: 2%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .background-mainly {
-    top: 56%;
-    left: 7%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .background-mainly {
-    top: 66%;
-    left: 8%;
-  }
-}
-
-@media screen and (max-width: 562px) {
-  .background-mainly {
-    top: 66%;
-    left: 8%;
-  }
-}
-
 @keyframes bounce {
   0% {
     transform: translatey(-600px)
@@ -1740,3 +1697,42 @@ input::placeholder {
   margin-top: 150px;
   text-align: center;
 }
+
+/*
+
+@media (max-width: 1199px) { 
+  body {
+    min-width: 960px;
+  }
+  .row-up {
+    padding-left: 20px;
+  }
+  .col-4-first {
+    margin-right: 0px; 
+  }
+  .col-1-stick {
+    transform: rotate(18deg);
+    margin-right: 20px;
+  }
+  .col-4-second {
+    flex: 0 0 22%;
+    min-width: 22%;
+    margin-right: 0px;
+  }
+  .call-button {
+    border-radius: 23px;
+    padding: 12.8px 8% 10.7px;
+    margin-top: 11px;
+  }
+  .down {
+   padding: 19.9px 0 6px;
+  }
+  .list-nav li {
+    margin-right: 40px;
+  }
+  .list-nav li:nth-child(2) {
+    margin-right: 40px;
+  }
+ }
+
+ */
