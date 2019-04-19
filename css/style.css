@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Proxima Nova Rg" "Arial", sans-serif;
   font-size: 14px;
@@ -17,12 +17,19 @@ a {
 ul {
   list-style: none;
 }
-
 .main-navigator {
+  display: flex;
+  padding: 0 15px;
   border-bottom: 11px solid #07a6b9;
   overflow: hidden;
 }
-
+.navigation-wrapper {
+  display: flex;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 992px;
+}
 .rectangle-container {
   background-position: top center;
   background-repeat: no-repeat;
@@ -67,12 +74,11 @@ map {
 
 .row-up {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 7px;
-  padding-left: 49px;
+  padding: 7px 0 2px;
 }
 
 .down {
+  display: flex;
   padding: 19.9px 0 6px 36px;
 }
 
@@ -84,15 +90,6 @@ map {
 .delta {
   position: relative;
   background-color: #07a6b9;
-}
-
-.delta::before {
-  content: ''; 
-  position: absolute;
-  right: 100%;
-  border: 34px solid transparent;
-  border-right: 24px solid #07a6b9;
-  border-bottom: 49px solid #07a6b9;
 }
 
 .delta::after {
@@ -114,7 +111,6 @@ map {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-left: 14px;
 }
 
 .h1-article {
@@ -168,29 +164,31 @@ map {
 .col-1-stick {
   flex: 0 0 0%;
   display: flex;
-  flex-wrap: wrap;
   border-left: 1px solid #07a6b9;
   opacity: 0.27;
   height: 70px;
   transform: rotate(34deg);
-  margin-top: 16px;
-  margin-right: 62px;
+  margin: 11.9px 7% 0;
 }
 
 .call-button {
   border-radius: 23px;
   background-color: #c14f2f;
-  padding: 12.8px 31px 10.7px 31px;
+  padding: 11.8px 0 10.7px;
   margin-top: 6px;
   border: 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+}
+.call-button span {
   color: #ffffff;
   font-family: "Proxima Nova Rg";
-  font-size: 16px;
-  font-weight: 400;
+  width: 123px;
+  height: 11px;
   line-height: 22px;
-  cursor: pointer;
 }
-
 .button-back {
   border-radius: 23px;
   background-color: #c14f2f;
@@ -221,14 +219,9 @@ map {
 }
 
 .col-button {
-  display: flex;
-  align-items: center;
-  flex: 0 0 28%;
-  min-width: 28%;
-  position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
+  flex: 0 0 23%;
+  padding: 15px 0 18px;
+  text-align: center;
 }
 
 .link-nav,
@@ -269,21 +262,28 @@ map {
 }
 
 .col-3-logo {
-  flex: 31.8%;
-  min-width: 31.8%;
-  padding: 44px 46px 21px 0;
+  padding: 44px 0 21px 0;
+  width: 310px;
 }
 
 .col-9-nav {
-  flex: 0 0 68.2%;
-  min-width: 68.2%;
+  position: relative;
+  flex: 0 0 72.404%;
+  padding: 0 0 0 50px;
+}
+.col-9-nav::before {
+  content: ''; 
+  position: absolute;
+  top: 93px;
+  left: -7px;
+  border: 34px solid transparent;
+  border-right: 24px solid #07a6b9;
+  border-bottom: 49px solid #07a6b9;
 }
 
 .write-onmail {
   margin: 0;
   padding: 0;
-  flex: 0 0 100%;
-  max-width: 100%;
   color: #1f425d;
   font-family: "Proxima Nova Rg";
   font-size: 16px;
@@ -292,8 +292,6 @@ map {
 }
 
 .our-mail {
-  flex: 0 0 100%;
-  max-width: 100%;
   margin: 0;
   padding: 0;
   color: #999999;
@@ -304,26 +302,21 @@ map {
 }
 
 .col-4-first {
-  flex: 0 0 26%;
-  min-width: 26%;
+  flex: 0 0 31%;
+  min-width: 31%;
   display: flex;
   align-items: center;
-  padding-top: 13px;
-  margin-right: 61px;
+  justify-content: flex-end;
 }
 
 .col-4-second {
-  flex: 0 0 26%;
-  min-width: 26%;
+  flex: 0 0 28%;
+  min-width: 28%;
   display: flex;
   align-items: center;
-  padding-top: 12px;
-  margin-right: 23px;
 }
 
 .col-12-mail {
-  flex: 0 0 100%;
-  min-width: 100%;
   padding-left: 18px;
 }
 
@@ -342,6 +335,7 @@ map {
 .list-nav {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .social-image {
@@ -432,7 +426,6 @@ map {
 
 .row-section {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 21px;
 }
 
@@ -1572,10 +1565,6 @@ input[type="text"] {
   text-align: center;
   margin: -1px 43px 15px 0;
 }
-
-.background-mainly {
-}
-
 .img-block {
   width: 100%;
   height: 100%;
@@ -1584,7 +1573,6 @@ input[type="text"] {
 .container {
   max-width: 1200px !important;
 }
-
 @keyframes bounce {
   0% {
     transform: translatey(-600px)
@@ -1593,7 +1581,6 @@ input[type="text"] {
     transform: translateY(0px)
   }
 }
-
 .modal-error {
   animation: shake 0.6s;
 }
@@ -1697,42 +1684,8 @@ input::placeholder {
   margin-top: 150px;
   text-align: center;
 }
-
-/*
-
-@media (max-width: 1199px) { 
-  body {
-    min-width: 960px;
-  }
-  .row-up {
-    padding-left: 20px;
-  }
-  .col-4-first {
-    margin-right: 0px; 
-  }
-  .col-1-stick {
-    transform: rotate(18deg);
-    margin-right: 20px;
-  }
-  .col-4-second {
-    flex: 0 0 22%;
-    min-width: 22%;
-    margin-right: 0px;
-  }
+@media (max-width: 1025px) { 
   .call-button {
-    border-radius: 23px;
-    padding: 12.8px 8% 10.7px;
-    margin-top: 11px;
-  }
-  .down {
-   padding: 19.9px 0 6px;
-  }
-  .list-nav li {
-    margin-right: 40px;
-  }
-  .list-nav li:nth-child(2) {
-    margin-right: 40px;
+    width: 150px;
   }
  }
-
- */
