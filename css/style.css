@@ -79,9 +79,17 @@ map {
 
 .down {
   display: flex;
-  padding: 19.9px 0 6px 36px;
+  padding: 16.9px 0 13px 0;
 }
 
+.col-nav {
+  flex: 0 0 59%;
+}
+
+.col-10-list {
+  display: flex;
+  align-items: end;
+}
 .navigation {
   max-height: 178px;
   background-color: white;
@@ -96,10 +104,16 @@ map {
   content: '';
   position: absolute;
   width: 2060px;
-  height: 80px;
+  height: 92px;
   right: -2046px;
   top: 0px;
   background-color: #07a6b9;
+}
+
+.col-social {
+  flex: 0 0 25%;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 .rectangle {
@@ -110,7 +124,6 @@ map {
 .image-logo {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .h1-article {
@@ -168,7 +181,7 @@ map {
   opacity: 0.27;
   height: 70px;
   transform: rotate(34deg);
-  margin: 11.9px 7% 0;
+  margin: 11.9px 1% 0 1.5%;
 }
 
 .call-button {
@@ -221,7 +234,6 @@ map {
 .col-button {
   flex: 0 0 23%;
   padding: 15px 0 18px;
-  text-align: center;
 }
 
 .link-nav,
@@ -266,19 +278,19 @@ map {
   width: 310px;
 }
 
-.col-9-nav {
+.col-contacts {
   position: relative;
   flex: 0 0 72.404%;
   padding: 0 0 0 50px;
 }
-.col-9-nav::before {
+.col-contacts::before {
   content: ''; 
   position: absolute;
   top: 93px;
-  left: -7px;
-  border: 34px solid transparent;
-  border-right: 24px solid #07a6b9;
-  border-bottom: 49px solid #07a6b9;
+  left: -15px;
+  border: 38px solid transparent;
+  border-right: 27px solid #07a6b9;
+  border-bottom: 53px solid #07a6b9;
 }
 
 .write-onmail {
@@ -302,18 +314,17 @@ map {
 }
 
 .col-4-first {
-  flex: 0 0 31%;
-  min-width: 31%;
+  flex: 0 0 33%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .col-4-second {
-  flex: 0 0 28%;
-  min-width: 28%;
+  flex: 0 0 32%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .col-12-mail {
@@ -324,25 +335,29 @@ map {
   margin-left: 15px;
 }
 
-.list-nav li {
-  margin-right: 67px;
-}
-
-.list-nav li:nth-child(2) {
-  margin-right: 70px;
-}
-
 .list-nav {
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
+  justify-content: flex-start;
+}
+
+.list-nav li:nth-child(1) {
+  flex: 0 0 38%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list-nav li:nth-child(2),
+.list-nav li:nth-child(3) {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .social-image {
   display: flex;
-  align-items: center;
-  padding: 0;
   margin: 0;
+  padding: 5px 0;
 }
 
 .social-list {
@@ -1539,7 +1554,6 @@ map {
   overflow: visible;
   margin-bottom: 48px;
 }
-
 .popup-name,
 .popup-number {
   padding: 16px 277px 5px 28.4px;
@@ -1684,8 +1698,11 @@ input::placeholder {
   margin-top: 150px;
   text-align: center;
 }
+
+/*
 @media (max-width: 1025px) { 
   .call-button {
     width: 150px;
   }
  }
+ */
