@@ -29,6 +29,7 @@ ul {
   margin: 0 auto;
   width: 1200px;
   min-width: 992px;
+  align-items: center;
 }
 .rectangle-container {
   background-position: top center;
@@ -79,11 +80,14 @@ map {
 
 .down {
   display: flex;
-  padding: 16.9px 0 13px 0;
+  padding: 21.9px 0 13px 0;
 }
 
 .col-nav {
-  flex: 0 0 59%;
+  display: flex;
+  flex: 0 0 66%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .col-10-list {
@@ -335,10 +339,10 @@ map {
   margin-left: 15px;
 }
 
+/*
 .list-nav {
   display: flex;
   padding: 0;
-  justify-content: flex-start;
 }
 
 .list-nav li:nth-child(1) {
@@ -353,6 +357,7 @@ map {
   display: flex;
   justify-content: flex-end;
 }
+*/
 
 .social-image {
   display: flex;
@@ -646,10 +651,6 @@ map {
   margin: 0 auto;
 }
 
-.about-us-container {
-  margin: 0 auto;
-}
-
 .form-main-page,
 .vacancy-main-page,
 .vacancy_form_page,
@@ -718,7 +719,9 @@ map {
 }
 
 .main-form {
-  padding: 110px 0 98px 0;
+  padding: 110px 15px 98px 15px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .order-form,
@@ -728,7 +731,9 @@ map {
 .form-driver,
 .vacancy_form,
 .about_us_form {
-  padding-left: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .order-form input,
@@ -738,7 +743,8 @@ map {
 }
 
 .input-date {
-  padding: 6px 62px 5px 18.4px;
+  padding: 7px 2.4% 3.9px 2.4%;
+  width: 39%;
   border: 0 solid white;
   border-bottom: 1px solid #afafaf;
   opacity: 0.47;
@@ -747,7 +753,7 @@ map {
   font-size: 15px;
   font-weight: 300;
   line-height: 32px;
-  overflow: visible
+  overflow: visible;
 }
 
 .input-text {
@@ -918,6 +924,7 @@ map {
   padding: 48px 17px 15px 0px;
 }
 
+
 .input-date:nth-child(1),
 .input-date:nth-child(3),
 .input-date:nth-child(5) {
@@ -933,33 +940,41 @@ map {
 .input-date:nth-child(4) {
   margin-bottom: 45.1px;
 }
-
+/*
 .input-date:nth-child(1),
 .input-date:nth-child(3),
 .input-date:nth-child(5) {
-  margin-right: 58px;
+  margin-right: 10%;
 }
-
-
+*/
 .input-date:nth-child(5),
 .input-date:nth-child(6) {
   margin-bottom: 35.1px;
 }
 
-.geography {
-  padding-bottom: 94px;
-}
-
 .geophy-tr {
   margin: 0 auto;
-  padding-top: 69px;
+  padding: 69px 15px 94px;
+  display: flex;
 }
 
-.map-img {
+.map-column {
   background-repeat: no-repeat;
-  width: 867px;
-  height: 483px;
-  right: 130px;
+  padding: 0 15px;
+  flex: 0 0 61%;
+  max-width: 61%;
+  display: flex;
+  align-items: center;
+}
+
+.map-column img {
+  width: 100%;
+}
+
+.geography-column {
+  flex: 0 0 38%;
+  min-width: 38%;
+  padding: 2px 15px;
 }
 
 .paragraph-geo {
@@ -990,20 +1005,33 @@ map {
 .our-number {
   color: #07a6b9;
   font-family: "Proxima Nova Rg";
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 28.2px;
   text-transform: uppercase;
   margin-top: 57px;
 }
 
-.footer {
+footer {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: black;
   background-image: url("../img/footer-img.jpg");
   background-size: cover;
   border-top: 9px solid #c14f2f;
+  padding: 50px 0;
+}
+
+.logo-footer,
+.navigation-footer,
+.contacts-col {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+.navigation-footer {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-article {
@@ -1017,7 +1045,12 @@ map {
 }
 
 .broadcrumps-footer {
-  padding: 2px 0px 0 34px;
+  display: block;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .index-border {
@@ -1051,7 +1084,16 @@ map {
   line-height: 30px;
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+}
+
+.number::before {
+  content: "";
+  background-image: url("../img/phone.svg");
+  position: absolute;
+  width: 28px;
+  height: 29px;
+  right: 3.2px;
+  top: 10.5px;
 }
 
 .around-clock {
@@ -1085,13 +1127,13 @@ map {
 }
 
 .schedule {
-  margin-left: 14px;
-  flex: 0 0 90%;
-  max-width: 90%;
+  text-align: right;
+  position: relative;
 }
 
 .indent {
   padding: 83px 0 47px 4px;
+  display: flex;
 }
 
 .indent-logo {
@@ -1584,9 +1626,6 @@ input[type="text"] {
   height: 100%;
 }
 
-.container {
-  max-width: 1200px !important;
-}
 @keyframes bounce {
   0% {
     transform: translatey(-600px)
