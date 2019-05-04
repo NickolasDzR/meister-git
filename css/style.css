@@ -18,16 +18,14 @@ ul {
   list-style: none;
 }
 .main-navigator {
-  display: flex;
   padding: 0 15px;
   border-bottom: 11px solid #07a6b9;
-  overflow: hidden;
 }
 .navigation-wrapper {
   display: flex;
-  padding: 0 15px;
+  padding: 0 30px;
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   min-width: 992px;
   align-items: center;
 }
@@ -87,7 +85,26 @@ map {
   display: flex;
   flex: 0 0 66%;
   align-items: center;
-  justify-content: space-around;
+}
+
+.main-link {
+  flex: 0 0 39.333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vacancy-link {
+  flex: 0 0 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-company-link {
+  flex: 0 0 26%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .col-10-list {
@@ -107,16 +124,15 @@ map {
 .delta::after {
   content: '';
   position: absolute;
-  width: 2060px;
-  height: 92px;
-  right: -2046px;
+  width: 2156px;
+  height: 87px;
+  right: -2156px;
   top: 0px;
   background-color: #07a6b9;
 }
 
 .col-social {
   flex: 0 0 25%;
-  justify-content: space-evenly;
   display: flex;
 }
 
@@ -294,7 +310,7 @@ map {
   left: -15px;
   border: 38px solid transparent;
   border-right: 27px solid #07a6b9;
-  border-bottom: 53px solid #07a6b9;
+  border-bottom: 49px solid #07a6b9;
 }
 
 .write-onmail {
@@ -1088,12 +1104,12 @@ footer {
 
 .number::before {
   content: "";
-  background-image: url("../img/phone.svg");
+  background-image: url("../img/call-ph.png");
   position: absolute;
   width: 28px;
   height: 29px;
-  right: 3.2px;
-  top: 10.5px;
+  right: 250.2px;
+  top: 1.5px;
 }
 
 .around-clock {
@@ -1488,10 +1504,6 @@ footer {
   font-weight: 700;
 }
 
-.send-post {
-  float: left;
-}
-
 .yandex-map {
   border: 0;
 }
@@ -1683,8 +1695,8 @@ input[type="text"] {
   width: 15px;
   height: 2px;
   background-color: #cbcbcb;
-  right: 3.2px;
-  top: 10.5px;
+  right: 4px;
+  top: 11px;
 }
 
 .popup-close::before,
