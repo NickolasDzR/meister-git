@@ -275,7 +275,6 @@ map {
 .cargo:hover,
 .about-us-list:hover {
   border-bottom: 1px solid #c6ecf1;
-  padding-bottom: 5px;
 }
 
 .link-index,
@@ -287,7 +286,6 @@ map {
   font-weight: 400;
   line-height: 20px;
   border-bottom: 1px solid #c6ecf1;
-  padding-bottom: 5px;
 }
 
 .social-svg {
@@ -727,18 +725,6 @@ map {
   top: 50%;
 }
 
-.form-unshow,
-.form-unshow-logist,
-.form-unshow-driver {
-  display: none;
-}
-
-.form-show,
-.form-show-logist,
-.form-show-driver {
-  display: block;
-}
-
 .main-form {
   padding: 110px 15px 98px 15px;
   display: flex;
@@ -755,6 +741,18 @@ map {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.form-unshow,
+.form-unshow-logist,
+.form-unshow-driver {
+  display: none;
+}
+
+.form-show,
+.form-show-logist,
+.form-show-driver {
+  display: block;
 }
 
 .order-form input,
@@ -1429,6 +1427,10 @@ footer {
 }
 
 .interest-vacansy {
+  max-width: 1200px;
+  min-width: 992px;
+  margin: 0 auto;
+  display: flex;
   padding-top: 113px;
   padding-bottom: 95px;
 }
@@ -1461,9 +1463,9 @@ footer {
   position: absolute;
   opacity: 0.13;
   border: 34px solid transparent;
-  border-left: 21px solid #3b97a2;
-  border-top: 59px solid #3b97a2;
-  left: -73px;
+  border-left: 25px solid #3b97a2;
+  border-top: 68px solid #3b97a2;
+  left: -88px;
   bottom: 1px;
 }
 

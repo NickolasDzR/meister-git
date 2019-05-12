@@ -5,9 +5,10 @@
   <meta charset='utf-8'>
   <link rel='stylesheet' href='css/style.css' type='text/css' />
   <link rel='stylesheet' href='css/normalize.css' type='text/css' />
-  <link rel='stylesheet' href='css/bootstrap-grid.css' type='text/css' />
+  <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
   <link rel='stylesheet' href='css/fonts.css' type='text/css' />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maister tk</title>
 </head>
 
@@ -58,8 +59,8 @@
         <div class="delta">
           <div class="down">
             <div class="col-nav">
-              <div class="main-link"><a class="link-index" href="#driver">Главная страница</a></div>
-              <div class="vacancy-link"><a class="cargo" href="vacancies.html">Вакансии</a></div>
+              <div class="main-link"><a class="link-nav" href="index.html">Главная страница</a></div>
+              <div class="vacancy-link"><a class="vacansy" href="vacancies.html">Вакансии</a></div>
               <div class="about-company-link"><a class="about-us-list" href="about-us.html">О компании</a></div>
             </div>
             <div class="col-social">
@@ -300,30 +301,27 @@
     </div>
     <!-- block end -->
     <div class="about-us-container">
-      <div class="container">
-        <div class="row interest-vacansy">
-          <div class="col-5">
-            <h2 class="interestingvac-h2">Заинтересовала<br>
-              вакансия?</h2>
-            <p class="text-vac">Более подробно о данной вакансии мы раскажем Вам по адресу: Тюмень, 2-й Рощинский
-              проезд, д. 8, с. 5, оф. 221, БЦ «Серпуховской двор».
-              Оставьте свои координаты, менеждер нашей компании назначит время собеседования.
-              Подходите к нам в рабочие дни.
-              Ждем желающих работать и зарабатывать вместе с нами.</p>
-          </div>
-          <div class="vacancy_form_page">
-            <h2 class="impost-request">Откликнуться</h2>
-            <form class="vacancy_form" action="/php/vacancy_form.php" method="POST">
-              <div class="position">
-                <input class="input-date" type="text" name="vacancy_name" id="company" placeholder="Имя">
-              </div>
-              <input class="input-date" type="text" name="vacancy_email" id="your-point"
-                placeholder="Телефон или Email">
-              <input class="input-text" type="text" name="vacancy_inp" id="cargo-weight" placeholder="Вакансия">
-              <div class="button-cont">
-                <button class="vacancy_button" type="submit">Отправить</button></div>
-            </form>
-          </div>
+      <div class="interest-vacansy">
+        <div class="col-5">
+          <h2 class="interestingvac-h2">Заинтересовала<br>
+            вакансия?</h2>
+          <p class="text-vac">Более подробно о данной вакансии мы раскажем Вам по адресу: Тюмень, 2-й Рощинский
+            проезд, д. 8, с. 5, оф. 221, БЦ «Серпуховской двор».
+            Оставьте свои координаты, менеждер нашей компании назначит время собеседования.
+            Подходите к нам в рабочие дни.
+            Ждем желающих работать и зарабатывать вместе с нами.</p>
+        </div>
+        <div class="vacancy_form_page">
+          <h2 class="impost-request">Откликнуться</h2>
+          <form class="vacancy_form" action="/php/vacancy_form.php" method="POST">
+            <div class="position">
+              <input class="input-date" type="text" name="vacancy_name" id="company" placeholder="Имя">
+            </div>
+            <input class="input-date" type="text" name="vacancy_email" id="your-point" placeholder="Телефон или Email">
+            <input class="input-text" type="text" name="vacancy_inp" id="cargo-weight" placeholder="Вакансия">
+            <div class="button-cont">
+              <button class="vacancy_button" type="submit">Отправить</button></div>
+          </form>
         </div>
       </div>
     </div>
