@@ -20,8 +20,12 @@ ul {
 .main-navigator {
   padding: 0 15px;
   border-bottom: 11px solid #07a6b9;
+  overflow: hidden;
 }
-.navigation-wrapper {
+
+.navigation-wrapper,
+.broadcrumps-top,
+.main-article {
   display: flex;
   padding: 0 30px;
   margin: 0 auto;
@@ -29,6 +33,16 @@ ul {
   min-width: 992px;
   align-items: center;
 }
+
+.about-company,
+.our-tasks {
+  padding: 0 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 992px;
+  align-items: center;
+}
+
 .rectangle-container {
   background-position: top center;
   background-repeat: no-repeat;
@@ -143,7 +157,7 @@ map {
 
 .rectangle {
   width: 100%;
-  position: bottom right;
+  position: relative;
 }
 
 .image-logo {
@@ -676,7 +690,8 @@ map {
 .abous_us_page {
   background: white;
   max-width: 660px;
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding-bottom: 50px;
   box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
 }
@@ -940,7 +955,7 @@ map {
   font-size: 32px;
   font-weight: 700;
   line-height: 48px;
-  padding: 48px 17px 15px 0px;
+  padding: 48px 17px 15px 17px;
 }
 
 
@@ -1435,17 +1450,12 @@ footer {
   padding-bottom: 95px;
 }
 
-.indent-business {
-  margin: 0 auto;
-}
-
 .our-bussines {
   color: #333333;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
-  padding-right: 60px;
 }
 
 .rectangle::before {
@@ -1455,7 +1465,8 @@ footer {
   position: absolute;
   background-color: #3b97a2;
   opacity: 0.13;
-  right: 373px;
+  right: 1227px;
+  top: -28px;
 }
 
 .rectangle::after {
@@ -1463,10 +1474,10 @@ footer {
   position: absolute;
   opacity: 0.13;
   border: 34px solid transparent;
-  border-left: 25px solid #3b97a2;
-  border-top: 68px solid #3b97a2;
-  left: -88px;
-  bottom: 1px;
+  border-left: 20px solid #3b97a2;
+  border-top: 60px solid #3b97a2;
+  left: -87px;
+  bottom: -22px;
 }
 
 .mission {
@@ -1527,9 +1538,8 @@ footer {
 .main-article {
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 3px;
+  margin-top: 67px;
+  margin-bottom: 40px;
   }
 
 .mission-message {
@@ -1579,6 +1589,10 @@ footer {
   margin-bottom: 37px;
 }
 
+.contacts-comp {
+  padding: 76px 0px 1px 0px;
+}
+
 .image-location {
   margin-top: 6px;
   margin-left: -10px;
@@ -1604,6 +1618,7 @@ footer {
 
 .input-question {
   padding: 6px 387px 5px 18.4px;
+  width: 90%;
   border: 0 solid white;
   border-bottom: 1px solid #afafaf;
   opacity: 0.47;
@@ -1615,9 +1630,8 @@ footer {
   overflow: visible;
   margin-bottom: 48px;
 }
-.popup-name,
-.popup-number {
-  padding: 16px 277px 5px 28.4px;
+
+.popup-form input {
   border: 0 solid white;
   border-bottom: 1px solid #afafaf;
   opacity: 0.47;
@@ -1629,8 +1643,13 @@ footer {
   overflow: visible;
   margin-bottom: 58px;
   margin-left: 60px;
+  padding: 1px 15px 3px 15px;
+  width: 80%;
 }
 
+.popup-form {
+  padding: 7px 40px 0px 40px;
+}
 
 input[type="text"] {
   color: #1c1c1c;
@@ -1638,7 +1657,6 @@ input[type="text"] {
 
 .button-question {
   text-align: center;
-  margin: -1px 43px 15px 0;
 }
 .img-block {
   width: 100%;

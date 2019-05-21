@@ -13,6 +13,18 @@
 </head>
 
 <body>
+	<div class="overlay"></div>
+	<!--pop-->
+	<div class="main-popup form-unshow">
+		<button class="popup-close"></button>
+		<h2 class="impost-request">Заказать звонок</h2>
+		<form class="popup-form" action="/php/main_popup.php" method="POST">
+			<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
+			<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+			<div class="button-question">
+				<button class="button-vacansy" type="submit">Отправить</button></div>
+		</form>
+	</div>
 	<nav class="main-navigator">
 		<div class="navigation-wrapper">
 			<div class="col-3-logo">
@@ -41,18 +53,6 @@
 					</div>
 					<div class="col-button">
 						<a class="call-button" href="#form" name="call-form"><span>Заказать звонок</span></a>
-					</div>
-					<div class="overlay"></div>
-					<!--pop-->
-					<div class="main-popup form-unshow">
-						<button class="popup-close"></button>
-						<h2 class="impost-request">Заказать звонок</h2>
-						<form class="popup-form" action="/php/main_popup.php" method="POST">
-							<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-							<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
-							<div class="button-question">
-								<button class="button-vacansy" type="submit">Отправить</button></div>
-						</form>
 					</div>
 					<!--pop-->
 				</div>

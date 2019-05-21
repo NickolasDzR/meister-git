@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang='ru'>
 
-  <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='css/style.css' type='text/css' />
-    <link rel='stylesheet' href='css/normalize.css' type='text/css' />
-    <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
-    <link rel='stylesheet' href='css/fonts.css' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maister tk</title>
-  </head>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='css/style.css' type='text/css' />
+  <link rel='stylesheet' href='css/normalize.css' type='text/css' />
+  <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
+  <link rel='stylesheet' href='css/fonts.css' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maister tk</title>
+</head>
 
 <body>
+  <div class="overlay"></div>
+  <!--pop-->
+  <div class="main-popup form-unshow">
+    <button class="popup-close"></button>
+    <h2 class="impost-request">Заказать звонок</h2>
+    <form class="popup-form" action="/php/main_popup.php" method="POST">
+      <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
+      <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+      <div class="button-question">
+        <button class="button-vacansy" type="submit">Отправить</button></div>
+    </form>
+  </div>
   <nav class="main-navigator">
     <div class="navigation-wrapper">
       <div class="col-3-logo">
@@ -41,18 +53,6 @@
           </div>
           <div class="col-button">
             <a class="call-button" href="#form" name="call-form"><span>Заказать звонок</span></a>
-          </div>
-          <div class="overlay"></div>
-          <!--pop-->
-          <div class="main-popup form-unshow">
-            <button class="popup-close"></button>
-            <h2 class="impost-request">Заказать звонок</h2>
-            <form class="popup-form" action="/php/main_popup.php" method="POST">
-              <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-              <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
-              <div class="button-question">
-                <button class="button-vacansy" type="submit">Отправить</button></div>
-            </form>
           </div>
           <!--pop-->
         </div>
@@ -141,112 +141,94 @@
     </div>
   </nav>
   <main class="mainly">
-    <div class="container">
-      <div class="row bc">
-        <div class="col-12">
-          <div class="broadcrumps">
-            <ul class="bc-list">
-              <li><a href="#">Главная</a></li>
-              <span class="arrow-right">></span>
-              <li>О нас</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="broadcrumps-top">
+      <ul class="bc-list">
+        <li><a href="#">Главная</a></li>
+        <span class="arrow-right">></span>
+        <li>О нас</li>
+      </ul>
     </div>
     <div class="main-article">
       <!--
     <img class="rectangel2" src="img/rectangel2.png" alt="прямоугольник" height="85" rectangle>
     -->
-      <div class="container">
-        <div class="row">
-          <div class="col-3 rectangle">
-            <h1 id="detail" class="h1-article_vc">О нас</h1>
-          </div>
-        </div>
+      <div class="rectangle">
+        <h1 id="detail" class="h1-article_vc">О нас</h1>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 indent-business">
-          <p class="our-bussines">ООО «Мейстер» было основано в 2016 году и на сегодняшний день является активным
-            участником рынка предоставления транспортных услуг. За это время мы зарекомендовали себя в бизнес-сообществе
-            надежным перевозчиком, исполняющим взятые на себя обязательства и всегда оправдывающим ожидания партнеров и
-            клиентов.
-            Мы гарантированно и оперативно доставляем сборные грузы в любую точку нашей страны, выдерживая заявленные
-            сроки и обеспечивая максимальную сохранность грузов.
-            Накопленный нами богатый опыт работы, профессионализм и высокая работоспособность наших специалистов начиная
-            от планирования маршрута до непосредственно доставки груза являются гарантом качества и надежности для наших
-            Клиентов.
-          </p>
-          <img src="img/full-track.jpg" alt="загруженный грузовик" width="1024" height="295">
+    <div class="about-company">
+      <p class="our-bussines">ООО «Мейстер» было основано в 2016 году и на сегодняшний день является активным
+        участником рынка предоставления транспортных услуг. За это время мы зарекомендовали себя в бизнес-сообществе
+        надежным перевозчиком, исполняющим взятые на себя обязательства и всегда оправдывающим ожидания партнеров и
+        клиентов.
+        Мы гарантированно и оперативно доставляем сборные грузы в любую точку нашей страны, выдерживая заявленные
+        сроки и обеспечивая максимальную сохранность грузов.
+        Накопленный нами богатый опыт работы, профессионализм и высокая работоспособность наших специалистов начиная
+        от планирования маршрута до непосредственно доставки груза являются гарантом качества и надежности для наших
+        Клиентов.
+      </p>
+      <img src="img/full-track.jpg" alt="загруженный грузовик" width="100%" height="100%">
+    </div>
+    <div class="our-tasks">
+      <div class="h2-article_cont">
+        <h2 class="mission-message">Наша цель и задачи</h2>
+      </div>
+      <p class="mission">
+        Развитие малого и среднего бизнеса в стране приводит к значительному увеличению объемов грузоперевозок, что
+        в свою очередь порождает новые потребности Клиентов в логистических услугах. Наша компания является частью
+        этой системы и стремится удовлетворить самые высокие требования и предоставить своим Клиентам
+        непревзойденное качество услуг. Для этого мы собрали вокруг себя команду профессионалов. <br></rb><span
+          class="main-mission">Их задача – избавить вас от лишних хлопот по доставке.</span><br>
+        <span class="main-mission">Наша цель</span> — стать для вас незаменимым партнером в этой отрасли. Развивайте
+        свой бизнес вместе с нами!
+      </p>
+      <p class="mission">
+        Для достижения поставленной цели нам помогает понимание стратегии развития нашей компании. <span
+          class="main-mission">Суть стратегии
+          ООО «Мейстер»</span> – быть лучшими в своей отрасли. А также задачи, которые мы обязуемся выполнять.
+      </p>
+      <div class="list-way">
+        <p class="way-work">Наши задачи:</p>
+        <ul class="tasks-company">
+          <li>Оказание высококачественных транспортных услуг по перевозке и доставке товаров в соответствии с
+            договорами и обязательствами; </li>
+          <li>Недопущение сбоев в работе компании;</li>
+          <li>Создание новых рабочих мест;</li>
+          <li>Обеспечение работников компании достойной заработной платой, нормальными условиями труда и
+            возможностью профессионального роста;</li>
+          <li>Уважительное отношение к каждому члену коллектива компании, Клиентам, Партнерам и конкурентам.</li>
+        </ul>
+      </div>
+      <div class="contacts-comp">
+        <div class="h2-article_cont">
+          <h2 class="our-contacts">Контакты</h2>
         </div>
-        <div class="col-12">
-          <div class="h2-article_cont">
-            <h2 class="mission-message">Наша цель и задачи</h2>
-          </div>
-          <p class="mission">
-            Развитие малого и среднего бизнеса в стране приводит к значительному увеличению объемов грузоперевозок, что
-            в свою очередь порождает новые потребности Клиентов в логистических услугах. Наша компания является частью
-            этой системы и стремится удовлетворить самые высокие требования и предоставить своим Клиентам
-            непревзойденное качество услуг. Для этого мы собрали вокруг себя команду профессионалов. <br></rb><span
-              class="main-mission">Их задача – избавить вас от лишних хлопот по доставке.</span><br>
-            <span class="main-mission">Наша цель</span> — стать для вас незаменимым партнером в этой отрасли. Развивайте
-            свой бизнес вместе с нами!
-          </p>
-          <p class="mission">
-            Для достижения поставленной цели нам помогает понимание стратегии развития нашей компании. <span
-              class="main-mission">Суть стратегии
-              ООО «Мейстер»</span> – быть лучшими в своей отрасли. А также задачи, которые мы обязуемся выполнять.
-          </p>
-          <div class="list-way">
-            <p class="way-work">Наши задачи:</p>
-            <ul class="tasks-company">
-              <li>Оказание высококачественных транспортных услуг по перевозке и доставке товаров в соответствии с
-                договорами и обязательствами; </li>
-              <li>Недопущение сбоев в работе компании;</li>
-              <li>Создание новых рабочих мест;</li>
-              <li>Обеспечение работников компании достойной заработной платой, нормальными условиями труда и
-                возможностью профессионального роста;</li>
-              <li>Уважительное отношение к каждому члену коллектива компании, Клиентам, Партнерам и конкурентам.</li>
-            </ul>
+        <div class="col-12 contacts">
+          <img class="image-location" src="img/location.jpg" width="23" height="33" alt="Картинка почты">
+          <div class="col-12-mail">
+            <p class="style-grey">Адрес:</p>
+            <p class="style-black">Нижегородская область, город Дзержинск, улица Студенческая 28, офис 4</p>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-10 indent-cont">
-              <div class="h2-article_cont">
-                <h2 class="our-contacts">Контакты</h2>
-              </div>
-              <div class="col-12 contacts">
-                <img class="image-location" src="img/location.jpg" width="23" height="33" alt="Картинка почты">
-                <div class="col-12-mail">
-                  <p class="style-grey">Адрес:</p>
-                  <p class="style-black">Нижегородская область, город Дзержинск, улица Студенческая 28, офис 4</p>
-                </div>
-              </div>
-              <div class="col-12 contacts">
-                <img class="image-phone" src="img/phone.png" width="31" height="31" alt="Картинка телефона">
-                <div class="col-12-mail">
-                  <p class="style-grey">Телефон:</p>
-                  <p class="style-black">+7 (929) 050 78 89</p>
-                </div>
-              </div>
-              <div class="col-12 contacts">
-                <img class="image-post" src="img/e-mail.jpg" width="32" height="30" alt="Картинка почты">
-                <div class="col-12-mail">
-                  <p class="style-grey">E-mail:</p>
-                  <p class="style-black">niсolasdzr@yandex.ru</p>
-                </div>
-              </div>
-              <div class="col-12 contacts">
-                <img class="image-clock" src="img/clock.png" width="32" height="32" alt="Картинка часов">
-                <div class="col-12-mail">
-                  <p class="style-grey">Режим работы:</p>
-                  <p class="style-black">Пн. – Пт.: с 9:00 до 17:00</p>
-                </div>
-              </div>
-            </div>
+        <div class="col-12 contacts">
+          <img class="image-phone" src="img/phone.png" width="31" height="31" alt="Картинка телефона">
+          <div class="col-12-mail">
+            <p class="style-grey">Телефон:</p>
+            <p class="style-black">+7 (929) 050 78 89</p>
+          </div>
+        </div>
+        <div class="col-12 contacts">
+          <img class="image-post" src="img/e-mail.jpg" width="32" height="30" alt="Картинка почты">
+          <div class="col-12-mail">
+            <p class="style-grey">E-mail:</p>
+            <p class="style-black">niсolasdzr@yandex.ru</p>
+          </div>
+        </div>
+        <div class="col-12 contacts">
+          <img class="image-clock" src="img/clock.png" width="32" height="32" alt="Картинка часов">
+          <div class="col-12-mail">
+            <p class="style-grey">Режим работы:</p>
+            <p class="style-black">Пн. – Пт.: с 9:00 до 17:00</p>
           </div>
         </div>
       </div>
@@ -256,27 +238,22 @@
     <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBVEQNel~B" width="100%" height="571"></iframe>
   </div>
   <div class="ask-question">
-    <div class="container">
-      <div class="row interest-vacansy">
-        <div class="col-5">
-          <h2 class="interestingvac-h2">Есть вопросы?</h2>
-          <p class="text-vac">Отправьте свой вопрос, менеждер нашей компании свяжется с вами в рабочее время и обсудит
-            все интересующие вопросы.
-            Мы рады сотрудничеству!</p>
-        </div>
-        <div class="abous_us_page box-shadow">
-          <h2 class="impost-request">Задать вопрос</h2>
-          <form class="about_us_form" action="/php/about_us_form.php" method="POST">
-            <div class="position">
-              <input class="input-date" type="text" name="about_us_name" id="company" placeholder="Имя">
-            </div>
-            <input class="input-date" type="text" name="about_us_email" id="your-point" placeholder="Телефон или Email">
-            <input class="input-question" type="text" name="about_us_question" id="cargo-weight"
-              placeholder="Ваш вопрос">
-            <div class="button-question">
-              <button class="about_us_button" type="submit">Отправить</button></div>
-          </form>
-        </div>
+    <div class="interest-vacansy">
+      <div class="col-5">
+        <h2 class="interestingvac-h2">Есть вопросы?</h2>
+        <p class="text-vac">Отправьте свой вопрос, менеждер нашей компании свяжется с вами в рабочее время и обсудит
+          все интересующие вопросы.
+          Мы рады сотрудничеству!</p>
+      </div>
+      <div class="abous_us_page box-shadow">
+        <h2 class="impost-request">Задать вопрос</h2>
+        <form class="about_us_form" action="/php/about_us_form.php" method="POST">
+          <input class="input-date" type="text" name="about_us_name" id="company" placeholder="Имя">
+          <input class="input-date" type="text" name="about_us_email" id="your-point" placeholder="Телефон или Email">
+          <input class="input-question" type="text" name="about_us_question" id="cargo-weight" placeholder="Ваш вопрос">
+          <div class="button-question">
+            <button class="about_us_button" type="submit">Отправить</button></div>
+        </form>
       </div>
     </div>
   </div>
