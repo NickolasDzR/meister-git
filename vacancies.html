@@ -141,26 +141,16 @@
     </div>
   </nav>
   <main class="mainly">
-    <div class="container">
-      <div class="row bc">
-        <div class="col-12">
-          <div class="broadcrumps">
-            <ul class="bc-list">
-              <li><a href="#">Главная</a></li>
-              <span class="arrow-right">></span>
-              <li>Вакансии</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="broadcrumps-top">
+      <ul class="bc-list">
+        <li><a href="index.html">Главная</a></li>
+        <span class="arrow-right">></span>
+        <li>Вакансии</li>
+      </ul>
     </div>
-    <div class="rectangle-container">
-      <div class="container">
-        <div class="row">
-          <div class="rectangle">
-            <h1 class="h1-article_vc">Вакансии</h1>
-          </div>
-        </div>
+    <div class="main-article">
+      <div class="rectangle">
+        <h1 id="detail" class="h1-article_vc">Вакансии</h1>
       </div>
     </div>
     <!-- vacansy first block -->
@@ -171,11 +161,7 @@
           <button class="close-logist"></button>
           <h2 class="impost-request">Вакансия логиста</h2>
           <form class="form-logist" action="/php/logist_popup.php" method="POST" name="myform">
-            <div class="position">
-              <input class="input-date" type="text" name="name_logist" id="name" placeholder="Имя">
-              <span class="redstar-name">*</span>
-              <span class="redstar-em">*</span>
-            </div>
+            <input class="input-date" type="text" name="name_logist" id="name" placeholder="Имя">
             <input class="input-date" type="text" name="number_logist" id="number" placeholder="Телефон или Email">
             <input class="input-question" type="text" name="logist_default" id="logist-default" placeholder="Логист"
               disabled>
@@ -238,11 +224,7 @@
           <button class="close-driver"></button>
           <h2 class="impost-request">Вакансия водителя</h2>
           <form class="form-driver" action="/php/driver_popup.php" method="POST" name="myform">
-            <div class="position">
-              <input class="input-date" type="text" name="name_driver" id="company" placeholder="Имя">
-              <span class="redstar-name">*</span>
-              <span class="redstar-em">*</span>
-            </div>
+            <input class="input-date" type="text" name="name_driver" id="company" placeholder="Имя">
             <input class="input-date" type="text" name="number_driver" id="number-driver"
               placeholder="Телефон или Email">
             <input class="input-question" type="text" name="driver_default" id="driver-default" value="Водитель"
