@@ -224,9 +224,21 @@ map {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.link-underline-nav {
   border-bottom: 1px solid #c6ecf1;
 }
 
+.link-underline-footer {
+  border-bottom: 1px solid white;
+}
+/*
+.index-border {
+  border-bottom: 1px solid white;
+  width: 68px;
+}
+*/
 .social-svg {
   fill: #fff;
 }
@@ -893,11 +905,6 @@ footer {
 
 .broadcrumps-footer {
   display: block;
-}
-
-.index-border {
-  border-bottom: 1px solid white;
-  width: 68px;
 }
 
 .broadcrumps a {
