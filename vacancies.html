@@ -20,10 +20,10 @@
     <button class="popup-close"></button>
     <h2 class="impost-request">Заказать звонок</h2>
     <form class="popup-form" action="/php/main_popup.php" method="POST">
-      <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-      <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+      <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя"  aria-label="Ваше имя">
+      <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона"  aria-label="Ваш номер телефона">
       <div class="button-question">
-        <button class="button-vacansy" type="submit">Отправить</button></div>
+        <button class="button-vacancy" type="submit">Отправить</button></div>
     </form>
   </div>
   <nav class="main-navigator">
@@ -154,18 +154,17 @@
         <h1 id="detail" class="h1-article">Вакансии</h1>
       </div>
     </div>
-    <!-- vacansy first block -->
-    <div class="first-vacansy">
+    <!-- vacancy first block -->
+    <div class="first-vacancy">
       <div class="h2-article_cont">
         <!-- popup logist -->
         <div class="col-7_logist box-shadow form-unshow-logist">
           <button class="close-logist"></button>
           <h2 class="impost-request">Вакансия логиста</h2>
           <form class="form-logist" action="/php/logist_popup.php" method="POST" name="myform">
-            <input class="input-date" type="text" name="name_logist" id="name" placeholder="Имя">
-            <input class="input-date" type="text" name="number_logist" id="number" placeholder="Телефон или Email">
-            <input class="input-question" type="text" name="logist_default" id="logist-default" placeholder="Логист"
-              disabled>
+            <input class="input-date" type="text" name="name_logist" id="name" placeholder="Имя"  aria-label="Имя">
+            <input class="input-date" type="text" name="number_logist" id="number" placeholder="Телефон или Email"  aria-label="Телефон или Email">
+            <input class="input-question" type="text" name="logist_default" id="logist-default" placeholder="Логист" disabled  aria-label="Вакансия Логиста">
             <div class="button-question">
               <button class="button-logist">Отправить</button></div>
           </form>
@@ -217,19 +216,18 @@
       </div>
     </div>
     <!-- block end -->
-    <!-- vacansy second block -->
-    <div class="secondcont-vacansy">
+    <!-- vacancy second block -->
+    <div class="secondcont-vacancy">
       <div class="h2-article_cont">
         <!--popup driver-->
         <div class="col-7_driver box-shadow form-unshow-driver">
           <button class="close-driver"></button>
           <h2 class="impost-request">Вакансия водителя</h2>
           <form class="form-driver" action="/php/driver_popup.php" method="POST" name="myform">
-            <input class="input-date" type="text" name="name_driver" id="company" placeholder="Имя">
+            <input class="input-date" type="text" name="name_driver" id="company" placeholder="Имя"  aria-label="Имя">
             <input class="input-date" type="text" name="number_driver" id="number-driver"
-              placeholder="Телефон или Email">
-            <input class="input-question" type="text" name="driver_default" id="driver-default" value="Водитель"
-              disabled>
+              placeholder="Телефон или Email"  aria-label="Ваш номер телефона или Email">
+            <input class="input-question" type="text" name="driver_default" id="driver-default" value="Водитель" disabled  aria-label="Вакансия водителя">
             <div class="button-question">
               <button class="button-driver">Отправить</button></div>
           </form>
@@ -290,10 +288,10 @@
         <div class="vacancy_form_page">
           <h2 class="impost-request">Откликнуться</h2>
           <form class="vacancy_form" action="/php/vacancy_form.php" method="POST">
-            <input class="vacancy-name" type="text" name="vacancy_name" id="company" placeholder="Имя">
+            <input class="vacancy-name" type="text" name="vacancy_name" id="company" placeholder="Имя"  aria-label="Ваше имя">
             <input class="vacancy-email" type="text" name="vacancy_email" id="your-point"
-              placeholder="Телефон или Email">
-            <input class="vacancy-text" type="text" name="vacancy_inp" id="cargo-weight" placeholder="Вакансия">
+              placeholder="Телефон или Email"  aria-label="Ваш телефона или email">
+            <input class="vacancy-text" type="text" name="vacancy_inp" id="cargo-weight" placeholder="Вакансия"  aria-label="Вакансия">
             <div class="button-cont">
               <button class="vacancy_button" type="submit">Отправить</button></div>
           </form>

@@ -20,10 +20,10 @@
 		<button class="popup-close"></button>
 		<h2 class="impost-request">Заказать звонок</h2>
 		<form class="popup-form" action="/php/main_popup.php" method="POST">
-			<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-			<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+			<input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя"  aria-label="Ваше имя">
+			<input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона"  aria-label="Ваш номер телефона">
 			<div class="button-question">
-				<button class="button-vacansy" type="submit">Отправить</button></div>
+				<button class="button-vacancy" type="submit">Отправить</button></div>
 		</form>
 	</div>
 	<nav class="main-navigator">
@@ -143,14 +143,14 @@
 		</div>
 	</nav>
 	<div class="img-block">
-		<img class="track-img" src="img/main-background.jpg" alt="track">
+		<img class="track-img" src="img/main-background.jpg" aria-hidden="true" alt="">
 		<div class="tagline">
 			<div class="header-article">
 				<h1 class="h1-tagline">Перевозки,<br> доступные всем</h1>
 			</div>
 			<p class="allowed-cargo">Мы предоставляем надежные и качественные услуги</p>
 			<div class="line-img">
-				<img class="line-img" src="img/line-img1.jpg">
+				<img class="line-img" src="img/line-img1.jpg" aria-hidden="true" alt="">
 			</div>
 		</div>
 	</div>
@@ -192,26 +192,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="visually-hidden">Преимущества</h2>
+						<h2 class="visually-hidden">Преимущества которые предлагает наша компания</h2>
 						<h1 class="advantages-h1">Наши преимущества</h1>
 						<ul class="odds">
-							<li class="advantages-list"><img class="advantages-img" src="img/exp.png" alt="Диспетчер">
+							<li class="advantages-list"><img class="advantages-img" src="img/exp.png" alt="Опытные диспетчера">
 								<h3 class="h3-list">Опытные диспетчера</h3>
 							</li>
-							<li class="advantages-list"><img class="advantages-img" src="img/recomend.png" alt="Рекомендации">
+							<li class="advantages-list"><img class="advantages-img" src="img/recomend.png" alt="Большое количество рекомендации">
 								<h3 class="h3-list">Более 100<br> рекомендаций</h3>
 							</li>
 							<li class="advantages-list"><img class="advantages-img" src="img/quality.png" alt="Качество перевозки">
 								<h3 class="h3-list">100% качество перевозки<br> и сохранность грузов</h3>
 							</li>
-							<li class="advantages-list"><img class="advantages-img" src="img/success.png" alt="Успешные перевозки">
+							<li class="advantages-list"><img class="advantages-img" src="img/success.png" alt="Большое количество успешных перевозок">
 								<h3 class="h3-list">Несколько тысяч<br> успешных перевозок</h3>
 							</li>
 							<li class="advantages-list"><img class="advantages-img" src="img/connect24.png"
 									alt="Круглосуточная связь">
 								<h3 class="h3-list">Круглосуточная связь</h3>
 							</li>
-							<li class="advantages-list"><img class="advantages-img" src="img/bigcar.png" alt="Грузовик">
+							<li class="advantages-list"><img class="advantages-img" src="img/bigcar.png" alt="Перевозки грузов любого тоннажа">
 								<h3 class="h3-list">Перевозки грузов<br> любого тоннажа</h3>
 							</li>
 						</ul>
@@ -232,13 +232,13 @@
 					<h2 class="visually-hidden">Форма подачи заявки на перевозку груза</h2>
 					<h2 class="impost-request">Подать заявку</h2>
 					<form class="main-order-form" action="/php/index_form.php" method="POST">
-						<input class="input-date" type="text" name="name_company" id="name_company" placeholder="Компания(Имя)">
+						<input class="input-date" type="text" name="name_company" id="name_company" placeholder="Компания(Имя)" aria-label="Компания">
 						<input class="input-date" type="text" name="telephone_email" id="telephone_email"
-							placeholder="Телефон или Email">
-						<input class="input-date" type="text" name="point_send" id="point_send" placeholder="Пункт отправления">
-						<input class="input-date" type="text" name="point_get" id="point_get" placeholder="Пункт назначения">
-						<input class="input-date" type="text" name="load_weight" id="load_weight" placeholder="Груз, вес">
-						<input class="input-date" type="text" name="cubage" id="cubage" placeholder="Кубатура груза">
+							placeholder="Телефон или Email" aria-label="Телефон или Email">
+						<input class="input-date" type="text" name="point_send" id="point_send" placeholder="Пункт отправления" aria-label="Пункт отправления груза">
+						<input class="input-date" type="text" name="point_get" id="point_get" placeholder="Пункт назначения" aria-label="Пункт доставки груза">
+						<input class="input-date" type="text" name="load_weight" id="load_weight" placeholder="Груз, вес"  aria-label="Груз, вес">
+						<input class="input-date" type="text" name="cubage" id="cubage" placeholder="Кубатура груза"  aria-label="Кубатура груза">
 						<div class="button-cont">
 							<button class="button-main-form" type="submit">Отправить</button></div>
 					</form>
@@ -248,7 +248,7 @@
 		<div class="geography">
 			<div class="geophy-cargo">
 				<div class="map-column">
-					<img src="img/map.jpg" alt="Карта россии с разными городами">
+					<img src="img/map.jpg" alt="Карта России с разными городами">
 				</div>
 				<div class="geography-column">
 					<p class="paragraph-geo">География перевозок</p>

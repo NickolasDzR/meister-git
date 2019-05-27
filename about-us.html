@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ООО Мейстер</title>
+  <meta name="description" content="Траспонтрая компания предоставляющая услуги грузоперевозок по России и области. Поможем расчитать стоимость перевозки" />
+  <title>Транспортная Компания - ООО Мейстер. Грузоперевозки по России</title>
 </head>
 
 <body>
@@ -20,10 +21,10 @@
     <button class="popup-close"></button>
     <h2 class="impost-request">Заказать звонок</h2>
     <form class="popup-form" action="/php/main_popup.php" method="POST">
-      <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя">
-      <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона">
+      <input class="popup-name" type="text" name="name" id="your-name" placeholder="Имя"  aria-label="Ваше имя">
+      <input class="popup-number" type="text" name="number" id="your-number" placeholder="Номер телефона"  aria-label="Ваш телефон">
       <div class="button-question">
-        <button class="button-vacansy" type="submit">Отправить</button></div>
+        <button class="button-vacancy" type="submit">Отправить</button></div>
     </form>
   </div>
   <nav class="main-navigator">
@@ -202,7 +203,7 @@
           <h2 class="our-contacts">Контакты</h2>
         </div>
         <div class="col-12 contacts">
-          <img class="image-location" src="img/location.jpg" width="23" height="33" alt="Картинка почты">
+          <img class="image-location" src="img/location.jpg" width="23" height="33" alt="Картинка локации">
           <div class="col-12-mail">
             <p class="style-grey">Адрес:</p>
             <p class="style-black">Нижегородская область, город Дзержинск, улица Студенческая 28, офис 4</p>
@@ -246,9 +247,9 @@
       <div class="abous_us_page box-shadow">
         <h2 class="impost-request">Задать вопрос</h2>
         <form class="about_us_form" action="/php/about_us_form.php" method="POST">
-          <input class="input-date" type="text" name="about_us_name" id="company" placeholder="Имя">
-          <input class="input-date" type="text" name="about_us_email" id="your-point" placeholder="Телефон или Email">
-          <input class="input-question" type="text" name="about_us_question" id="cargo-weight" placeholder="Ваш вопрос">
+          <input class="input-date" type="text" name="about_us_name" id="company" placeholder="Имя"  aria-label="Ваше имя">
+          <input class="input-date" type="text" name="about_us_email" id="your-point" placeholder="Телефон или Email"  aria-label="Ваш телефон или email">
+          <input class="input-question" type="text" name="about_us_question" id="cargo-weight" placeholder="Ваш вопрос"  aria-label="Ваш вопрос">
           <div class="button-question">
             <button class="about_us_button" type="submit">Отправить</button></div>
         </form>

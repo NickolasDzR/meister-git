@@ -183,7 +183,7 @@ map {
 .button-main-form:hover,
 .about_us_button:hover,
 .vacancy_button:hover,
-.button-vacansy:hover,
+.button-vacancy:hover,
 .button-driver:hover,
 .button-logist:hover {
   background-color: #a53617;
@@ -212,7 +212,7 @@ map {
 
 .link-index,
 .about-us-page,
-.vacansy {
+.vacancy {
   color: #ffffff;
   font-family: "Proxima Nova Rg";
   font-size: 16px;
@@ -544,6 +544,7 @@ map {
 .about-us-container {
   background-image: url("../img/pattern.jpg");
   margin: 0 auto;
+  background-color: #e5f2f4;
 }
 
 .form-main-page,
@@ -554,7 +555,7 @@ map {
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 50px;
-  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.4);
 }
 
 .vacancy_form_page {
@@ -562,7 +563,7 @@ map {
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 50px;
-  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px 75px rgba(0, 0, 0, 0.4);
   min-width: 47%;
 }
 
@@ -746,7 +747,7 @@ map {
 .button-logist,
 .button-logist,
 .button-driver,
-.button-vacansy,
+.button-vacancy,
 .vacancy_button,
 .about_us_button {
   border: 0 solid white;
@@ -761,7 +762,7 @@ map {
   cursor: pointer;
 }
 
-.button-vacansy,
+.button-vacancy,
 .button-logist,
 .button-driver {
   margin-left: 5px;
@@ -864,7 +865,7 @@ map {
 footer {
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: #1f2124;
   background-image: url("../img/footer-img.jpg");
   background-size: cover;
   border-top: 9px solid #c14f2f;
@@ -1150,8 +1151,8 @@ footer {
   margin-bottom: 22px;
 }
 
-.first-vacansy,
-.secondcont-vacansy {
+.first-vacancy,
+.secondcont-vacancy {
   padding: 0 30px;
   margin: 0 auto;
   max-width: 1200px;
@@ -1173,15 +1174,15 @@ footer {
   min-width: 50%;
 }
 
-.first-vacansy {
+.first-vacancy {
   margin-bottom: 90px;
 }
 
-.firstcont-vacansy {
+.firstcont-vacancy {
   margin-bottom: 103px;
 }
 
-.secondcont-vacansy {
+.secondcont-vacancy {
   margin-bottom: 119px;
 }
 
@@ -1482,7 +1483,6 @@ input[type="text"] {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  list-style: none;
 }
 
 input:disabled {
