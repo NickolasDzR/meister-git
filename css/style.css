@@ -61,12 +61,6 @@ map {
   width: 100%;
 }
 
-.line-img {
-  max-width: 90%;
-  position: relative;
-  left: 45px;
-}
-
 .row-up {
   display: flex;
   padding: 7px 0 2px;
@@ -233,12 +227,7 @@ map {
 .link-underline-footer {
   border-bottom: 1px solid white;
 }
-/*
-.index-border {
-  border-bottom: 1px solid white;
-  width: 68px;
-}
-*/
+
 .social-svg {
   fill: #fff;
 }
@@ -257,6 +246,7 @@ map {
   flex: 0 0 72.404%;
   padding: 0 0 0 50px;
 }
+
 .col-contacts::before {
   content: ''; 
   position: absolute;
@@ -366,7 +356,7 @@ map {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
-  margin-bottom: 70px;
+  margin-bottom: 92px;
 }
 
 .detail {
@@ -1405,6 +1395,7 @@ input[type="text"] {
   text-align: center;
 }
 .img-block {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -1519,4 +1510,80 @@ input::placeholder {
 .center {
   margin-top: 150px;
   text-align: center;
+}
+
+.container-background {
+  height: 853px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 340px;
+  padding-bottom: 190px;  
+}
+
+.line-img {
+  max-width: 90%;
+  position: relative;
+  top: -49px;
+  left: 35px;
+  height: 3px;
+}
+
+.allowed-cargo {
+  text-align: right;
+  color: #3b97a2;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.row-up {
+  margin-left: 14px;
+}
+
+.tagline {
+  position :absolute;
+  top: 22.3%;
+  left: 12%;
+}
+
+.h1-tagline {
+  margin: 0;
+  padding: 0;
+  color: #1c1c1c;
+  font-family: 'Proxima Nova Lt it';
+  color: #1f425d;
+  font-size: 64px;
+  font-weight: 460;
+  line-height: 71px;
+  text-align: end;
+}
+
+@media screen and (max-width: 1365px) {
+  .tagline { left: 8%; }
+}
+
+@media screen and (max-width: 1225px) {
+  .tagline { left: 5%; }
+}
+
+@media screen and (max-width: 1140px) {
+  .h1-tagline { font-size: 54px; }
+}
+
+@media screen and (max-width: 1070px) {
+  .h1-tagline { font-size: 46px;
+                line-height: 44px; }
+
+  .line-img {
+    max-width: 82%;
+    position: relative;
+    top: -35px;
+    left: 69px;
+    height: 3px; }
+
+  .allowed-cargo { font-size: 14px; }
+
+  .tagline { left: 0%; }
 }

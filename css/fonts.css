@@ -10,7 +10,7 @@
 }
 
 @font-face {
-	font-family: 'Proxima Nova Lt';
+	font-family: 'Proxima Nova Lt it';
 	src: url('../fonts/ProximaNova-LightIt.eot');
 	src: local('Proxima Nova Light Italic'), local('ProximaNova-LightIt'),
 		url('../fonts/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
@@ -32,7 +32,7 @@
 }
 
 @font-face {
-	font-family: 'Proxima Nova Th';
+	font-family: 'Proxima Nova Extra bold';
 	src: url('../fonts/ProximaNova-Extrabld.eot');
 	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
 		url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
@@ -54,7 +54,7 @@
 }
 
 @font-face {
-	font-family: 'Proxima Nova Cn Th';
+	font-family: 'Proxima Nova Cn Extra Bold It';
 	src: url('../fonts/ProximaNovaCond-ExtrabldIt.eot');
 	src: local('Proxima Nova Condensed Extrabold Italic'), local('ProximaNovaCond-ExtrabldIt'),
 		url('../fonts/ProximaNovaCond-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
