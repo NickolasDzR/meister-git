@@ -1,47 +1,43 @@
 mixin header()
-    section.header
+    section.header_container
         div.container
-            div.row
-                div.col-xl-3
-                    div.b-logo
-                        img(src="img/logo/logo.png", alt="Логотоп сайта")
-                        p
-                            | Грузоперевозки по России
-                div.col-xl-8.offset-xl-1
-                    nav.navigation
-                        div.navigation_b-contacts
-                            div.navigation_contact-email
-                                img(src="/img/sprites/sprite.svg#post", alt="Телефон")
-                                div.navigation_text-wrapper
-                                    p
-                                        |   Напишите нам
-                                    p
-                                        |   nikolasdzr@yandex.ru
-                            div.navigation_line
-                            div.navigation_contact-number
-                                img(src="/img/sprites/sprite.svg#phone", alt="")
-                                div.navigation_text-wrapper
-                                    p
-                                        |   Позвоните нам 
-                                    p
-                                        |   +7 (999) 120 59 82
-                            div.btn
-                                | Заказать звонок
-                        div.navigation_items
-                            div.navigation_item
-                                ul.navigation_list
-                                    li.navigation-item
-                                        |   Вы водитель?
-                                    li.navigation-item
-                                        |   Нужен грузоперевозчик?
-                                    li.navigation-item
-                                        |   О компании
-                            div.navigation_social
-                                div.navigation_widgets
-                                    a(href="#")
-                                        i.icon.icofont-vk
-                                    a(href="#")
-                                        i.icon.icofont-odnoklassniki
-                                    a(href="#")
-                                        i.icon.icofont-instagram
-                            
+            div.header
+                div.header_logo
+                    img(src="img/logo/logo.png", alt="#")
+                    p
+                        |   Грузоперевозки по России
+                div.header_navigation
+                    ul
+                        li
+                            a(href="#")
+                                |   Вы водитель?
+                        li
+                            a(href="#")
+                                |   Нужен грузоперевозчик?
+                        li
+                            a(href="#")
+                                |   О компании
+                div.header_contacts
+                    div.widget_b
+                        img(src="../../../img/sprites/sprite.svg#post", alt="почта")
+                        div.header_b-paragraph
+                            p
+                                |   Напишите нам
+                            p  
+                                |   nikolasdzr@yandex.ru
+                    div.widget_b
+                        img(src="../../../img/sprites/sprite.svg#phone", alt="номер телефона")
+                        div.header_b-paragraph
+                            p
+                                |   Позвоните нам 
+                            p  
+                                |   +7 (999) 120 59 82
+                    a.btn
+                        |   Заказать звонок
+                div.header_widgets
+                    a(href="#")
+                        i.icon.icofont-vk
+                    a(href="#")
+                        i.icon.icofont-odnoklassniki
+                    a(href="#")
+                        i.icon.icofont-instagram

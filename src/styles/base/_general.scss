@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul, p {
     margin: 0;
     padding: 0;
 }
@@ -18,8 +18,14 @@ ul li {
   margin: auto 0;
   padding: 15px 30px;
   cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
 }
 .btn:hover {
   background-color: #a63311;
   transition: 1s ease;
+}
+
+.text-right {
+  text-align: right;
 }
