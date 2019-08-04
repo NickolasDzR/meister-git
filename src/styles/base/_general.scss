@@ -2,3 +2,24 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
+
+ul li {
+    list-style: none;
+}
+
+.btn {
+  font-family: $Proxima-Nova;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  background-color: $brown;
+  border-radius: 23px;
+  margin: auto 0;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #a63311;
+  transition: 1s ease;
+}

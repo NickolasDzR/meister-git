@@ -1,0 +1,46 @@
+.header {
+    border-bottom: 11px solid $blue;
+}
+
+.navigation {
+    p {
+        padding: 0;
+        margin: 0;
+        font-family: $Proxima-Nova;
+    }
+    &_text-wrapper {
+        margin: auto 0;
+    }
+    &_b-contacts {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0 12px;
+    }
+    img {
+        width: 33px;
+        height: auto;
+    }
+
+    &_contact-email, &_contact-number {
+        display: flex;
+    }
+
+    &_line {
+        width: 1px;
+        height: 70px;
+        border-left: 1px solid $blue;
+        transform: rotate(25deg);
+    }
+    &-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+a {
+    text-decoration: none;
+}
