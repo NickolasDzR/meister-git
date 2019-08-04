@@ -1,4 +1,0 @@
-User-agent: 
-Crawl-delay: 1
-Host: http://meister-tk.ru
-Sitemap: http://meister-tk.ru/sitemap.xml
