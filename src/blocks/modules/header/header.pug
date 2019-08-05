@@ -3,41 +3,49 @@ mixin header()
         div.container
             div.header
                 div.header_logo
-                    img(src="img/logo/logo.png", alt="#")
-                    p
-                        |   Грузоперевозки по России
-                div.header_navigation
+                    a(href="")
+                        img(src="img/logo/logo.png", alt="#")
+                        p
+                            |   Грузоперевозки по России
+                    a.hamburger.hamburger--emphatic(href="#my-menu" tabindex="1" aria-label="Menu" aria-controls="navigation")
+                        span.hamburger-box
+                            span.hamburger-inner
+                        span.hamburger-label
+                            | Меню
+                div.header_navigation#my-menu
                     ul
-                        li
+                        li.header_navigation__main
                             a(href="#")
-                                |   Вы водитель?
-                        li
+                                |   Главная страница
+                        li.header_navigation__vacancy
                             a(href="#")
-                                |   Нужен грузоперевозчик?
-                        li
+                                |   Вакансии
+                        li.header_navigation__about
                             a(href="#")
                                 |   О компании
                 div.header_contacts
                     div.widget_b
                         img(src="../../../img/sprites/sprite.svg#post", alt="почта")
                         div.header_b-paragraph
-                            p
+                            p.header_b-paragraph__top
                                 |   Напишите нам
-                            p  
+                            p.header_b-paragraph__bottom
                                 |   nikolasdzr@yandex.ru
+                    div.line-btw
                     div.widget_b
                         img(src="../../../img/sprites/sprite.svg#phone", alt="номер телефона")
                         div.header_b-paragraph
-                            p
+                            p.header_b-paragraph__top
                                 |   Позвоните нам 
-                            p  
+                            p.header_b-paragraph__bottom
                                 |   +7 (999) 120 59 82
-                    a.btn
-                        |   Заказать звонок
-                div.header_widgets
+                    div.btn-wrapper
+                        a.btn
+                            |   Заказать звонок
+                div.header_widgets#my-soc
                     a(href="#")
-                        i.icon.icofont-vk
+                        i.icon.icofont-instagram
                     a(href="#")
                         i.icon.icofont-odnoklassniki
                     a(href="#")
-                        i.icon.icofont-instagram
+                        i.icon.icofont-vk
