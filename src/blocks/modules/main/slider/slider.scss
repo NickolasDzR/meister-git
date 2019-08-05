@@ -1,29 +1,58 @@
 .owl-carousel {
-    div {
-        img {
-            width: 100vw;
-            height: auto;
+    position: relative;
+
+    div  img {
+        width: 100vw;
+        height: auto;
+    }
+
+    &__article {
+        position: absolute;
+        top: 200px;
+        left: 70px;
+        width: 40%;
+
+        p {
+            font-family: $Roboto;
+            font-size: 16px;
+            color: rgba(#fff, .8);
+            font-weight: normal;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0;
+            font-family: $Proxima-Nova-Light;
+            font-size: 65px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 1;
         }
     }
 }
 
 .owl-nav {
     button {
-        width: 60px;
-        height: 60px;
-        background-color: #000 !important;
+        width: 50px;
+        height: 50px;
+        background-color: #fff !important;
         opacity: .3;
         position: absolute;
+
         i {
-            color: rgba(#fff, .7);
+            color: rgba(#000, .7);
         }
     }
+
     .owl-prev {
-        top: 0px;
-        right: 0px;
+        top: 140px;
+        left: 130px;
+        border-radius: 8px;
     }
+
     .owl-next {
-        top: 0px;
-        left: 0px;
+        top: 140px;
+        left: 70px;
+        border-radius: 8px;
     }
 }

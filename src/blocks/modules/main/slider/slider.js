@@ -7,6 +7,6 @@ $(function(){
         dots: false,
         nav: true,
         navText: ['<i class="icon icofont-ui-next"</i>','<i class="icon icofont-ui-previous"</i>'],
-        smartSpeed: 1500,
+        smartSpeed: 1100,
     });
   });

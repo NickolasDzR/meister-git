@@ -1,5 +1,10 @@
-// @media (max-width: 320px) {
-// }
+@media (max-width: 320px) {
+    .owl-nav {
+        .owl-prev, .owl-next {
+            top: 40px;
+        }
+    }
+}
 
 @media (max-width: 480px) {
     .hamburger-label {
@@ -12,30 +17,92 @@
             height: 60px;
             position: absolute;
             background-color: transparent !important;
+
             i {
                 color: $blue;
                 opacity: 1 !important;
             }
         }
+
         .owl-prev {
-            top: 0px;
+            top: 70px;
             right: 0px;
         }
+
         .owl-next {
-            top: 0px;
+            top: 70px;
             left: 0px;
         }
     }
 }
 
-// // Small devices (landscape phones, 576px and up)
-// @media (max-width: 576px) {
-// }
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .owl-nav {
+        button {
+            width: 30px;
+            height: 30px;
+        }
 
-// // Medium devices (tablets, 768px and up)
-// @media (max-width: 768px) {
+        .owl-prev {
+            top: 110px;
+            right: 15px;
+            left: inherit;
+        }
+
+        .owl-next {
+            top: 110px;
+            left: 15px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .owl-carousel {
+
+        &__article {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: #1f425d;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 15px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 9px;
+            }
+        }
+    }
+
+    .owl-nav {
+        button {
+            width: 30px;
+            height: 30px;
+        }
+
+        .owl-prev {
+            top: 150px;
+            right: 15px;
+            left: inherit;
+        }
+
+        .owl-next {
+            top: 150px;
+            left: 15px;
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
+
 @media (max-width: 992px) {
     .hamburger {
         display: block;
@@ -43,9 +110,11 @@
 
     .header {
         flex-direction: column;
+
         &_container {
             border-bottom: 10px solid $blue;
         }
+
         &_widgets {
             order: 3;
             display: block;
@@ -53,15 +122,18 @@
             width: 100%;
             text-align: center;
             margin-bottom: 20px;
+
             &::after {
                 content: '';
                 width: 0px;
                 height: 0px;
             }
+
             a {
                 i {
                     color: $blue;
                     margin: 0 25px;
+
                     &:hover {
                         color: rgba($blue, 0.3)
                     }
@@ -101,6 +173,7 @@
 
         ul {
             display: block;
+
             li {
                 margin: 10px 0;
                 width: 100%;
@@ -108,6 +181,7 @@
 
                 a {
                     color: $dark;
+
                     &:hover {
                         border-bottom: 1px solid rgba($dark, .3);
                         color: rgba($dark, .3);
@@ -161,14 +235,46 @@
     .is-active {
         display: block;
     }
+
     .hamburger {
         display: flex;
         align-items: center;
+
         &-label {
             margin-left: 7px;
         }
     }
+
+    .owl-carousel {
+        &__article {
+            top: 180px;
+
+            h2 {
+                font-size: 42px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .owl-nav {
+        button {
+            width: 40px;
+            height: 40px;
+        }
+        .owl-prev {
+            top: 130px;
+            left: 120px;
+        }
+
+        .owl-next {
+            top: 130px;
+            left: 70px;
+        }
+    }
 }
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {
@@ -219,7 +325,34 @@
             height: 100px;
         }
     }
+
     .line-btw {
         display: none;
+    }
+
+    .owl-carousel {
+        &__article {
+            top: 210px;
+
+            h2 {
+                font-size: 52px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .owl-nav {
+        .owl-prev {
+            top: 150px;
+            left: 130px;
+        }
+
+        .owl-next {
+            top: 150px;
+            left: 70px;
+        }
     }
 }
