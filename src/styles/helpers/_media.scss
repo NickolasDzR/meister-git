@@ -5,6 +5,27 @@
     .hamburger-label {
         display: none;
     }
+
+    .owl-nav {
+        button {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            background-color: transparent !important;
+            i {
+                color: $blue;
+                opacity: 1 !important;
+            }
+        }
+        .owl-prev {
+            top: 0px;
+            right: 0px;
+        }
+        .owl-next {
+            top: 0px;
+            left: 0px;
+        }
+    }
 }
 
 // // Small devices (landscape phones, 576px and up)
@@ -22,12 +43,21 @@
 
     .header {
         flex-direction: column;
+        &_container {
+            border-bottom: 10px solid $blue;
+        }
         &_widgets {
             order: 3;
             display: block;
             margin: 0;
             width: 100%;
             text-align: center;
+            margin-bottom: 20px;
+            &::after {
+                content: '';
+                width: 0px;
+                height: 0px;
+            }
             a {
                 i {
                     color: $blue;

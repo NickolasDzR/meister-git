@@ -1,0 +1,29 @@
+.owl-carousel {
+    div {
+        img {
+            width: 100vw;
+            height: auto;
+        }
+    }
+}
+
+.owl-nav {
+    button {
+        width: 60px;
+        height: 60px;
+        background-color: #000 !important;
+        opacity: .3;
+        position: absolute;
+        i {
+            color: rgba(#fff, .7);
+        }
+    }
+    .owl-prev {
+        top: 0px;
+        right: 0px;
+    }
+    .owl-next {
+        top: 0px;
+        left: 0px;
+    }
+}

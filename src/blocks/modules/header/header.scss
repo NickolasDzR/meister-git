@@ -60,9 +60,9 @@
                     color: #ffffff;
                     white-space: nowrap;
                     text-decoration: none;
-                    &:hover {
+                    &:hover, &active {
                         opacity: .9;
-                        border-bottom: 1px solid rgba(#fff, .7);
+                        border-bottom: 1px solid rgba($blue, .7);
                     } 
                 }
             }
@@ -150,6 +150,7 @@
 }
 
 .hamburger-label {
+    font-family: $Proxima-Nova;
     font-size: 20px;
     color: $blue;
 }
