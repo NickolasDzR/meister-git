@@ -1,0 +1,20 @@
+.b-about {
+    background-size: 100% auto;
+    padding: 100px 0;
+    &__wrapper-text {
+        .h2 {
+            color: #1a1a1a;
+            font-family: $Proxima-Nova;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 46px;
+        }
+    }
+    &__paragraph {
+        color: #333333;
+        font-family: $Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+}

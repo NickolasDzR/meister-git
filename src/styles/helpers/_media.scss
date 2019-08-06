@@ -63,6 +63,30 @@
             top: inherit;
         }
     }
+    .b-advantages {
+        padding: 50px 0 0;
+        &__item-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        &__img {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 25%;
+            img {
+                min-width: 50%;
+                max-width: 50px;
+            }
+        }
+        p {
+            text-align: left;
+            margin-left: 25px;
+            min-width: 25%;
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -109,12 +133,15 @@
     }
 
     .b-info {
+        padding: 40px 0;
         &__item-image {
             display: none;
         }
+        &__item-owner {
+            margin-top: 40px;
+        }
         &__wrapper {
             top: inherit;
-            margin-top: 40px;
             padding: 25px;
             box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
         }
