@@ -2,13 +2,14 @@ mixin b-about()
     section.b-about(style="background-image:url('img/bg-about.jpg')")
         div.container
             div.row
-                div.col-sm-4.offset-sm-1.col-12
-                    article.b-about__wrapper-text
-                        h2.h2
-                            |   О нас
-                        p.b-about__paragraph
-                            |   Мы прекрасно знаем свое дело — максимально оптимизировать транспортный процесс, объединив время и пространство, эффективно использовать фактор географии, технические средства и профессиональные качества коллектива нашей компании.
-                div.col-sm-7.col-12
+                div.col-md-5.col-12
+                    div.b-about__article-wrapper
+                        article.b-about__article
+                            h2.h2
+                                |   О нас
+                            p.b-about__paragraph
+                                |   Мы прекрасно знаем свое дело — максимально оптимизировать транспортный процесс, объединив время и пространство, эффективно использовать фактор географии, технические средства и профессиональные качества коллектива нашей компании.
+                div.col-md-7.col-12
                     div.b-about__wrapper-form
                         form.callback
                             div.success

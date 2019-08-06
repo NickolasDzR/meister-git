@@ -36,6 +36,12 @@
             left: 0px;
         }
     }
+
+    .callback {
+        .formhead {
+            font-size: 30px;
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -63,28 +69,39 @@
             top: inherit;
         }
     }
+
     .b-advantages {
         padding: 50px 0 0;
+
         &__item-wrapper {
             display: flex;
             align-items: center;
             margin-bottom: 0px;
         }
+
         &__img {
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-width: 25%;
+
             img {
                 min-width: 50%;
                 max-width: 50px;
             }
         }
+
         p {
             text-align: left;
             margin-left: 25px;
             min-width: 25%;
+        }
+    }
+    .b-about {
+        .callback {
+            padding: 25px;
+            box-shadow: none;
         }
     }
 }
@@ -134,12 +151,15 @@
 
     .b-info {
         padding: 40px 0;
+
         &__item-image {
             display: none;
         }
+
         &__item-owner {
             margin-top: 40px;
         }
+
         &__wrapper {
             top: inherit;
             padding: 25px;
@@ -149,11 +169,14 @@
         h2 {
             font-size: 24px;
         }
+
         p {
             line-height: 21px;
             font-size: 15px;
         }
-        &__paragraph-item1, &__paragraph-item2 {
+
+        &__paragraph-item1,
+        &__paragraph-item2 {
             margin-bottom: 20px;
         }
     }
@@ -367,6 +390,36 @@
                 left: 80px;
                 top: -30px;
             }
+        }
+    }
+
+    .b-about {
+        padding: 40px 0;
+
+        .callback {
+            padding: 25px 44px 25px 37px;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                border: 1px solid rgba(#afafaf, .46);
+            }
+        }
+
+        &__paragraph {
+            line-height: 22px;
+        }
+
+        .btn-wrapper {
+            margin-top: 12px;
+        }
+
+        &__article-wrapper {
+            display: block;
+            align-items: inherit;
+            margin-bottom: 20px;
         }
     }
 }
