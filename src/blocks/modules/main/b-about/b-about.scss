@@ -1,6 +1,7 @@
 .b-about {
     background-size: 100% auto;
     padding: 100px 0;
+
     &__wrapper-text {
         .h2 {
             color: #1a1a1a;
@@ -10,11 +11,68 @@
             line-height: 46px;
         }
     }
+
     &__paragraph {
         color: #333333;
         font-family: $Roboto;
         font-size: 16px;
         font-weight: 300;
         line-height: 28px;
+    }
+}
+
+.callback {
+    width: 100%;
+    background-color: #fff;
+    padding: 60px 44px 50px 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    .success {
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        // blur
+        & ~ * {
+            transition: all 1s ease
+        }
+        &.active {
+            & ~ * {
+                opacity: .5;
+                filter: blur(7px);
+            }
+        }
+        span {
+            color: #07a6b9;
+            font-family: $Proxima-Nova;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+        // display: none;
+    }
+
+    .formhead {
+        text-align: center;
+        color: #07a6b9;
+        font-family: $Proxima-Nova;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        width: 100%;
+    }
+
+    .btn-wrapper {
+        text-align: center;
+        width: 100%;
     }
 }

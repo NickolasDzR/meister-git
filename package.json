@@ -60,6 +60,7 @@
         "imagemin-webp": "^5.0.0",
         "imagemin-zopfli": "^6.0.0",
         "jquery.mmenu": "^7.3.3",
+        "magnific-popup": "^1.1.0",
         "owl.carousel": "^2.3.4",
         "require-dir": "^1.2.0",
         "selectize": "^0.12.6",

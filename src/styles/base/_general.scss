@@ -24,6 +24,7 @@ ul li {
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
+  border: none;
 }
 .btn:hover {
   background-color: #a63311;
@@ -32,4 +33,26 @@ ul li {
 
 .text-right {
   text-align: right;
+}
+
+input {
+  width: 45%;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  opacity: 0.47;
+  color: #676767;
+  font-family: $Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 8px 18px;
+  border-bottom: 1px solid rgba(#afafaf, .46);
+  margin-bottom: 50px;
+  &:hover, &:focus, &:active {
+      border-bottom: 1px solid #8fd5dd;
+      color: #000;
+      opacity: 1;
+  }
 }
