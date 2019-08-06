@@ -1,6 +1,8 @@
 @media (max-width: 320px) {
     .owl-nav {
-        .owl-prev, .owl-next {
+
+        .owl-prev,
+        .owl-next {
             top: 40px;
         }
     }
@@ -55,6 +57,12 @@
             left: 15px;
         }
     }
+
+    .b-info {
+        &__wrapper {
+            top: inherit;
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -99,11 +107,36 @@
             left: 15px;
         }
     }
+
+    .b-info {
+        &__item-image {
+            display: none;
+        }
+        &__wrapper {
+            top: inherit;
+            margin-top: 40px;
+            padding: 25px;
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            line-height: 21px;
+            font-size: 15px;
+        }
+        &__paragraph-item1, &__paragraph-item2 {
+            margin-bottom: 20px;
+        }
+    }
 }
+
 
 // Large devices (desktops, 992px and up)
 
 @media (max-width: 992px) {
+
     .hamburger {
         display: block;
     }
@@ -113,6 +146,7 @@
 
         &_container {
             border-bottom: 10px solid $blue;
+            background-color: #fff;
         }
 
         &_widgets {
@@ -258,11 +292,13 @@
             }
         }
     }
+
     .owl-nav {
         button {
             width: 40px;
             height: 40px;
         }
+
         .owl-prev {
             top: 130px;
             left: 120px;
@@ -271,6 +307,39 @@
         .owl-next {
             top: 130px;
             left: 70px;
+        }
+    }
+
+    .b-info {
+        &__wrapper {
+            padding: 49px 43px 28px 43px;
+        }
+
+        &__paragraph-item2 {
+            margin-bottom: 89px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            line-height: 25px;
+            font-size: 15px;
+        }
+
+        &__item {
+            &-image_arrow-right {
+                width: 20px;
+                right: 158px;
+                top: -55px;
+            }
+
+            &-image_arrow-left {
+                width: 70px;
+                left: 80px;
+                top: -30px;
+            }
         }
     }
 }
@@ -353,6 +422,41 @@
         .owl-next {
             top: 150px;
             left: 70px;
+        }
+    }
+
+    .b-info {
+        &__wrapper {
+            padding: 49px 43px 28px 43px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        &__paragraph-item2 {
+            margin-bottom: 64px;
+        }
+
+        p {
+            line-height: 25px;
+        }
+
+        &__item {
+            &-image_truck {
+                width: 60%;
+                height: auto;
+            }
+
+            &-image_arrow-right {
+                right: 230px;
+            }
+
+            &-image_arrow-left {
+                left: 110px;
+                top: -25px;
+                width: 80px;
+            }
         }
     }
 }

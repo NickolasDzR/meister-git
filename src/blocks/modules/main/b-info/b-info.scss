@@ -1,0 +1,61 @@
+.b-info {
+    &__wrapper {
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+        padding: 49px 103px 28px 43px;
+        background-color: #fff;
+        position: relative;
+        top: -70px;
+        z-index: 30;    
+    }
+
+    &__paragraph-item1 {
+        margin-bottom: 39px;
+    }
+
+    &__paragraph-item2 {
+        margin-bottom: 67px;
+    }
+
+    h2 {
+        font-family: $Proxima-Nova;
+        font-size: 32px;
+        font-weight: 700;
+        color: #1c1c1c;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: #333333;
+        font-family: $Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .btn {
+        margin-top: auto;
+    }
+    &__item-image {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -40px;
+        &_truck {
+            width: 60%;
+            height: auto;
+        }
+        &_arrow-left {
+            position: absolute;
+            top: -38px;
+            left: 115px;
+            z-index: 50;
+        }
+        &_arrow-right {
+            position: absolute;
+            top: -70px;
+            right: 290px;
+            z-index: 50;
+        }
+    }
+}
