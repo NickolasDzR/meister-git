@@ -1,0 +1,44 @@
+.remodal {
+    .callback {
+        box-shadow: none;
+        padding: 0;
+    }
+    &-close {
+        border: 1px solid #cccccc;
+        border-radius: 45px;
+        left: inherit;
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        &:hover {
+            border: 1px solid $blue;
+            &.remodal-close:before {
+                color: $blue;
+            }
+        }
+        &:before {
+            font-size: 38px;
+            color: #cbcbcb;
+            width: 28px;
+            line-height: 30px;
+        }
+    }
+    width: 630px;
+    padding: 60px 100px;
+    input {
+        width: 100%;
+    }
+    .formhead {
+        margin-bottom: 20px;
+    }
+}
+
+.swal2-container {
+    z-index: 10000 !important;
+    position: absolute;
+}
+
+.swal2-shown {
+    z-index:10000;
+}

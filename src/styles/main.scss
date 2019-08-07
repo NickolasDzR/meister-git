@@ -8,6 +8,7 @@
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";
 
+
 body {
   font-family: $Roboto, serif;
   min-width: 320px;
@@ -16,4 +17,5 @@ body {
   opacity: 1;
   color: #1a1a1a;
   background-color: #fff;
+  padding: 0 !important;
 }
