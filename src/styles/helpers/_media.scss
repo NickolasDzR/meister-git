@@ -180,6 +180,21 @@
             margin-bottom: 20px;
         }
     }
+    .b-geography {
+        padding: 50px 0 50px;
+    }
+    .footer-container {
+        padding: 33px 0;
+    }
+    .footer__logo-wrapper {
+        margin-bottom: 30px;
+    }
+    .footer__nav-wrapper {
+        margin-bottom: 30px;
+    }
+    .footer__info-wrapper {
+        text-align: left;
+    }
 }
 
 
@@ -422,6 +437,10 @@
             margin-bottom: 20px;
         }
     }
+    .b-geography {
+        padding: 100px 0 100px;
+    }
+
 }
 
 
@@ -537,6 +556,24 @@
                 top: -25px;
                 width: 80px;
             }
+        }
+    }
+    .b-geography {
+        background-position: center;
+        background-size: 80%;
+        padding: 160px 0 100px;
+        .h2 {
+            font-size: 27px;
+        }
+        &__number {
+            color: $brown;
+            font-size: 22px;
+        }
+    }
+
+    .footer__nav-wrapper {
+        a {
+            font-size: 16px;
         }
     }
 }
