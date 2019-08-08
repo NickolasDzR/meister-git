@@ -1,15 +1,19 @@
 mixin popup()
-    div.remodal(data-remodal-id="modal")
-        button.remodal-close(data-remodal-action="close")
-        form.callback(data-remodal-id="modal" id="callback")
+    div.overlay-wrapper
+    div.remodal
+        div.remodal-close
+        form.callback
             input(type="hidden" name="project_name" value="ООО Мейстер")
             input(type="hidden" name="admin_email" value="nickolasdzr@yandex.ru")
             input(type="hidden" name="form_subject" value="Обращение с главной страницы сайта")
             input(type="hidden" name="Страница" value="")
             div.formhead
                 |   Подать заявку
-            input(type="text", name="Имя" placeholder="Имя" required)
-            input(type="text", name="Номер телефона" placeholder="Телефон" required)
+            input(type="text", name="Имя" placeholder="Имя")
+            input(type="text", name="Телефон" placeholder="Телефон")
             div.btn-wrapper
-                button.btn.confirm(href="#" data-remodal-action="confirm" form="callback" type="submit")
+                a.btn(href="#" id='popup-btn')
                     |   Отправить
+
+
+//- a.btn.confirm(href="#" data-remodal-action="confirm")

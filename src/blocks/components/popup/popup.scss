@@ -1,34 +1,67 @@
 .remodal {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 2000;
+    width: 700px;
+    display: none;
+
     .callback {
         box-shadow: none;
         padding: 0;
+        padding: 60px 100px;
     }
+
     &-close {
         border: 1px solid #cccccc;
         border-radius: 45px;
-        left: inherit;
         right: 15px;
         top: 15px;
         width: 30px;
         height: 30px;
+        position: absolute;
+        z-index: 100;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: '';
+            width: 1px;
+            height: 7px;
+            border: 1px solid #ccc;
+        }
+
+        &:after {
+            content: '';
+            transform: rotate(-45deg);
+        }
+
+        &:before {
+            content: '';
+            transform: rotate(45deg);
+        }
+
+        i {
+            font-size: 21px;
+            color: #ccc;
+            position: relative;
+            right: 2px;
+        }
+
         &:hover {
             border: 1px solid $blue;
-            &.remodal-close:before {
-                color: $blue;
+
+            &:hover i {
+                color: $blue
             }
         }
-        &:before {
-            font-size: 38px;
-            color: #cbcbcb;
-            width: 28px;
-            line-height: 30px;
-        }
     }
-    width: 630px;
-    padding: 60px 100px;
+
     input {
         width: 100%;
     }
+
     .formhead {
         margin-bottom: 20px;
     }
@@ -40,5 +73,24 @@
 }
 
 .swal2-shown {
-    z-index:10000;
+    z-index: 10000;
+}
+
+.remodal-is-active {
+    display: block;
+}
+
+.remodal {
+    animation: swal2-show .3s;
+}
+
+.overlay {
+    background: #000;
+    opacity: .7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
 }

@@ -61,7 +61,6 @@
         "imagemin-zopfli": "^6.0.0",
         "jquery.mmenu": "^7.3.3",
         "owl.carousel": "^2.3.4",
-        "remodal": "^1.1.1",
         "require-dir": "^1.2.0",
         "selectize": "^0.12.6",
         "stylelint": "^10.0.1",
