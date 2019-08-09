@@ -1,9 +1,11 @@
 .remodal {
     position: absolute;
-    top: 30%;
-    left: 30%;
     z-index: 2000;
     width: 700px;
+    left: 50%;
+    margin-left: -350px;
+    top: 50%;
+    margin-top: -200px;
     display: none;
 
     .callback {
@@ -28,13 +30,20 @@
         &:after {
             content: '';
             width: 1px;
-            height: 7px;
+            height: 19px;
+            display: block;
             border: 1px solid #ccc;
+            position: absolute;
+            top: 4px;
+            left: 13px;
         }
 
         &:after {
             content: '';
             transform: rotate(-45deg);
+        }
+        &:hover:after,&:hover::before {
+            border: 1px solid $blue;
         }
 
         &:before {
@@ -51,10 +60,6 @@
 
         &:hover {
             border: 1px solid $blue;
-
-            &:hover i {
-                color: $blue
-            }
         }
     }
 
@@ -84,13 +89,21 @@
     animation: swal2-show .3s;
 }
 
-.overlay {
-    background: #000;
-    opacity: .7;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+#overlay {
+    position: fixed; 
+    display: none; 
     width: 100%;
-    z-index: 999;
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 200; 
+    cursor: pointer; 
+    transition: background-color .1s;
+}
+
+.swal2-container.swal2-shown {
+    background-color: rgba(0,0,0,0.5) !important;
 }
