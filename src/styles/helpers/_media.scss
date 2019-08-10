@@ -38,10 +38,17 @@
     }
 
     .callback {
+        input {
+            padding: 2px 12px;
+        }
         .formhead {
             font-size: 30px;
         }
     }
+    .btn-wrapper {
+        margin: 0.55em 0;
+    }
+
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -98,6 +105,7 @@
             min-width: 25%;
         }
     }
+
     .b-about {
         .callback {
             padding: 25px;
@@ -180,20 +188,37 @@
             margin-bottom: 20px;
         }
     }
+
     .b-geography {
         padding: 50px 0 50px;
     }
+
     .footer-container {
         padding: 33px 0;
     }
+
     .footer__logo-wrapper {
         margin-bottom: 30px;
     }
+
     .footer__nav-wrapper {
         margin-bottom: 30px;
     }
+
     .footer__info-wrapper {
         text-align: left;
+    }
+
+    .remodal {
+
+        .formhead {
+            font-size: 26px;
+        }
+
+        input {
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -201,6 +226,10 @@
 // Large devices (desktops, 992px and up)
 
 @media (max-width: 992px) {
+    body {
+        padding: 0 !important;
+        overflow: auto !important;
+    }
 
     .hamburger {
         display: block;
@@ -437,9 +466,18 @@
             margin-bottom: 20px;
         }
     }
+
     .b-geography {
         padding: 100px 0 100px;
     }
+
+    // .remodal {
+    //     width: 100%;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     margin: 0;
+    // }
 
 }
 
@@ -488,7 +526,7 @@
         width: 68%;
 
         &::after {
-            left: 634px;
+            left: 652px;
             width: 1200px;
             height: 100px;
         }
@@ -558,13 +596,16 @@
             }
         }
     }
+
     .b-geography {
         background-position: center;
         background-size: 80%;
         padding: 160px 0 100px;
+
         .h2 {
             font-size: 27px;
         }
+
         &__number {
             color: $brown;
             font-size: 22px;
@@ -574,6 +615,16 @@
     .footer__nav-wrapper {
         a {
             font-size: 16px;
+        }
+    }
+
+    .remodal {
+        // left: 65%;
+        // top: 45%;
+        .callback {
+            .formhead {
+                font-size: 26px;
+            }
         }
     }
 }

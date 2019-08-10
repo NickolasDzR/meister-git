@@ -1,17 +1,47 @@
+
+// #overlay {
+//     position: absolute;
+//     display: none; 
+//     width: 100%;
+//     height: 100%; 
+//     top: 0; 
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgba(0,0,0,0.5); 
+//     z-index: 300; 
+//     cursor: pointer; 
+//     transition: background-color .1s;
+// }
+
 .remodal {
-    position: absolute;
-    z-index: 2000;
-    width: 700px;
-    left: 50%;
-    margin-left: -350px;
-    top: 50%;
-    margin-top: -200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: none;
+    justify-content: center;
+    align-items: center;
+    padding: .625em;
+    z-index: 200 !important;
+    background-color: rgba(0,0,0,0.5); 
 
     .callback {
         box-shadow: none;
-        padding: 0;
-        padding: 60px 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 32em;
+        max-width: 100%;
+        padding: 1.25em;
+        position: relative;
+        border-radius: .3125em;
+        z-index: 1000 !important;
+        animation: swal2-show .3s;
+        .btn-wrapper {
+            margin: 1.05em 0;
+          }
     }
 
     &-close {
@@ -64,11 +94,12 @@
     }
 
     input {
-        width: 100%;
+        width: 80%;
+        margin-bottom: 2.25em;
     }
 
     .formhead {
-        margin-bottom: 20px;
+        margin: 1.05em 0;
     }
 }
 
@@ -82,28 +113,13 @@
 }
 
 .remodal-is-active {
-    display: block;
-}
-
-.remodal {
-    animation: swal2-show .3s;
-}
-
-#overlay {
-    position: fixed; 
-    display: none; 
-    width: 100%;
-    height: 100%; 
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); 
-    z-index: 200; 
-    cursor: pointer; 
-    transition: background-color .1s;
+    display: flex;
 }
 
 .swal2-container.swal2-shown {
     background-color: rgba(0,0,0,0.5) !important;
+}
+
+body.swal2-height-auto {
+    padding-right: 17px;
 }
