@@ -1,0 +1,40 @@
+.b-mission {
+    padding-top: 80px;
+
+    &__header-item {
+        .h2 {
+            line-height: 1px;
+        }
+    }
+
+    &__paragraph {
+        color: #333333;
+        font-family: $Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    &__job-ways {
+        ul {
+            position: relative;
+            li {
+                color: #333333;
+                font-family: $Roboto;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+                margin-left: 20px;
+                &:before {
+                    content: '—';
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
