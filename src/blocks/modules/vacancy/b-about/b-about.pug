@@ -1,0 +1,32 @@
+mixin b-about()
+    section.b-about(style="background-image:url('img/bg-about.jpg')")
+        div.container 
+            div.row
+                div.col-md-5.col-12
+                    div.b-about__article-wrapper
+                        article.b-about__article
+                            h2.h2
+                                |   Заинтересовала  вакансия?
+                            p.b-about__paragraph
+                                |   Более подробно о данной вакансии мы раскажем Вам по адресу: Тюмень, 2-й Рощинский проезд,  д. 8, с. 5, оф. 221, БЦ «Серпуховской двор».Оставьте свои координаты, менеждер нашей компании назначит время собеседования.Подходите к нам в рабочие дни.Ждем желающих работать и зарабатывать вместе с нами.
+                div.col-md-7.col-12
+                    div.b-about__wrapper-form
+                        form.callback
+                            div.success
+                                span
+                                    |   Спасибо за обращение.
+                                    br
+                                    |   Мы вам скоро перезвоним!
+                            input(type="hidden" name="project_name" value="ООО Мейстер")
+                            input(type="hidden" name="admin_email" value="nickolasdzr@yandex.ru")
+                            input(type="hidden" name="form_subject" value="Обращение с главной страницы сайта")
+                            input(type="hidden" name="Страница" value="")
+                            div.formhead
+                                |   Подать заявку
+                            input(type="text", name="Имя" placeholder="Имя")
+                            input(type="text", name="Телефон или Email" placeholder="Телефон или Email")
+                            input.input-vacancy(type="text", name="Вакансия" placeholder="Вакансия")
+                            input.input-comment(type="text", name="Комментарий" placeholder="Комментарий")
+                            div.btn-wrapper
+                                button.btn(href="#")
+                                    |   Отправить

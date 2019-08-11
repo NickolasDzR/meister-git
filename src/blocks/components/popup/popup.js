@@ -14,7 +14,7 @@ $(function () {
   });
 
 $(document).mouseup(function(e) {
-  var container = $(".remodal-wrapper");
+  var container = $(".callback-wrapper");
   if (container.has(e.target).length === 0) {
     $('.remodal').removeClass('remodal-is-active');
     $('body').css('overflow', '');

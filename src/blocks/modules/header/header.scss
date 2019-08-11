@@ -1,6 +1,7 @@
 .header_container {
     position: relative;
     background-color: $blue;
+
     &::before {
         content: '';
         position: absolute;
@@ -29,11 +30,14 @@
         background-color: #fff;
         position: relative;
         padding-top: 35px;
+
         p {
             font-family: $Proxima-Nova-Light;
             color: #999999;
             font-style: oblique;
+            margin-top: -10px;
         }
+
         img {
             width: 250px;
         }
@@ -46,6 +50,7 @@
         padding: 24px 0px;
         width: calc(100% - 609px);
         position: relative;
+
         &:before {
             content: '';
             position: absolute;
@@ -60,18 +65,22 @@
         ul {
             display: flex;
             justify-content: space-around;
+
             li {
                 display: inline-block;
+
                 a {
                     font-family: $Proxima-Nova;
                     font-size: 16px;
                     color: #ffffff;
                     white-space: nowrap;
                     text-decoration: none;
-                    &:hover, &active {
+
+                    &:hover,
+                    &active {
                         opacity: .9;
                         border-bottom: 1px solid rgba($blue, .7);
-                    } 
+                    }
                 }
             }
         }
@@ -86,6 +95,7 @@
         justify-content: space-around;
         background-color: #fff;
         position: relative;
+
         &::after {
             content: '';
             position: absolute;
@@ -107,9 +117,11 @@
         justify-content: space-around;
         align-items: center;
         position: relative;
+
         a {
             text-decoration: none;
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -118,9 +130,11 @@
             height: 96px;
             background-color: #ffffff;
         }
+
         i {
             color: #fff;
             font-size: 20px;
+
             &:hover {
                 opacity: .7;
             }
@@ -132,12 +146,15 @@
             color: #999999;
             font-size: 14px;
         }
+
         &__bottom {
             color: #1f425d;
             font-size: 16px;
             line-height: 16px;
         }
+
         margin-left: 18px;
+
         p {
             font-family: $Proxima-Nova;
         }
@@ -146,6 +163,7 @@
 
 .widget_b {
     display: flex;
+
     img {
         width: 33px;
         height: auto;
@@ -168,8 +186,12 @@
     transform: translateX(0px) !important;
 }
 
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after,
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
     background-color: $blue;
 }
 

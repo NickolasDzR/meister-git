@@ -1,0 +1,14 @@
+include ../header/header.pug
+include ../../components/broadcrumps/broadcrumps.pug
+include b-vacancy/b-vacancy.pug
+include b-about/b-about.pug
+include ../footer/footer.pug
+include ../../components/popup/popup.pug
+mixin vacancy()
+    div.vacancy-container
+        +header
+        main.main_container
+            +broadcrumps
+            +b-vacancy
+            +b-about
+        +footer

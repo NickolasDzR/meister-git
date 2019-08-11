@@ -40,13 +40,41 @@
     .callback {
         input {
             padding: 2px 12px;
+            margin-bottom: 1.3rem;
         }
         .formhead {
             font-size: 30px;
+            margin: 0.45em 0;
         }
     }
     .btn-wrapper {
         margin: 0.55em 0;
+    }
+    .remodal .callback .btn-wrapper {
+        margin: 0.65em 0;
+    }
+    .b-vacancy {
+        &__tasks-item {
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            ul {
+                margin-bottom: 10px;
+                li {
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__header-item {
+        h2 {
+            font-size: 19px;
+        }
+    }
+    .btn {
+        margin: 15px 0 30px;
     }
 
 }
@@ -188,6 +216,9 @@
             margin-bottom: 20px;
         }
     }
+    .header_navigation {
+        animation: swal2-show .5s;
+    }
 
     .b-geography {
         padding: 50px 0 50px;
@@ -272,11 +303,9 @@
 
     .header_navigation {
         display: none;
-        transform: translateX(-300px);
         width: 75%;
         order: 2;
         padding-bottom: 0;
-        transition: 1s;
 
         &__main:before {
             content: '\efb2';
@@ -470,22 +499,30 @@
     .b-geography {
         padding: 100px 0 100px;
     }
-
-    // .remodal {
-    //     width: 100%;
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     margin: 0;
-    // }
-
+    .b-vacancy {
+        &__tasks-item {
+            p {
+                line-height: 24px;
+            }
+            ul {
+                li {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    &__header-item {
+        h2 {
+            font-size: 22px;
+        }
+    }
 }
 
 
 // Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {
     .header_logo {
-        padding-top: 19px;
+        padding-top: 12px;
         height: 100px;
         width: 220px;
 
@@ -494,7 +531,7 @@
         }
 
         p {
-            display: inline-block;
+            margin-top: -10px;
         }
     }
 
@@ -508,6 +545,7 @@
         margin-left: 0;
         margin-top: 0;
         width: 55%;
+        transition: 1s;
 
         &:before {
             border: none;
@@ -619,8 +657,6 @@
     }
 
     .remodal {
-        // left: 65%;
-        // top: 45%;
         .callback {
             .formhead {
                 font-size: 26px;
