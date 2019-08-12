@@ -5,6 +5,12 @@
     &__header {
         &_wrapper {
             padding: 35px 0;
+            img {
+                position: absolute;
+                right: 100%;
+                top: 10px;
+                margin-right: 30px;
+            }
         }
     }
 

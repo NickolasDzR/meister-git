@@ -1,0 +1,24 @@
+.b-conctact-us {
+    padding: 110px 0;
+
+    &__input {
+        width: 100%;
+    }
+
+    .b-about__article-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    &__callback {
+        a {
+            color: #07a6b9;
+            font-family: $Proxima-Nova;
+            font-weight: 700;
+            line-height: 28px;
+            text-decoration: underline !important;
+        }
+    }
+}

@@ -2,8 +2,11 @@ include ../header/header.pug
 include ../../components/broadcrumps/broadcrumps.pug
 include ../footer/footer.pug
 include ../../components/popup/popup.pug
+include ../../components/b-map/b-map.pug
 include b-company/b-company.pug
 include b-mission/b-mission.pug
+include b-contacts/b-contacts.pug
+include b-conctact-us/b-conctact-us.pug
 mixin company()
     div.company-container
         +header
@@ -11,4 +14,7 @@ mixin company()
             +broadcrumps
             +b-company
             +b-mission
+            +b-contacts
+            +b-map
+            +b-conctact-us
         +footer

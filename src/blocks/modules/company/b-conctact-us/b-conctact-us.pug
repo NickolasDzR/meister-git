@@ -1,0 +1,38 @@
+mixin b-conctact-us()
+    section.b-conctact-us
+        div.container
+            div.row
+                div.col-md-5.col-12
+                    div.b-about__article-wrapper
+                        article.b-about__article
+                            h2.h2
+                                |   Есть вопросы?
+                            p.b-about__paragraph
+                                |   Отправьте свой вопрос, менеждер нашей компании свяжется с вами в рабочее время и обсудит все интересующие вопросы. Мы рады сотрудничеству!
+                        article.b-conctact-us__callback
+                            h4.h4
+                                |   Не хотите ждать?
+                            p
+                                |   Воспользуйтесь функцией
+                            a.popup-btn(href="#")
+                                |   Зказать обратный звонок
+                div.col-md-7.col-12
+                    div.b-about__wrapper-form
+                        form.callback
+                            div.success
+                                span
+                                    |   Спасибо за обращение.
+                                    br
+                                    |   Мы вам скоро перезвоним!
+                            input(type="hidden" name="project_name" value="ООО Мейстер")
+                            input(type="hidden" name="admin_email" value="nickolasdzr@yandex.ru")
+                            input(type="hidden" name="form_subject" value="Обращение с главной страницы сайта")
+                            input(type="hidden" name="Страница" value="")
+                            div.formhead
+                                |   Задать вопрос
+                            input(type="text", name="Имя" placeholder="Имя")
+                            input(type="text", name="Телефон или email" placeholder="Телефон или Email")
+                            input.b-contacts-us__input(type="text", name="Ваш вопрос" placeholder="Ваш вопрос")
+                            div.btn-wrapper
+                                button.btn(href="#")
+                                    |   Отправить
