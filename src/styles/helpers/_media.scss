@@ -42,25 +42,31 @@
             padding: 2px 12px;
             margin-bottom: 1.3rem;
         }
+
         .formhead {
             font-size: 30px;
             margin: 0.45em 0;
         }
     }
+
     .btn-wrapper {
         margin: 0.55em 0;
     }
+
     .remodal .callback .btn-wrapper {
         margin: 0.65em 0;
     }
+
     .b-vacancy {
         &__tasks-item {
             p {
                 font-size: 14px;
                 line-height: 24px;
             }
+
             ul {
                 margin-bottom: 10px;
+
                 li {
                     line-height: 22px;
                     font-size: 14px;
@@ -68,11 +74,13 @@
             }
         }
     }
+
     &__header-item {
         h2 {
             font-size: 19px;
         }
     }
+
     .btn {
         margin: 15px 0 30px;
     }
@@ -138,6 +146,16 @@
         .callback {
             padding: 25px;
             box-shadow: none;
+        }
+    }
+
+    .b-conctact-us {
+        .b-about__wrapper-form {
+            .callback {
+                input {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -216,8 +234,19 @@
             margin-bottom: 20px;
         }
     }
+
     .header_navigation {
-        animation: swal2-show .5s;
+        &__main {
+            animation-delay: 0.05s;
+        }
+
+        &__vacancy {
+            animation-delay: 0.30s;
+        }
+
+        &__about {
+            animation-delay: 0.55s;
+        }
     }
 
     .b-geography {
@@ -249,6 +278,12 @@
         input {
             font-size: 13px;
             margin-bottom: 30px;
+        }
+    }
+
+    .b-contact-us {
+        .b-about__wrapper-form {
+            margin-top: 30px;
         }
     }
 }
@@ -499,11 +534,13 @@
     .b-geography {
         padding: 100px 0 100px;
     }
+
     .b-vacancy {
         &__tasks-item {
             p {
                 line-height: 24px;
             }
+
             ul {
                 li {
                     font-size: 15px;
@@ -511,10 +548,15 @@
             }
         }
     }
+
     &__header-item {
         h2 {
             font-size: 22px;
         }
+    }
+    .header_navigation ul li a:hover {
+        border: none;
+        color: inherit;
     }
 }
 

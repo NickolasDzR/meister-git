@@ -2,6 +2,7 @@
     padding-top: 80px;
 
     &__header-item {
+        margin-bottom: 10px;
         .h2 {
             line-height: 1px;
         }
@@ -20,6 +21,7 @@
     }
 
     &__job-ways {
+        margin: 20px 0;
         ul {
             position: relative;
             li {

@@ -56,3 +56,12 @@ input {
       opacity: 1;
   }
 }
+
+.active {
+  opacity: .9;
+  border-bottom: 1px solid #c6ecf1;
+}
+
+.active-footer {
+  border-bottom: 1px solid #fff;
+}

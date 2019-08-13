@@ -4,12 +4,14 @@
         li {
             display: inline-block;
             &:nth-child(1):after {
-                content: '>';
+                content: "\eaca";
                 color: #999999;
-                font-family: $Proxima-Nova;
+                font-family: "IcoFont";
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 36px;
+                position: relative;
+                bottom: -2px;
             }
         }
         a {
