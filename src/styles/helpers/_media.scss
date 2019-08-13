@@ -6,6 +6,12 @@
             top: 40px;
         }
     }
+    .b-geography {
+        &__number {
+            color: $brown;
+            font-size: 20px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -83,6 +89,15 @@
 
     .btn {
         margin: 15px 0 30px;
+    }
+
+    .b-map {
+        max-height: 371px;
+    }
+
+    .b-conctact-us {
+        margin-top: 40px;
+        padding: 0 0 110px;
     }
 
 }
@@ -286,6 +301,9 @@
             margin-top: 30px;
         }
     }
+    .b-conctact-us {
+        padding: 20px 0 110px;
+    }
 }
 
 
@@ -402,6 +420,9 @@
         display: block;
         width: 100%;
         height: auto;
+        .widget_b {
+            max-height: 70px;
+        }
 
         &::after {
             width: 0;
@@ -527,7 +548,7 @@
         &__article-wrapper {
             display: block;
             align-items: inherit;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
     }
 
@@ -554,6 +575,7 @@
             font-size: 22px;
         }
     }
+
     .header_navigation ul li a:hover {
         border: none;
         color: inherit;
@@ -604,7 +626,6 @@
     .header_contacts {
         height: 100px;
         width: 68%;
-
         &::after {
             left: 651px;
             width: 1200px;

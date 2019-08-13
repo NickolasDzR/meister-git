@@ -139,9 +139,15 @@
                 opacity: .7;
             }
         }
+        img {
+            height: auto;
+        }
     }
 
     &_b-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &__top {
             color: #999999;
             font-size: 14px;

@@ -13,6 +13,11 @@
                 position: relative;
                 bottom: -2px;
             }
+            &:nth-child(2) {
+                a {
+                    color: $blue;
+                }
+            }
         }
         a {
             text-decoration: none;
