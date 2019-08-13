@@ -3,8 +3,7 @@ import Swal from "sweetalert2";
 
 
 $(function () {
-  $('.popup-btn').click(function () {
-    event.preventDefault();
+  $('.popup-btn').click('submit', function () {
     if (!$('.remodal').hasClass('remodal-is-active')) {
       $('.remodal').addClass('remodal-is-active');
       $('body').css('padding-right', '17px');
@@ -24,30 +23,20 @@ $(document).mouseup(function(e) {
 });
 
   $('.remodal-close').click(function () {
-    event.preventDefault();
     $('.remodal').removeClass('remodal-is-active');
     $('body').css('overflow', '');
     $('body').css('padding-right', '');
     $('#overlay').css('display', '');
   });
 
-  // $('.remodal').dblclick(function () {
-  //   event.preventDefault();
-  //   $('.remodal').removeClass('remodal-is-active');
-  //   $('body').css('overflow', '');
-  //   $('body').css('padding-right', '');
-  //   $('#overlay').css('display', '');
-  // });
-
-  $('.confirm').click(function () {
-    event.preventDefault();
+  $('.callback-wrapper button').click(function () {
     $('.remodal').removeClass('remodal-is-active');
     $('body').css('overflow', '');
     $('body').css('padding-right', '');
     $('#overlay').css('display', '');
   });
 
-  $('.confirm').click('submit', function () {
+  $('.callback-wrapper button').click('submit', function () {
     if ($(this).closest('.remodal').find('.callback input[name="Имя"]').val() === '') {
       Swal.fire({
         type: 'error',

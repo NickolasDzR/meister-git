@@ -9,7 +9,10 @@
         margin-top: 20px;
     }
     &__contact {
+        display: flex;
         margin-bottom: 20px;
+        max-height: 100px;
+        align-items: center;
         p:nth-child(1) {
             color: #666666;
             font-family: $Roboto;
