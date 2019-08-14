@@ -11,6 +11,9 @@
         justify-content: space-evenly;
         align-items: flex-start;
     }
+    &__article {
+        width: 100%;
+    }
 
     &__callback {
         a {

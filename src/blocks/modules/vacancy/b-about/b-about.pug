@@ -22,14 +22,14 @@ mixin b-about()
                                     |   Мы вам скоро перезвоним!
                             input(type="hidden" name="project_name" value="ООО Мейстер")
                             input(type="hidden" name="admin_email" value="nickolasdzr@yandex.ru")
-                            input(type="hidden" name="form_subject" value="Обращение с главной страницы сайта")
+                            input(type="hidden" name="form_subject" value="Обращение со страницы вакансий")
                             input(type="hidden" name="Страница" value="")
                             div.formhead
                                 |   Подать заявку
-                            input(type="text", name="Имя" placeholder="Имя")
-                            input(type="text", name="Телефон или Email" placeholder="Телефон или Email")
+                            input(type="text", name="Имя" placeholder="Имя" required)
+                            input(type="text", name="Телефон или Email" placeholder="Телефон или Email" required)
                             input.input-vacancy(type="text", name="Вакансия" placeholder="Вакансия")
                             input.input-comment(type="text", name="Комментарий" placeholder="Комментарий")
                             div.btn-wrapper
-                                button.btn(href="#")
+                                button.btn
                                     |   Отправить
