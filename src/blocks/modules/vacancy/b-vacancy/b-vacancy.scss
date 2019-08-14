@@ -1,10 +1,14 @@
 .b-vacancy {
-    &__manager, &__driver {
+
+    &__manager,
+    &__driver {
         margin-bottom: 110px;
     }
+
     &__header {
         &_wrapper {
             padding: 35px 0;
+
             img {
                 position: absolute;
                 right: 100%;
@@ -21,11 +25,19 @@
         h2 {
             line-height: 20px;
         }
+
         img {
             margin-bottom: 10px;
         }
     }
-    &__conditions-item {
+
+    .b-vacancy__conditions-item {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .b-vacancy__conditions {
+        margin-right: 20px;
         p {
             color: #1c1c1c;
             font-family: "Proxima Nova";
@@ -34,7 +46,10 @@
             line-height: 28px;
             min-width: 70px;
         }
-        span {
+    }
+
+    .b-vacancy__resume {
+        p {
             color: #1c1c1c;
             font-family: "Proxima Nova";
             font-size: 16px;
@@ -42,9 +57,11 @@
             line-height: 28px;
         }
     }
+
     &__tasks-item {
         ul {
             position: relative;
+
             li {
                 color: #333333;
                 font-family: $Roboto;
@@ -52,6 +69,7 @@
                 font-weight: 300;
                 line-height: 28px;
                 margin-left: 20px;
+
                 &:before {
                     content: '—';
                     position: absolute;
@@ -59,6 +77,7 @@
                 }
             }
         }
+
         p {
             color: #333333;
             font-family: Roboto;
@@ -66,20 +85,24 @@
             font-weight: 300;
             line-height: 28px;
         }
+
         h3 {
             margin: 10px 0 5px;
         }
     }
+
     &__img-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+
         img {
             display: block;
             width: 90%;
         }
     }
+
     .btn {
         margin: 30px 0;
     }

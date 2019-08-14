@@ -157,6 +157,10 @@
             color: #1f425d;
             font-size: 16px;
             line-height: 16px;
+            a {
+                color: inherit;
+                cursor: pointer;
+            }
         }
 
         margin-left: 18px;

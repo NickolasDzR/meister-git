@@ -4,7 +4,7 @@ mixin header()
             div.header
                 div.header_logo
                     a(href="")
-                        img(src="img/logo/logo.png", alt="#")
+                        img(src="img/logo/logo.png", alt="Логотип компании")
                         p
                             |   Грузоперевозки по России
                     a.hamburger.hamburger--emphatic(href="#" tabindex="1" aria-label="Menu" aria-controls="navigation")
@@ -30,7 +30,8 @@ mixin header()
                             p.header_b-paragraph__top
                                 |   Напишите нам
                             p.header_b-paragraph__bottom
-                                |   nikolasdzr@yandex.ru
+                                a(href="mailto:nikolasdzr@yandex.ru")
+                                    |   nikolasdzr@yandex.ru
                     div.line-btw
                     div.widget_b
                         img(src="../../../img/sprites/sprite.svg#phone", alt="номер телефона")
@@ -38,14 +39,21 @@ mixin header()
                             p.header_b-paragraph__top
                                 |   Позвоните нам 
                             p.header_b-paragraph__bottom
-                                |   +7 (999) 120 59 82
+                                a(href="tel:+7 (999) 120 59 82")
+                                    |   +7 (999) 120 59 82
                     div.btn-wrapper
                         a.btn.popup-btn(href="#modal")
                             |   Заказать звонок
                 div.header_widgets#my-soc
                     a(href="#")
                         i.icon.icofont-instagram
+                        span.visually-hidden
+                            |   инстаграмм
                     a(href="#")
                         i.icon.icofont-odnoklassniki
+                        span.visually-hidden
+                            |   одноклассники
                     a(href="#")
                         i.icon.icofont-vk
+                        span.visually-hidden
+                            |   вконтакте
