@@ -50,9 +50,9 @@
         text-align: center;
         // blur
         & ~ * {
-            transition: all 1s ease
+            transition: all 1s ease;
         }
-        &.active {
+        &.blur-active {
             & ~ * {
                 opacity: .5;
                 filter: blur(7px);
